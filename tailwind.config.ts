@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         chakrapetch: ['var(--font-chakra-petch'],
         actay: ['var(--font-actay)'],
+        jersey10: ['var(--font-jersey-10)'],
       }
     },
     colors: {
