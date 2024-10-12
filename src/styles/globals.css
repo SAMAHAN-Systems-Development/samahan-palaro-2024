@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--color-green: 211 254 16;
+	--color-blue: 0 31 121;
+	--color-white: 255 255 255;
+	--color-pink: 254 51 133;
+	--font-chakrapetch: "Chakrapetch", sans-serif;
+	--font-actay: "Actay", sans-serif;
+}
+*,
+*::before,
+*::after {
+	box-sizing: "border-box";
+}
+
+* {
+	margin: "0";
+}
+
+img {
+	max-width: "100%";
+	display: "block";
+}
