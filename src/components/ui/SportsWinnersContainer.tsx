@@ -9,10 +9,13 @@ const borderTextStyles = cva(['font-chakra-petch'], {
       blueWhite: 'border-blue text-white',
       greenBlue: 'border-green text-blue',
       greenPink: 'border-green text-pink',
+      greenWhite: 'border-green text-white',
       pinkGreen: 'border-pink text-green',
       pinkWhite: 'border-pink text-white',
+      pinkBlue: 'border-pink text-blue',
       whiteBlue: 'border-white text-blue',
       whitePink: 'border-white text-pink',
+      whiteWhite: 'border-white text-white',
     },
   },
   defaultVariants: {
@@ -27,10 +30,11 @@ const titleStyles = cva('font-chakra-petch', {
       blueGreen: 'bg-blue text-green',
       pinkGreen: 'bg-pink text-green',
       blueWhite: 'bg-blue text-white',
-      pinkWhite: 'bg-pink text-green',
+      pinkWhite: 'bg-pink text-white',
+      pinkBlue: 'bg-pink text-blue',
       greenBlue: 'bg-green text-blue',
-      whiteBlue: 'bg-white text-blue',
       greenPink: 'bg-green text-pink',
+      whiteBlue: 'bg-white text-blue',
       whitePink: 'bg-white text-pink',
     },
   },
@@ -47,6 +51,7 @@ interface Winners {
   third_place_name: string;
   color:
     | string
+    | 'greenWhite'
     | 'blueBlue'
     | 'blueWhite'
     | 'greenBlue'
