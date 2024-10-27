@@ -11,7 +11,7 @@ const textStyles = cva('', {
       white: 'text-white',
     },
     size: {
-      content: 'font-chakrapetch text-xs sm:text-sm md:text-base lg:text-lg',
+      content: 'font-chakrapetch text-xs sm:text-base md:text-lg lg:text-lg',
       header: 'font-jersey10 text-xl sm:text-2xl md:text-3xl lg:text-4xl',
     },
   },
@@ -29,8 +29,8 @@ const borderStyles = cva('', {
       white: 'border-white',
     },
     borderDirection: {
-      all: 'border-2 sm:border-3 md:border-4',
-      right: 'border-r-2 sm:border-r-3 md:border-r-4',
+      all: 'border-2 md:border-4',
+      right: 'border-r-2 md:border-r-4',
     },
   },
 });
