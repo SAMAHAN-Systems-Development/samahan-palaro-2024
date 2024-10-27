@@ -15,7 +15,7 @@ const config: Config = {
       }
     },
     colors: {
-      yellow: 'rgb(var(--color-yellow) / <alpha-value>)',
+      green: 'rgb(var(--color-green) / <alpha-value>)',
       blue: 'rgb(var(--color-blue) / <alpha-value>)',
       white: 'rgb(var(--color-white) / <alpha-value>)',
       pink: 'rgb(var(--color-pink) / <alpha-value>)',

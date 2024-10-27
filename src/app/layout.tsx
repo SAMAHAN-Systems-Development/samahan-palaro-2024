@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import '@/styles/globals.css';
-import { actay, chakrapetch } from '@/styles/fonts';
+import { actay, chakrapetch, jersey10 } from '@/styles/fonts';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${actay.variable} ${chakrapetch.variable} antialiased`}
+        className={`${actay.variable} ${chakrapetch.variable} ${jersey10.variable} antialiased`}
       >
         {children}
       </body>

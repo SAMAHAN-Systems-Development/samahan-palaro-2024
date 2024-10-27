@@ -11,7 +11,8 @@ export const chakrapetch = Chakra_Petch({
 export const jersey10 = Jersey_10({
     variable: '--font-jersey-10',
     weight: ['400'],
-    subsets: ['latin', 'latin-ext']
+    display: 'swap',
+    subsets: ['latin']
 });
 
 export const actay = localFont({
