@@ -10,7 +10,7 @@ export default function Home() {
     {/* add sections here */}
     {/* For testing of fonts */}
     <div className='mt-10 justify-center items-center flex flex-col'>
-      <div className="font-actay text-center">
+      <div className="font-actay text-center ">
         <h1 className="text-2xl">Actay Font</h1>
         <p>The quick brown fox jumps over the lazy dog.</p>
       </div>
@@ -19,6 +19,5 @@ export default function Home() {
         <p>The quick brown fox jumps over the lazy dog.</p>
       </div>
     </div>
-
   </main>;
 }

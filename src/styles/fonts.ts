@@ -1,4 +1,5 @@
-import { Chakra_Petch, Jersey_10 } from 'next/font/google';
+import { Jersey_10 } from 'next/font/google';
+import { Chakra_Petch } from 'next/font/google';
 import localFont from 'next/font/local';
 
 export const chakrapetch = Chakra_Petch({
@@ -10,7 +11,7 @@ export const chakrapetch = Chakra_Petch({
 export const jersey10 = Jersey_10({
     variable: '--font-jersey-10',
     weight: ['400'],
-    display: 'swap'
+    subsets: ['latin', 'latin-ext']
 });
 
 export const actay = localFont({

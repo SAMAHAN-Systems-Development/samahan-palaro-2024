@@ -7,9 +7,9 @@
   --color-blue: 0 31 121;
   --color-white: 255 255 255;
   --color-pink: 254 51 133;
-  --font-chakrapetch: 'Chakrapetch', sans-serif;
+  --font-chakra-petch: 'Chakra Petch', sans-serif;
   --font-actay: 'Actay', sans-serif;
-  --font-jersey10: 'Jersey-10', sans-serif;
+  --font-jersey-10: 'Jersey10', sans-serif;
 }
 *,
 *::before,
@@ -24,4 +24,12 @@
 img {
   max-width: '100%';
   display: 'block';
+}
+
+.font-chakra-petch {
+  font-family: var(--font-chakra-petch);
+}
+
+.font-actay {
+  font-family: var(--font-actay);
 }
