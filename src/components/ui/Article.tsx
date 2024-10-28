@@ -64,18 +64,17 @@ export default function Component({
       })}`}
     >
       <div
-        className={`w-7/12 relative ${borderStyles({
+        className={`w-7/12 relative aspect-[4/3] ${borderStyles({
           borderColor,
           borderDirection: 'right',
         })}`}
-        style={{ aspectRatio: '4 / 3' }}
       >
         <Image
           src={`/images/${imageUrl}`}
           alt="Article image"
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          style={{ objectFit: 'cover' }}
+          className="object-cover"
           priority
         />
       </div>
