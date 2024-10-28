@@ -1,4 +1,3 @@
-import SportsWinnersContainer from '@/components/ui/SportsWinnersContainer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

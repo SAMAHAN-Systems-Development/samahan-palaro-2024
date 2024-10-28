@@ -24,7 +24,7 @@ const borderTextStyles = cva(['font-chakra-petch'], {
 });
 
 //Title Bakcground & Title Color
-const titleStyles = cva('font-chakra-petch', {
+const titleStyles = cva(['font-chakra-petch'], {
   variants: {
     titleColor: {
       blueGreen: 'bg-blue text-green',
@@ -39,9 +39,13 @@ const titleStyles = cva('font-chakra-petch', {
     },
   },
   defaultVariants: {
-    titleColor: 'greenBlue',
+    titleColor: 'blueGreen',
   },
 });
+
+// Define types for color and titleColor props using VariantProps
+type BorderTextColorVariants = VariantProps<typeof borderTextStyles>;
+type TitleColorVariants = VariantProps<typeof titleStyles>;
 
 interface Winners {
   id: number;
@@ -49,27 +53,8 @@ interface Winners {
   first_place_name: string;
   second_place_name: string;
   third_place_name: string;
-  color:
-    | string
-    | 'greenWhite'
-    | 'blueBlue'
-    | 'blueWhite'
-    | 'greenBlue'
-    | 'greenPink'
-    | 'pinkGreen'
-    | 'pinkWhite'
-    | 'whiteBlue'
-    | 'whitePink';
-  titleColor:
-    | string
-    | 'greenBlue'
-    | 'greenPink'
-    | 'whiteBlue'
-    | 'whitePink'
-    | 'blueGreen'
-    | 'blueWhite'
-    | 'pinkGreen'
-    | 'pinkWhite';
+  color: BorderTextColorVariants['color'];
+  titleColor: TitleColorVariants['titleColor'];
 }
 
 //Allows winnersArray prop to use color & titleColor
@@ -82,7 +67,6 @@ const SportsWinnersContainer: FC<SportsWinnersContainerProps> = ({
 }) => {
   return (
     <div
-      style={{ backgroundColor: '#ced4da' }}
       className={`flex flex-col gap-4 max-w-lg min-w-sm text-xl m-auto p-6 `}
     >
       {winnersArray.map(
@@ -98,30 +82,24 @@ const SportsWinnersContainer: FC<SportsWinnersContainerProps> = ({
           return (
             <div
               key={id}
-              className={`${borderTextStyles({ color })} border-4 px-4 pb-4 flex flex-col gap-4 justify-items-center items-center text-xl font-medium rounded-sm shadow-sm`}
+              className={`${borderTextStyles({ color })} border-4 px-12 pb-4 flex flex-col gap-4 text-center text-xl font-medium rounded-sm shadow-sm`}
             >
               <div>
                 <h1
-                  className={`!text-3xl px-6 py-2 !font-semibold ${titleStyles({ titleColor })}`}
+                  className={`!text-3xl py-2 !font-semibold ${titleStyles({ titleColor })}`}
                 >
                   {game_title}
                 </h1>
               </div>
-              <div
-                className={`flex flex-col justify-items-center items-center`}
-              >
+              <div>
                 <p>First Place</p>
                 <p>{first_place_name}</p>
               </div>
-              <div
-                className={`flex flex-col justify-items-center items-center`}
-              >
+              <div>
                 <p>Second Place</p>
                 <p>{second_place_name}</p>
               </div>
-              <div
-                className={`flex flex-col justify-items-center items-center`}
-              >
+              <div>
                 <p>Third Place</p>
                 <p>{third_place_name}</p>
               </div>
