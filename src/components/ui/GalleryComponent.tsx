@@ -1,5 +1,6 @@
 import { cva, type VariantProps } from 'class-variance-authority';
 import { FC } from 'react';
+import Image from 'next/image';
 
 const galleryStyles = cva('overflow-hidden font-jersey10', {
   variants: {
@@ -61,7 +62,7 @@ const GalleryComponent: FC<GalleryComponentProps> = ({
       >
         {sportName}
       </div>
-      <img
+      <Image
         src={`/images/sports-picture/${image}`}
         alt={sportName}
         className="object-cover w-full h-full"
