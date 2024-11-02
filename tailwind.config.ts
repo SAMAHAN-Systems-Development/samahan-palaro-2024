@@ -1,18 +1,18 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       fontFamily: {
-        chakrapetch: ['var(--font-chakra-petch'],
+        chakrapetch: ['var(--font-chakra-petch)'],
         actay: ['var(--font-actay)'],
         jersey10: ['var(--font-jersey-10)'],
-      }
+      },
     },
     colors: {
       green: 'rgb(var(--color-green) / <alpha-value>)',

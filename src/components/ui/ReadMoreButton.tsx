@@ -5,38 +5,41 @@ const readMoreButtonStyles = cva(
   'font-jersey10 transition-all duration-300 cursor-pointer',
   {
     variants: {
-      color: {
-        blue1: 'bg-blue text-green',
-        blue2: 'bg-blue text-white',
-        green1: 'bg-green text-blue',
-        green2: 'bg-green text-pink',
-        pink1: 'bg-pink text-green',
-        pink2: 'bg-pink text-white',
-        white1: 'bg-white text-blue',
-        white2: 'bg-white text-pink',
+      bgColor: {
+        blue: 'bg-blue',
+        green: 'bg-green',
+        pink: 'bg-pink',
+        white: 'bg-white',
+      },
+      textColor: {
+        blue: 'text-blue',
+        green: 'text-green',
+        pink: 'text-pink',
+        white: 'text-white',
       },
       size: {
+        responsive:
+          'text-lg sm:text-xl md:text-2xl lg:text-3xl w-32 sm:w-36 md:w-40 lg:w-48 h-8 sm:h-9 md:h-10 lg:h-11',
         small: 'text-3xl w-48 h-11',
-        big: 'text-5xl w-[332px] h-[102px] ',
+        big: 'text-5xl w-[332px] h-[102px]',
       },
     },
     defaultVariants: {
-      color: 'blue1',
-      size: 'small',
+      bgColor: 'blue',
+      textColor: 'green',
+      size: 'responsive',
     },
   }
 );
 
 const ReadMoreButton: FC<VariantProps<typeof readMoreButtonStyles>> = ({
-  color,
+  bgColor,
+  textColor,
   size,
 }) => {
-  if (size === 'big' && !(color === 'pink1' || color === 'green2')) {
-    color = 'pink1';
-  }
   return (
-    <button className={readMoreButtonStyles({ color, size })}>
-      <span>
+    <button className={readMoreButtonStyles({ bgColor, textColor, size })}>
+      <span className="whitespace-nowrap">
         Read More {'>'}
         {'>'}
       </span>
