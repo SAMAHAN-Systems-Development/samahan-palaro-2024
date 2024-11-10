@@ -65,6 +65,7 @@ const GalleryComponent: FC<GalleryComponentProps> = ({
       <Image
         src={`/images/sports-picture/${image}`}
         alt={sportName}
+        fill
         className="object-cover w-full h-full"
       />
     </div>
