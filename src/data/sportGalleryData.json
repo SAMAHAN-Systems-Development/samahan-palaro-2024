@@ -1,10 +1,140 @@
 [
   {
-    "title": "Sport Title 1",
-    "image": "SportImage.png"
+    "title": "Opening Ceremony / Cheerdance Competition",
+    "image": "",
+    "excerpt": "With the comeback of the competition following an 8-year hiatus since 2016, the School of Nursing (SON) Panthers were hailed as this year’s Palarong Atenista ‘24 cheerdance champions.",
+    "link": "https://atenews.ph/palarong-atenista-24-revives-cheerdance-son-panthers-clinch-gold"
   },
   {
-    "title": "Sport Title 2",
-    "image": "SportImage2.png"
+    "title": "Scrabble Men",
+    "image": "",
+    "excerpt": "Beating last year’s champion, the Social Science (SS) Dragons brought home the gold medal over the Accountancy (ACC) Griffins through a 2-0 win in the Palarong Atenista 2024 Men’s Scrabble tournament. SS Dragons’ Cian Athen Sy held an early lead, winning the first round with a score of 312 – 276. The Dragons’ bet then maintained this momentum in the second round with a score of 312 – 286 in the final match.",
+    "link": "https://atenews.ph/palarong-atenista-24-ss-dragons-nab-mens-scrabble-champ-title-vs-acc-griffins"
+  },
+  {
+    "title": "Scrabble Women",
+    "image": "",
+    "excerpt": "With a 2-0 win, the Accountancy (ACC) Griffins secured a back-to-back championship title in the Palarong Atenista 2024 Women’s Scrabble tournament. ACC Griffins’ Regine Cabel, who was also her cluster’s representative last year, won the first finals game against B&M Vipers’ Chrystanni Gregore with a close lead of 311 – 286. The second finals game saw her secure the two-time championship with another close lead of 318 – 287.",
+    "link": "https://atenews.ph/palarong-atenista-24-acc-griffins-keep-crown-in-womens-scrabble"
+  },
+  {
+    "title": "Chess Women",
+    "image": "",
+    "excerpt": "Remaining undefeated throughout the competition, Accountancy (ACC) Griffins’ Mel Glamoura Olanda gave her cluster a back-to-back gold after triumphing against Natural Sciences and Mathematics (NSM) Falcons’ Aess Anndee Maquiling in this year’s Palarong Atenista.",
+    "link": "https://atenews.ph/palarong-atenista-24-acc-griffins-sweeps-chess-womens-tourney-defends-champ-title-2-1"
+  },
+  {
+    "title": "Chess Men",
+    "image": "",
+    "excerpt": "Clawing his way in the championship match, the School of Engineering and Architecture Tigers’ Francis Liane Francisco beat undefeated Accountancy Griffins’ Ray Abie Karfael Campaña in a 2-1 finals escape.",
+    "link": "https://atenews.ph/palarong-atenista-24-sea-tigers-snatches-gold-from-undefeated-acc-griffins-in-chess-mens-compe"
+  },
+  {
+    "title": "Badminton Men Singles and Doubles",
+    "image": "",
+    "excerpt": "The Social Sciences (SS) Dragons secured the gold podium for a second time around in the badminton doubles category, while the School of Engineering and Architecture (SEA) Tigers emerged victorious in the singles category during the recently concluded Palarong Atenista 2024 men’s badminton tournament.",
+    "link": "https://atenews.ph/palarong-atenista-24-ss-defends-champ-title-in-mens-badminton-doubles-sea-triumphs-in-singles-category"
+  },
+  {
+    "title": "Badminton Women Singles and Doubles",
+    "image": "",
+    "excerpt": "The Social Sciences (SS) Dragons claimed the championship title in the badminton singles category, while the School of Nursing (SON) Panthers clinched victory in the doubles category of the Palarong Atenista 2024 women’s badminton tournament.",
+    "link": "https://atenews.ph/palarong-atenista-24-ss-son-bags-gold-in-womens-badminton-tourney"
+  },
+  {
+    "title": "Table Tennis Women Singles and Doubles",
+    "image": "",
+    "excerpt": "The Social Science (SS) Dragons escaped a dogfight against the Accountancy (ACC) Griffins in the 2024 Palarong Atenista women’s Table Tennis singles championship, with the Natural Sciences and Mathematics (NSM) Falcons cruised against opponents to go back-to back in the women’s doubles.",
+    "link": "https://atenews.ph/palarong-atenista-24-ss-hails-in-womens-singles-table-tennis-tourney-nsm-goes-back-to-back-in-doubles"
+  },
+  {
+    "title": "Table Tennis Men Singles and Doubles",
+    "image": "",
+    "excerpt": "The Accountancy (ACC) Griffins secured the championship title in the Table Tennis Men’s singles category, while the Business and Management (B&M) Vipers seized gold in the doubles category after a tight match against the School of Engineering and Architecture (SEA) Tigers.",
+    "link": "https://atenews.ph/palarong-atenista-24-bm-vipers-acc-griffins-tops-mens-table-tennis"
+  },
+  {
+    "title": "Darts Women",
+    "image": "",
+    "excerpt": "The School of Nursing (SON) Panther secured the championship medal, besting the Humanities and Letters (HUMLET) Wolf in a best-of-three showdown, scoring 2-1.",
+    "link": "https://atenews.ph/palarong-atenista-24-son-panthers-secure-gold-in-darts-womens-category"
+  },
+  {
+    "title": "Darts Men",
+    "image": "",
+    "excerpt": "The School of Engineering and Architecture (SEA) Tigers dominated the game and bagged the champion title for the 501 Darts Men Category in this year’s Palarong Atenista ‘24.",
+    "link": "https://atenews.ph/palarong-atenista-24-sea-tigers-climb-to-victory-in-mens-darts-game"
+  },
+  {
+    "title": "Billiards Men and Women",
+    "image": "",
+    "excerpt": "In a notable first for this year’s Palarong Atenista, the School of Nursing (SON) Panthers and School of Engineering and Architecture (SEA) Tigers emerged victorious in the newly added billiards competition in this year’s Palarong Atenista.",
+    "link": "https://atenews.ph/palarong-atenista-24-son-sea-pioneer-champs-in-pool-game-debut"
+  },
+  {
+    "title": "Football Mixed",
+    "image": "",
+    "excerpt": "The School of Engineering and Architecture (SEA) Tigers celebrated a triumphant victory as they led the football match against the Natural Sciences and Mathematics (NSM) Falcons, securing a 2-0 win to claim the championship title for the second consecutive year.",
+    "link": "https://atenews.ph/palarong-atenista-24-sea-tigers-dump-nsm-falcons-in-football-mixed-score-back-to-back-champ-title-2-0"
+  },
+  {
+    "title": "Esports - MLBB",
+    "image": "",
+    "excerpt": "Marking a successful return after their 2022 triumph and their failure to advance to last year’s finals, the School of Engineering and Architecture (SEA) Tigers secured a 3-0 victory over the Accountancy (ACC) Griffins in the grand finals of the Palarong Atenista 2024 Mobile Legends: Bang Bang (MLBB) series.",
+    "link": "https://atenews.ph/palarong-atenista-24-sea-tigers-reclaim-mlbb-champ-title-wipe-acc-griffins-3-0"
+  },
+  {
+    "title": "Esports - DOTA2",
+    "image": "",
+    "excerpt": "The School of Engineering and Architecture (SEA) Tigers kept their reign as victors over the Computer Studies (CS) Chameleons in a best-of-five DOTA 2 championships during the Palarong Atenista 2024, 3-1.",
+    "link": "https://atenews.ph/palarong-atenista-24-sea-tigers-clinch-two-peat-championship-in-dota-2"
+  },
+  {
+    "title": "Esports - Valorant",
+    "image": "",
+    "excerpt": "After falling short in last year’s Palarong Atenista Valorant Grand Finals, Business and Management (B&M) Vipers asserted their dominance over the defending champions Computer Studies (CS) Chameleons, 3-0, in what seemed like a rematch of last year’s finals round.",
+    "link": "https://atenews.ph/palarong-atenista-24-bm-vipers-topple-cs-chammies-regain-top-spot-in-valorant-tourney"
+  },
+  {
+    "title": "Volleyball Men",
+    "image": "",
+    "excerpt": "Dominating their way in the championship match by winning the first 3 sets, the Social Sciences (SS) Dragons claimed their first-ever podium and gold against the two-time champion Business and Management (BM) Vipers in the Palarong Atenista 2024 volleyball finals, securing a 3-0 victory.",
+    "link": "https://atenews.ph/palarong-atenista-24-ss-dragons-dethrones-two-peat-mens-vball-champ-bm-vipers-bring-home-first-gold-in-history"
+  },
+  {
+    "title": "Volleyball Women",
+    "image": "",
+    "excerpt": "Coming back to the golden podium after their 2022 title, the School of Nursing (SON) Panthers dominated the court of women’s volleyball in the Palarong Atenista ‘24 over the Humanities and Letters (HUMLET) Wolves, 3-0.",
+    "link": "https://atenews.ph/palarong-atenista-24-son-panthers-win-back-champ-title-in-womens-vball-tourney-after-two-years"
+  },
+  {
+    "title": "Basketball Men",
+    "image": "",
+    "excerpt": "Fresh from last year’s silver, the Business and Management (B&M) Vipers clinched gold in this year’s classic Men’s 5×5 Basketball, declawing the School of Engineering and Architecture (SEA) Tigers, 79-69.",
+    "link": "https://atenews.ph/palarong-atenista-24-bm-vipers-ousts-sea-tigers-in-bid-for-gold-in-mens-bball-slithers-back-to-victory"
+  },
+  {
+    "title": "Basketball Women",
+    "image": "",
+    "excerpt": "The Business & Management (B&M) Vipers redeemed their championship title from the School of Nursing (SON) Panthers in the basketball women’s category, edging them out with a score of 36-31 in a fierce rematch against last year’s rivals.",
+    "link": "https://atenews.ph/palarong-atenista-24-bm-vipers-snatch-back-gold-podium-from-son-panthers-in-bball-women"
+  },
+  {
+    "title": "Swimming Men Singles",
+    "image": "",
+    "excerpt": "The Business and Management (B&M) Vipers surged through the water and took home the gold in the Men’s Singles Swimming Tournament in the Palarong Atenista ‘24.",
+    "link": "https://atenews.ph/palarong-atenista-24-bm-vipers-defend-throne-bags-top-spot-in-mens-swimming-tourney"
+  },
+  {
+    "title": "Swimming Women Singles",
+    "image": "",
+    "excerpt": "Riding on the momentum of their victory last season, the School of Engineering and Architecture (SEA) Tigers seized another win in the recently concluded Women’s Singles Swimming Tournament in the Palarong Atenista ‘24.",
+    "link": "https://atenews.ph/palarong-atenista-24-sea-takes-lead-in-swimming-womens-singles"
+  },
+  {
+    "title": "Closing Ceremony / Awarding",
+    "image": "",
+    "excerpt": "The School of Engineering and Architecture (SEA) Tigers brought back the overall championship title to their cluster in this year’s Ateneo UFest ‘24 after claiming 9 gold medals and 44 overall accumulated points, leading the sports tally among the other clusters.",
+    "link": "https://atenews.ph/palarong-atenista-24-sea-tigers-claw-back-to-overall-champ-title-with-9-golds"
   }
 ]
