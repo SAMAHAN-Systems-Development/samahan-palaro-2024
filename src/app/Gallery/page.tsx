@@ -81,7 +81,9 @@ export default function Gallery() {
                     titleColor={titleColor1}
                     position={getRandom(positions)}
                   />
-                  <p className="font-jersey10 text-2xl text-center text-white my-8 mx-14">{data[wideIndex].quote}</p>
+                  <p className="font-jersey10 text-2xl text-center text-white my-8 mx-14">
+                    {data[wideIndex].quote}
+                  </p>
                 </div>
               )}
 
@@ -96,9 +98,8 @@ export default function Gallery() {
                     titleColor={titleColor2}
                     position={getRandom(positions)}
                   />
-                  
                 )}
-                
+
                 {squareIndex2 < data.length && (
                   <GalleryComponent
                     image={data[squareIndex2].image}
@@ -109,11 +110,10 @@ export default function Gallery() {
                     position={getRandom(positions)}
                   />
                 )}
-                
               </div>
               <p className="hidden sm:block w-full font-jersey10 text-2xl text-center text-white my-8 mx-14">
-  {squareIndex1 < data.length && data[squareIndex1]?.quote}
-</p>
+                {squareIndex1 < data.length && data[squareIndex1]?.quote}
+              </p>
 
               {/* Render everything in wide layout for small screens */}
               <div className="block sm:hidden w-full">
