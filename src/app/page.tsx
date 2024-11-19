@@ -1,4 +1,5 @@
 // import HeroSection from '@/components/ui/HeroSection';
+import HeroSection from '@/components/ui/HeroSection';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,18 +11,7 @@ export default function Home() {
   return (
     <main>
       {/* add sections here */}
-      {/* <HeroSection></HeroSection> */}
-      {/* For testing of fonts */}
-      <div className="mt-10 justify-center items-center flex flex-col">
-        <div className="font-actay text-center ">
-          <h1 className="text-2xl">Actay Font</h1>
-          <p>The quick brown fox jumps over the lazy dog.</p>
-        </div>
-        <div className="font-chakra-petch text-center">
-          <h1 className="text-2xl">Chakra Petch Font</h1>
-          <p>The quick brown fox jumps over the lazy dog.</p>
-        </div>
-      </div>
+      <HeroSection />
     </main>
   );
 }

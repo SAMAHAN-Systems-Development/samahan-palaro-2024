@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import '@/styles/globals.css';
 import { actay, chakrapetch, jersey10 } from '@/styles/fonts';
+import Navbar from '@/components/ui/Navbar/Navbar';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body
         className={`${actay.variable} ${chakrapetch.variable} ${jersey10.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
