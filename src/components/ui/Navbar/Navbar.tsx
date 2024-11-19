@@ -15,7 +15,7 @@ const Navbar: FC = () => {
     ];
 
     return (
-        <div className="relative">
+        <div className="relative z-50">
             <nav className="jersey10 bg-blue shadow-lg border-b-8 border-green">
                 <div className="w-full mx-auto flex justify-between p-4">
                     <div className="flex items-center">
