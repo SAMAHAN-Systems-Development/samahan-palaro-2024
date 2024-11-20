@@ -12,7 +12,7 @@ const ClosingCeremony = () => {
       <div className="mx-auto w-full max-w-full px-4 mt-12 mb-24">
         {closingCeremonyData.map(({ imageUrl, title, link }, index) => (
           <div key={index} className="flex flex-col w-full bg-blue shadow-lg">
-            <div className="relative w-full h-[358px] mt-8 border-8 border-pink">
+            <div className="relative w-full h-[358px] mt-24 border-24 border-pink">
               <Image
                 src={imageUrl}
                 alt={title}
