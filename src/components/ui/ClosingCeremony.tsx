@@ -32,9 +32,9 @@ const ClosingCeremony = () => {
                 <div className="flex justify-center md:ml-8">
                   <Link href={link} passHref>
                     <ReadMoreButton
-                      color="green1"
+                      bgColor="green"
+                      textColor="pink"
                       size="big"
-                      className="text-white"
                     />
                   </Link>
                 </div>
