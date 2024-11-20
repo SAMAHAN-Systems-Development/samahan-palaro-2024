@@ -41,7 +41,7 @@ export default function Gallery() {
       </div>
 
       {/* Gallery header */}
-      <div className="flex justify-center items-center pt-8 pb-24">
+      <div className="flex justify-center items-center pt-8 pb-24 px-10 text-center">
         <h1 className="font-jersey10 text-green pr-4 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
           <span className="text-pink">PALARO</span> PHOTO GALLERY
         </h1>
