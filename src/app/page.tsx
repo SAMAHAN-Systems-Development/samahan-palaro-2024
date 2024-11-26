@@ -1,4 +1,5 @@
 // import HeroSection from '@/components/ui/HeroSection';
+import ClosingCeremony from '@/components/ui/ClosingCeremony';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -21,6 +22,7 @@ export default function Home() {
           <h1 className="text-2xl">Chakra Petch Font</h1>
           <p>The quick brown fox jumps over the lazy dog.</p>
         </div>
+        <ClosingCeremony />
       </div>
     </main>
   );
