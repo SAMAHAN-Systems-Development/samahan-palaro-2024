@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 import ReadMoreButton from './ReadMoreButton';
 import { cva, type VariantProps } from 'class-variance-authority';
@@ -45,6 +46,7 @@ interface ArticleProps
   headerColor: 'blue' | 'green' | 'pink' | 'white';
   textColor: 'blue' | 'green' | 'pink' | 'white';
   buttonTextColor: 'blue' | 'green' | 'pink' | 'white';
+  url: string;
 }
 
 export default function Component({
@@ -55,6 +57,7 @@ export default function Component({
   headerColor,
   textColor,
   buttonTextColor,
+  url,
 }: ArticleProps) {
   return (
     <div
@@ -88,7 +91,10 @@ export default function Component({
           >
             {title}
           </h2>
-          <p className={`${textStyles({ textColor, size: 'content' })}`}>
+          <p
+            className={`${textStyles({ textColor, size: 'content' })} 
+            line-clamp-5 overflow-hidden`}
+          >
             {content}
           </p>
         </div>
@@ -97,6 +103,7 @@ export default function Component({
             bgColor={borderColor}
             textColor={buttonTextColor}
             size="responsive"
+            url={url}
           />
         </div>
       </div>
