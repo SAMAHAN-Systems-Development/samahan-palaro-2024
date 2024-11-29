@@ -38,7 +38,7 @@ const borderStyles = cva('', {
 
 interface ArticleProps
   extends VariantProps<typeof textStyles>,
-    VariantProps<typeof borderStyles> {
+  VariantProps<typeof borderStyles> {
   imageUrl: string;
   title: string;
   content: string;
@@ -73,8 +73,8 @@ export default function Component({
         })}`}
       >
         <Image
-          src={`/images/${imageUrl}`}
-          alt="Article image"
+          src={`/images/sports-picture/${imageUrl}`}
+          alt={title}
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover"

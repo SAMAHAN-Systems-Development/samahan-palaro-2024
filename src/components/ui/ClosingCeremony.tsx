@@ -30,7 +30,7 @@ const ClosingCeremony = () => {
 
               <div className="flex justify-center md:ml-8">
                 <Link href={link} passHref>
-                  <ReadMoreButton bgColor="green" textColor="pink" size="big" />
+                  <ReadMoreButton bgColor="green" textColor="pink" size="big" url={''} />
                 </Link>
               </div>
             </div>

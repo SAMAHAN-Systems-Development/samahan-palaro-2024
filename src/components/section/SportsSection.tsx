@@ -6,9 +6,19 @@ import sportsArticleData from '@/data/sportsArticleData.json';
 import sportsWinnersData from '@/data/sportsWinnersData.json';
 import { transformSportsData } from '@/utils/transformSportsData';
 
-const COLORS = ['blue', 'green', 'pink', 'white'];
+// Define color types
+type ColorType = 'blue' | 'green' | 'pink' | 'white';
+const COLORS: ColorType[] = ['blue', 'green', 'pink', 'white'];
 
-const getValidColors = (bgColor: string, borderColor?: string) => {
+interface ColorScheme {
+  bgColor: ColorType;
+  borderColor: ColorType;
+  textColor: ColorType;
+  headerColor: ColorType;
+  buttonTextColor: ColorType;
+}
+
+const getValidColors = (bgColor: ColorType, borderColor?: ColorType): ColorType[] => {
   return COLORS.filter((color) => {
     if (color === bgColor) return false;
     if (
@@ -26,19 +36,16 @@ const getValidColors = (bgColor: string, borderColor?: string) => {
   });
 };
 
-const calculateColorScheme = (seed: number) => {
+const calculateColorScheme = (seed: number): ColorScheme => {
   const bgColor = COLORS[seed % COLORS.length];
   const validColors = getValidColors(bgColor);
-  const borderColorIndex = seed % validColors.length;
-  const borderColor = validColors[borderColorIndex];
+  const borderColor = validColors[seed % validColors.length];
   const validTextColors = getValidColors(bgColor);
-  const textColorIndex = (seed + 1) % validTextColors.length;
-  const textColor = validTextColors[textColorIndex];
-  const headerColorIndex = (seed + 2) % validTextColors.length;
-  const headerColor = validTextColors[headerColorIndex];
+  const textColor = validTextColors[(seed + 1) % validTextColors.length];
+  const headerColor = validTextColors[(seed + 2) % validTextColors.length];
   const validButtonColors = getValidColors(bgColor, borderColor);
-  const buttonTextColor =
-    validButtonColors[(seed + 3) % validButtonColors.length];
+  const buttonTextColor = validButtonColors[(seed + 3) % validButtonColors.length];
+
   return {
     bgColor,
     borderColor,
@@ -50,8 +57,13 @@ const calculateColorScheme = (seed: number) => {
 
 const data = transformSportsData(sportsWinnersData, sportsArticleData);
 
+interface ColorSchemes {
+  articleColors: ColorScheme;
+  sportsWinnerColors: ColorScheme;
+}
+
 export default function Test() {
-  const colorSchemes = useMemo(() => {
+  const colorSchemes = useMemo<ColorSchemes[]>(() => {
     return data.map((_, index) => ({
       articleColors: calculateColorScheme(index),
       sportsWinnerColors: calculateColorScheme(index + 2),
