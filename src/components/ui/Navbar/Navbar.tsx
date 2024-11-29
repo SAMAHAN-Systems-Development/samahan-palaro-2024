@@ -10,7 +10,7 @@ const Navbar: FC = () => {
 
     const menuItems = [
         { href: '/', label: 'HOME' },
-        { href: '/gallery', label: 'GALLERY' },
+        { href: '/Gallery', label: 'GALLERY' },
         { href: '/twg', label: 'TWG' },
     ];
 

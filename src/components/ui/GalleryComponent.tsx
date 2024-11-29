@@ -9,9 +9,9 @@ const galleryStyles = cva('overflow-hidden font-jersey10', {
       square: 'w-1/2 h-96',
     },
     borderColor: {
-      pink: 'border border-pink rounded-none border-8',
-      white: 'border border-white rounded-none border-8',
-      green: 'border border-green rounded-none border-8',
+      pink: 'border-pink rounded-none border-8',
+      white: 'border-white rounded-none border-8',
+      green: 'border-green rounded-none border-8',
     },
     titleColor: {
       pinkWhite: 'bg-pink text-white',
@@ -37,13 +37,13 @@ interface GalleryComponentProps extends VariantProps<typeof galleryStyles> {
   layout?: 'wide' | 'square';
   borderColor?: 'pink' | 'white' | 'green';
   titleColor?:
-    | 'pinkWhite'
-    | 'pinkGreen'
-    | 'pinkBlue'
-    | 'greenPink'
-    | 'greenBlue'
-    | 'whiteBlue'
-    | 'whitePink';
+  | 'pinkWhite'
+  | 'pinkGreen'
+  | 'pinkBlue'
+  | 'greenPink'
+  | 'greenBlue'
+  | 'whiteBlue'
+  | 'whitePink';
   position?: 'upperLeft' | 'upperRight' | 'lowerLeft' | 'lowerRight';
 }
 
