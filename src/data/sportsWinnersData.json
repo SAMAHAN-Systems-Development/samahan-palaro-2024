@@ -1,0 +1,183 @@
+[
+  {
+    "game_title": "Cheerdance Competition",
+    "variant": "normal",
+    "first_place_name": "SON Panthers",
+    "second_place_name": "B&M Vipers",
+    "third_place_name": "ACC Griffins"
+  },
+  {
+    "game_title": "Men's Scrabble Tournament",
+    "variant": "normal",
+    "first_place_name": "SS Dragons",
+    "second_place_name": "ACC Griffins",
+    "third_place_name": "HUMLET Wolves"
+  },
+  {
+    "game_title": "Women's Scrabble Tournament",
+    "variant": "normal",
+    "first_place_name": "ACC Griffins",
+    "second_place_name": "B&M Vipers",
+    "third_place_name": "CS Chameleons"
+  },
+  {
+    "game_title": "Women's Chess Tournament",
+    "variant": "normal",
+    "first_place_name": "ACC Griffins",
+    "second_place_name": "NSM Falcons",
+    "third_place_name": "SEA Tigers"
+  },
+  {
+    "game_title": "Men's Chess Tournament",
+    "variant": "normal",
+    "first_place_name": "SEA Tigers",
+    "second_place_name": "ACC Griffins",
+    "third_place_name": "SS Dragons"
+  },
+  {
+    "game_title": "Men's Badminton",
+    "variant": "split",
+    "split_type": "game type",
+    "var1_first_place_name": "SS Dragons",
+    "var1_second_place_name": "B&M Vipers",
+    "var1_third_place_name": "",
+    "var2_first_place_name": "SEA Tigers",
+    "var2_second_place_name": "ACC Griffins",
+    "var2_third_place_name": ""
+  },
+  {
+    "game_title": "Women's Badminton",
+    "variant": "split",
+    "split_type": "game type",
+    "var1_first_place_name": "SON Panthers",
+    "var1_second_place_name": "SS Dragons",
+    "var1_third_place_name": "ACC Griffins",
+    "var2_first_place_name": "SS Dragons",
+    "var2_second_place_name": "NSM Falcons",
+    "var2_third_place_name": "B&M Vipers"
+  },
+  {
+    "game_title": "Women's Table Tennis",
+    "variant": "split",
+    "split_type": "game type",
+    "var1_first_place_name": "NSM Falcons",
+    "var1_second_place_name": "SS Dragons",
+    "var1_third_place_name": "SON Panthers",
+    "var2_first_place_name": "SS Dragons",
+    "var2_second_place_name": "ACC Griffins",
+    "var2_third_place_name": "NSM Falcons"
+  },
+  {
+    "game_title": "Men's Table Tennis",
+    "variant": "split",
+    "split_type": "game type",
+    "var1_first_place_name": "B&M Vipers",
+    "var1_second_place_name": "SEA Tigers",
+    "var1_third_place_name": "ACC Griffins",
+    "var2_first_place_name": "ACC Griffins",
+    "var2_second_place_name": "SOE Sharks",
+    "var2_third_place_name": "B&M Vipers"
+  },
+  {
+    "game_title": "Women's Darts",
+    "variant": "normal",
+    "first_place_name": "SON Panthers",
+    "second_place_name": "HUMLET Wolves",
+    "third_place_name": ""
+  },
+  {
+    "game_title": "Men's Darts",
+    "variant": "normal",
+    "first_place_name": "SEA Tigers",
+    "second_place_name": "HUMLET Wolves",
+    "third_place_name": "SON Panthers"
+  },
+  {
+    "game_title": "Billiards",
+    "variant": "split",
+    "split_type": "gender",
+    "var1_first_place_name": "SON Panthers",
+    "var1_second_place_name": "SS Dragons",
+    "var1_third_place_name": "B&M Vipers",
+    "var2_first_place_name": "SEA Tigers",
+    "var2_second_place_name": "SON Panthers",
+    "var2_third_place_name": "SOE Sharks"
+  },
+  {
+    "game_title": "Football",
+    "variant": "normal",
+    "first_place_name": "SEA Tigers",
+    "second_place_name": "NSM Falcons",
+    "third_place_name": ""
+  },
+  {
+    "game_title": "Mobile Legends: Bang Bang",
+    "variant": "normal",
+    "first_place_name": "SEA Tigers",
+    "second_place_name": "ACC Griffins",
+    "third_place_name": ""
+  },
+  {
+    "game_title": "DOTA 2",
+    "variant": "normal",
+    "first_place_name": "SEA Tigers",
+    "second_place_name": "CS Chameleons",
+    "third_place_name": ""
+  },
+  {
+    "game_title": "Valorant",
+    "variant": "normal",
+    "first_place_name": "B&M Vipers",
+    "second_place_name": "CS Chameleons",
+    "third_place_name": "SON Panthers"
+  },
+  {
+    "game_title": "Men's Volleyball",
+    "variant": "normal",
+    "first_place_name": "SS Dragons",
+    "second_place_name": "BM Vipers",
+    "third_place_name": "SEA Tigers"
+  },
+  {
+    "game_title": "Women's Volleyball",
+    "variant": "normal",
+    "first_place_name": "SON Panthers",
+    "second_place_name": "HUMLET Wolves",
+    "third_place_name": "SEA Tigers"
+  },
+  {
+    "game_title": "Men's Basketball",
+    "variant": "normal",
+    "first_place_name": "B&M Vipers",
+    "second_place_name": "SEA Tigers",
+    "third_place_name": "SS Dragons"
+  },
+  {
+    "game_title": "Women's Basketball",
+    "variant": "normal",
+    "first_place_name": "B&M Vipers",
+    "second_place_name": "SON Panthers",
+    "third_place_name": ""
+  },
+  {
+    "game_title": "Men's Singles Swimming",
+    "variant": "normal",
+    "first_place_name": "B&M Vipers",
+    "second_place_name": "SS Dragons",
+    "third_place_name": "SON Panthers"
+  },
+  {
+    "game_title": "Women's Singles Swimming",
+    "variant": "normal",
+    "first_place_name": "SEA Tigers",
+    "second_place_name": "SS Dragons",
+    "third_place_name": "SON Panthers"
+  },
+  {
+    "game_title": "Ateneo UFest '24 Overall Championship",
+    "variant": "normal",
+    "first_place_name": "SEA Tigers",
+    "second_place_name": "B&M Vipers",
+    "third_place_name": "SS Dragons"
+  }
+]

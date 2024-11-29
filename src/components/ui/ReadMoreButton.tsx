@@ -32,13 +32,26 @@ const readMoreButtonStyles = cva(
   }
 );
 
-const ReadMoreButton: FC<VariantProps<typeof readMoreButtonStyles>> = ({
+interface ReadMoreButtonProps
+  extends VariantProps<typeof readMoreButtonStyles> {
+  url: string;
+}
+
+const ReadMoreButton: FC<ReadMoreButtonProps> = ({
   bgColor,
   textColor,
   size,
+  url,
 }) => {
+  const handleClick = () => {
+    window.open(`${url}`, '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <button className={readMoreButtonStyles({ bgColor, textColor, size })}>
+    <button
+      className={readMoreButtonStyles({ bgColor, textColor, size })}
+      onClick={handleClick}
+    >
       <span className="whitespace-nowrap">
         Read More {'>'}
         {'>'}
