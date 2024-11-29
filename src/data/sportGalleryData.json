@@ -1,10 +1,170 @@
 [
   {
-    "title": "Sport Title 1",
-    "image": "SportImage.png"
+    "id":  1,
+    "title": "Opening Image",
+    "image": "Opening.jpg",
+    "quote": ""
   },
   {
-    "title": "Sport Title 2",
-    "image": "SportImage2.png"
+    "id":  2,
+    "title": "Opening Ceremony / Cheerdance Competition",
+    "image": "Cheerdance.jpg",
+    "quote": "It feels surreal because way back pandemic, the School of Nursing, ang code namin is parang ‘we are the underdogs’, but right now being the champion and titleholder for this year’s cheerdance competition, I believe [that] we are not underdogs. We are powerful and can compete with other clusters. - Voltaire Conrad Potot"
+  },
+  {
+    "id":  3,
+    "title": "Scrabble Men",
+    "image": "ScrabbleMen.JPG",
+    "quote": "For weeks, we went every Monday and Wednesday, we’d practice… us three, our coach, and the women’s rep… we’d play like one or two games every few days or so. - Cian Athen Sy"
+  },
+  {
+    "id":  4,
+    "title": "Scrabble Women",
+    "image": "ScrabbleWomen.JPG",
+    "quote": "What I did is that I listed down the words, actually may list na ako beforehand… Since nag iba kami ng dictionary ngayon, I just cross-checked it with notes with the possible two-letter words, three-letter words, and so on. - Regine Cabel"
+  },
+  {
+    "id":  5,
+    "title": "Chess Women",
+    "image": "ChessWomen.JPG",
+    "quote": "Before the competition, I didn’t have time to practice since it was prelims week. So, I focused on my exam. Since I don’t have practice, I usually open to E4 to play safe. E4 [for white] and E5 for black. - Mel Glamoura Olanda"
+  },
+  {
+    "id":  6,
+    "title": "Chess Men",
+    "image": "ChessMen.JPG",
+    "quote": "I wanted to make positions where I can make tactics. I wanted to create a short game so that my opponent will have a hard time trying to navigate and make the best moves. - Francis Liane Francisco"
+  },
+  {
+    "id":  7,
+    "title": "Chess Men",
+    "image": "ChessMen2.JPG",
+    "quote": "By preparing the right opening for your right opponent, you are able to exploit the openings that they are not used to… If I use an unorthodox opening against them, they don’t know how to play against it, and they’ll have a hard time trying to retaliate. - Francis Liane Francisco"
+  },
+  {
+    "id":  8,
+    "title": "Badminton Men Singles and Doubles",
+    "image": "BadmintonMen.JPG",
+    "quote": "It is a remarkable victory because last year I made it with my partner, Arth Cipriano. It was just one thing we got to the finals, and now, we won it again. - Bryle Sermese and Arth Cipriano"
+  },
+  {
+    "id":  9,
+    "title": "Badminton Women Singles and Doubles",
+    "image": "BadmintonWomen.JPG",
+    "quote": "It was challenging for me at first, since this is my first time participating [in the Palarong Atenista] and most of my opponents are older than me, but I managed to win through stamina and endurance. - Achbbel Celine Baguio"
+  },
+  {
+    "id":  10,
+    "title": "Badminton Women Singles and Doubles",
+    "image": "BadmintonWomen2.JPG",
+    "quote": "In games like these, communication is key, like if you want to get the shuttle, you just tell your teammate and the same thing goes with defense, - Angelika Mijares"
+  },
+  {
+    "id":  11,
+    "title": "Table Tennis Women Singles and Doubles",
+    "image": "TableTennisWomen.JPG",
+    "quote": "As a player that is a defender, I learned to be patient since I’m not more of an attacker. - Jennie Sevilla"
+  },
+  {
+    "id":  12,
+    "title": "Table Tennis Men Singles and Doubles",
+    "image": "TableTennisMen.JPG",
+    "quote": "Yung mga strategies is yung reflex and utak, since in volleyball you really have to use your brain…What helped me the most is my experience in table tennis and support of my companions. - Zander Tumanday"
+  },
+  {
+    "id":  13,
+    "title": "Table Tennis Men Singles and Doubles",
+    "image": "TableTennisMen2.JPG",
+    "quote": "The preparations that we only followed was the advice from our teammates who were varsity [players] who cannot join the game… We still managed to win the game despite having technical difficulties in assessing the opponent’s weaknesses -  Jaydee Grapa "
+  },
+  {
+    "id":  14,
+    "title": "Darts Women",
+    "image": "DartsWomen.JPG",
+    "quote": "Di ko maka-practice jud ug kanang grabe jud nga practice. Siguro kanang mga pinakalit lang like kanang pahapyaw lang ba kung mu-adto ra ko diria kay akong duty man pud gud kay 3PM to 11PM. Pirmi jud ko ma-3 to 11 kanang pang-gabii nga duty so wala koy time. - Zechariah Lacubtan"
+  },
+  {
+    "id":  15,
+    "title": "Darts Men",
+    "image": "DartsMen.JPG",
+    "quote": "Last year, I tried out but lost. That’s why I wanted to come back stronger and hopefully win the next [game]. - James Philip Pulido"
+  },
+  {
+    "id":  16,
+    "title": "Darts Men",
+    "image": "DartsMen2.JPG",
+    "quote": "60 is best… because I know it would be difficult to beat a player that scores high[er]. - James Philip Pulido"
+  },
+  {
+    "id":  17,
+    "title": "Billiards Men and Women",
+    "image": "Billiards.JPG",
+    "quote": "Since nagabilliards din talaga kami for fun ng friends ko, thrilling din siya and exciting since first time ito na may billiards sa Palaro. - Sittie Shareena Sandigana"
+  },
+  {
+    "id":  18,
+    "title": "Football Mixed",
+    "image": "Football.JPG",
+    "quote": "Mahirap siya pasukin since don nakatambay [ang mga players] sa goalie, tapos ginafigure out namin kung pano siya lusutin - Altoine Ray Alfonso"
+  },
+  {
+    "id":  19,
+    "title": "Football Mixed",
+    "image": "Football2.JPG",
+    "quote": "Siguro sa pag adjust kay double effort na lang kay kanina, hindi pa talaga ‘yun all out. Since championships—importante, tapos last game—so double effort. - Altoine Ray Alfonso"
+  },
+  {
+    "id":  20,
+    "title": "Esports - DOTA2",
+    "image": "Dota.JPG",
+    "quote": "Gi-outdraft ra gyud namo sila, and chemistry kay since last year pa man mi, plus coach gyud. Plus, gusto sad namo magpasalamat sa other players namo, si Grecian Dangcalan and si Ralph Russel Ruiz, kay although wala sila sa Championships, dako ilahang natabang sa uban nga games. - Josh Pablo"
+  },
+  {
+    "id":  21,
+    "title": "Volleyball Men",
+    "image": "VolleyballMen.JPG",
+    "quote": "The turning point of our play was during the third set when we had a timeout to compose ourselves and talk about how we should perform inside the court, - Kai Ronan Catacutan"
+  },
+  {
+    "id":  22,
+    "title": "Volleyball Men",
+    "image": "VolleyballMen2.JPG",
+    "quote": "The most challenging aspect of competing this season is facing the crowd of other clusters because most of them have many fans and supporters, while we, in SS, are only small. - Kai Ronan Catacutan"
+  },
+  {
+    "id":  23,
+    "title": "Volleyball Women",
+    "image": "VolleyballWomen.JPG",
+    "quote": "Nagstart kami training mga July or August [and] during our trainings, kompleto kami lahat. So, nakabuo kami ng connection with each other. Mostly [sa amin] ay rookies, dalawa lang kami fourth years, kaunti lang third years. Trust lang talaga. - Lorence Librero"
+  },
+  {
+    "id":  24,
+    "title": "Basketball Men",
+    "image": "BasketballMen.JPG",
+    "quote": "Kadto sa last 2 to 3 points nako, katong clutch moments, siguro didto napalong ang [School of] Engineering, - Adrian Dailo"
+  },
+  {
+    "id":  25,
+    "title": "Basketball Men",
+    "image": "BasketballMen2.JPG",
+    "quote": "Ang strategy jud namo for this game… si Yaba. Number one player sa Engineering; among goal is ma stop siya, dayun nakuha namo na nastop siya, mao nang naglisud ang Engineering pud. - Adrian Dailo"
+  },
+  {
+    "id":  26,
+    "title": "Basketball Women",
+    "image": "BasketballWomen.JPG",
+    "quote": "Work as a team, there is no I in team. Always play as one. Always look for the better option, because in terms of basketball, you have to look for the open hand, yung walang nagbabantay. - Kate Buenaventura"
+  },
+  {
+    "id":  27,
+    "title": "Swimming Men Singles",
+    "image": "SwimmingMen.JPG",
+    "quote": "Most people stop and get distracted halfway through. However, people who have a strong desire to win have already marked their victory. - Kuiper Leybag"
+  },
+  {
+    "id":  28,
+    "title": "Swimming Women Singles",
+    "image": "SwimmingWomen.JPG",
+    "quote": "Winning this year’s Palarong Atenista is overwhelming. It is the fruit of considerable amounts of sacrifice, dedication, and perseverance, and it makes me and my teammates extremely happy and honored. - Korinne Bianca Trinidad"
   }
 ]
