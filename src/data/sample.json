@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "game_title": "Scrabble Men Winners",
+      "first_place_name": "test",
+      "second_place_name": "Name",
+      "third_place_name": "Name",
+      "color": "blueBlue",
+      "titleColor": "blueGreen"
+    },
+    {
+      "id": 2,
+      "game_title": "Scrabble Men Winners",
+      "first_place_name": "Name",
+      "second_place_name": "Name",
+      "third_place_name": "Name",
+      "color": "blueBlue",
+      "titleColor": "blueWhite"
+    },
+    {
+      "id": 3,
+      "game_title": "Scrabble Men Winners",
+      "first_place_name": "Name",
+      "second_place_name": "Name",
+      "third_place_name": "Name",
+      "color": "greenWhite",
+      "titleColor": "greenBlue"
+    }
+]
