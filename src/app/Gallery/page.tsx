@@ -8,17 +8,21 @@ export const metadata: Metadata = {
   description: '',
 };
 
-const getRandom = (arr) => arr[Math.floor(Math.random() * arr.length)];
-
+const getRandom = <T,>(arr: readonly T[]): T => arr[Math.floor(Math.random() * arr.length)];
 export default function Gallery() {
-  const borderColors = ['pink', 'white', 'green'];
 
-  const titleColors = {
+  const borderColors = ['pink', 'white', 'green'] as const;
+  type BorderColor = typeof borderColors[number]; 
+
+  // Define the title colors associated with each border color
+  type TitleColor = 'pinkWhite' | 'pinkGreen' | 'pinkBlue' | 'greenPink' | 'greenBlue' | 'whiteBlue' | 'whitePink';
+  const titleColors: Record<BorderColor, TitleColor[]> = {
     pink: ['pinkWhite', 'pinkGreen', 'pinkBlue'],
     green: ['greenPink', 'greenBlue'],
     white: ['whiteBlue', 'whitePink'],
   };
 
+  // Function to get random border and title color pair
   const getRandomColorPair = () => {
     const randomBorderColor = getRandom(borderColors);
     const matchingTitleColors = titleColors[randomBorderColor];
@@ -26,8 +30,8 @@ export default function Gallery() {
     return { borderColor: randomBorderColor, titleColor: randomTitleColor };
   };
 
-  const positions = ['upperLeft', 'upperRight', 'lowerLeft', 'lowerRight'];
-
+  // Define the positions for elements
+  const positions = ['upperLeft', 'upperRight', 'lowerLeft', 'lowerRight'] as const;
   return (
     <main className="bg-blue pt-20">
       {/* Display the first item */}
