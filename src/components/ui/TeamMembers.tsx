@@ -2,13 +2,13 @@ import React from 'react';
 import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
 
-export const borderVariants = cva(
+export const membersBorderVariants = cva(
   [
-    'flex justify-center items-center font-jersey10 border-8 text-[5.3125rem] relative',
+    'flex justify-center items-center font-jersey10 border-8 text-[5.3125rem] relative py-12 px-10',
   ],
   {
     variants: {
-      color: {
+      membersBorderColor: {
         green: 'text-green border-green',
         blue: 'text-blue border-blue',
         white: 'text-white border-white',
@@ -16,34 +16,15 @@ export const borderVariants = cva(
       },
     },
     defaultVariants: {
-      color: 'green',
+      membersBorderColor: 'green',
     },
   }
 );
-export const textVariants = cva(['font-jersey10 text-[5.3125rem]'], {
-  variants: {
-    textColor: {
-      green: 'text-green',
-      blue: 'text-blue',
-      white: 'text-white',
-      pink: 'text-pink',
-    },
-  },
-  defaultVariants: {
-    textColor: 'green',
-  },
-});
-export const boxVariants = cva(
-  ['absolute top-0 left-6 w-[7.6rem] text-[1.9375rem] flex justify-center'],
+export const membersBodyTextVariants = cva(
+  ['font-jersey10 text-[1.9375rem] max-xl:text-center'],
   {
     variants: {
-      color: {
-        green: 'bg-green',
-        blue: 'bg-blue',
-        white: 'bg-white',
-        pink: 'bg-pink',
-      },
-      boxTextColor: {
+      membersBodyTextColor: {
         green: 'text-green',
         blue: 'text-blue',
         white: 'text-white',
@@ -51,8 +32,32 @@ export const boxVariants = cva(
       },
     },
     defaultVariants: {
-      color: 'green',
-      boxTextColor: 'blue',
+      membersBodyTextColor: 'green',
+    },
+  }
+);
+export const membersTitleVariants = cva(
+  [
+    'px-4 text-[1.9375rem] flex justify-center items-center max-xl:whitespace-nowrap',
+  ],
+  {
+    variants: {
+      membersTitleColor: {
+        green: 'bg-green',
+        blue: 'bg-blue',
+        white: 'bg-white',
+        pink: 'bg-pink',
+      },
+      membersTitleTextColor: {
+        green: 'text-green',
+        blue: 'text-blue',
+        white: 'text-white',
+        pink: 'text-pink',
+      },
+    },
+    defaultVariants: {
+      membersTitleColor: 'green',
+      membersTitleTextColor: 'blue',
     },
   }
 );
@@ -63,30 +68,55 @@ export type Member = {
 };
 
 export interface TeamMembersProps
-  extends VariantProps<typeof borderVariants>,
-    VariantProps<typeof textVariants>,
-    VariantProps<typeof boxVariants> {
+  extends VariantProps<typeof membersBorderVariants>,
+    VariantProps<typeof membersBodyTextVariants>,
+    VariantProps<typeof membersTitleVariants> {
+  group?: string;
   members: Member[];
 }
 
 // TODO: Change font size for members
 
 const TeamMembers: React.FC<TeamMembersProps> = ({
-  color,
-  textColor,
-  boxTextColor,
+  membersBorderColor,
+  membersBodyTextColor,
+  membersTitleTextColor,
+  group,
   members,
 }) => {
   return (
-    <div className={borderVariants({ color })}>
-      <div className={boxVariants({ color, boxTextColor })}>Members</div>
+    <div className={membersBorderVariants({ membersBorderColor })}>
+      <div className="max-xl:hidden absolute top-0 left-6 ">
+        <div
+          className={membersTitleVariants({
+            membersTitleColor: membersBorderColor,
+            membersTitleTextColor,
+          })}
+        >
+          MEMBERS
+        </div>
+      </div>
+      <div className="hidden max-xl:block absolute top-0 right-1/2 translate-x-1/2 ">
+        <div
+          className={membersTitleVariants({
+            membersTitleColor: membersBorderColor,
+            membersTitleTextColor,
+          })}
+        >
+          {group}
+        </div>
+      </div>
       {/* <div className={textVariants({ textColor })}>OVERALL MANAGEMENT</div> */}
-      <div className="flex flex-wrap">
-        {members.map((value) => {
+      <div className="grid grid-cols-2 grid-rows-2 max-xl:flex max-xl:flex-col max-xl:justify-center max-xl:items-center">
+        {members.map((value, index) => {
           return (
-            <div>
-              <p>{value.role}</p>
-              <p>{value.name}</p>
+            <div key={index} className="flex flex-col">
+              <p className={membersBodyTextVariants({ membersBodyTextColor })}>
+                {value.role}
+              </p>
+              <p className={membersBodyTextVariants({ membersBodyTextColor })}>
+                {value.name}
+              </p>
             </div>
           );
         })}

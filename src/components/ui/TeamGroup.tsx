@@ -2,13 +2,11 @@ import React from 'react';
 import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
 
-export const borderVariants = cva(
-  [
-    'flex justify-center items-center font-jersey10 border-8 text-[5.3125rem] relative',
-  ],
+export const groupBorderVariants = cva(
+  ['flex justify-center items-center border-8 p-10 relative max-xl:hidden'],
   {
     variants: {
-      color: {
+      groupBorderColor: {
         green: 'text-green border-green',
         blue: 'text-blue border-blue',
         white: 'text-white border-white',
@@ -16,23 +14,26 @@ export const borderVariants = cva(
       },
     },
     defaultVariants: {
-      color: 'green',
+      groupBorderColor: 'green',
     },
   }
 );
-export const textVariants = cva(['font-jersey10 text-[5.3125rem]'], {
-  variants: {
-    textColor: {
-      green: 'text-green',
-      blue: 'text-blue',
-      white: 'text-white',
-      pink: 'text-pink',
+export const groupTextVariants = cva(
+  ['font-jersey10 text-[max(4.3125rem,2rem)] leading-[4.3125rem]'],
+  {
+    variants: {
+      groupTextColor: {
+        green: 'text-green',
+        blue: 'text-blue',
+        white: 'text-white',
+        pink: 'text-pink',
+      },
     },
-  },
-  defaultVariants: {
-    textColor: 'green',
-  },
-});
+    defaultVariants: {
+      groupTextColor: 'green',
+    },
+  }
+);
 export const boxVariants = cva(
   ['absolute top-0 left-0 w-[7.6rem] h-[1.5rem]'],
   {
@@ -51,14 +52,20 @@ export const boxVariants = cva(
 );
 
 export interface TeamGroupProps
-  extends VariantProps<typeof borderVariants>,
-    VariantProps<typeof textVariants> {}
+  extends VariantProps<typeof groupBorderVariants>,
+    VariantProps<typeof groupTextVariants> {
+  children?: React.ReactNode;
+}
 
-const TeamGroup: React.FC<TeamGroupProps> = ({ color, textColor }) => {
+const TeamGroup: React.FC<TeamGroupProps> = ({
+  groupBorderColor,
+  groupTextColor,
+  children,
+}) => {
   return (
-    <div className={borderVariants({ color })}>
-      <div className={boxVariants({ color })} />
-      <p className={textVariants({ textColor })}>OVERALL MANAGEMENT</p>
+    <div className={groupBorderVariants({ groupBorderColor })}>
+      <div className={boxVariants({ color: groupBorderColor })} />
+      <p className={groupTextVariants({ groupTextColor })}>{children}</p>
     </div>
   );
 };
