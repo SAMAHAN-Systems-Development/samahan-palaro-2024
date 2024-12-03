@@ -2,11 +2,11 @@ import React from 'react';
 import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
 
-export const groupBorderVariants = cva(
-  ['flex justify-center items-center border-8 p-10 relative max-xl:hidden'],
+export const borderVariants = cva(
+  ['flex justify-center items-center border-8 p-10 relative'],
   {
     variants: {
-      groupBorderColor: {
+      borderColor: {
         green: 'text-green border-green',
         blue: 'text-blue border-blue',
         white: 'text-white border-white',
@@ -14,15 +14,15 @@ export const groupBorderVariants = cva(
       },
     },
     defaultVariants: {
-      groupBorderColor: 'green',
+      borderColor: 'green',
     },
   }
 );
-export const groupTextVariants = cva(
+export const textVariants = cva(
   ['font-jersey10 text-[max(4.3125rem,2rem)] leading-[4.3125rem]'],
   {
     variants: {
-      groupTextColor: {
+      textColor: {
         green: 'text-green',
         blue: 'text-blue',
         white: 'text-white',
@@ -30,7 +30,7 @@ export const groupTextVariants = cva(
       },
     },
     defaultVariants: {
-      groupTextColor: 'green',
+      textColor: 'green',
     },
   }
 );
@@ -52,20 +52,20 @@ export const boxVariants = cva(
 );
 
 export interface TeamGroupProps
-  extends VariantProps<typeof groupBorderVariants>,
-    VariantProps<typeof groupTextVariants> {
+  extends VariantProps<typeof borderVariants>,
+    VariantProps<typeof textVariants> {
   children?: React.ReactNode;
 }
 
 const TeamGroup: React.FC<TeamGroupProps> = ({
-  groupBorderColor,
-  groupTextColor,
+  borderColor,
+  textColor,
   children,
 }) => {
   return (
-    <div className={groupBorderVariants({ groupBorderColor })}>
-      <div className={boxVariants({ color: groupBorderColor })} />
-      <p className={groupTextVariants({ groupTextColor })}>{children}</p>
+    <div className={borderVariants({ borderColor })}>
+      <div className={boxVariants({ color: borderColor })} />
+      <p className={textVariants({ textColor })}>{children}</p>
     </div>
   );
 };

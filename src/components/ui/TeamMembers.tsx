@@ -2,13 +2,13 @@ import React from 'react';
 import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
 
-export const membersBorderVariants = cva(
+export const borderVariants = cva(
   [
-    'flex justify-center items-center font-jersey10 border-8 text-[5.3125rem] relative py-12 px-10',
+    'flex justify-center items-center font-jersey10 border-8 text-[5.3125rem] relative py-12 px-10 h-[348px]',
   ],
   {
     variants: {
-      membersBorderColor: {
+      borderColor: {
         green: 'text-green border-green',
         blue: 'text-blue border-blue',
         white: 'text-white border-white',
@@ -16,15 +16,15 @@ export const membersBorderVariants = cva(
       },
     },
     defaultVariants: {
-      membersBorderColor: 'green',
+      borderColor: 'green',
     },
   }
 );
-export const membersBodyTextVariants = cva(
+export const bodyTextVariants = cva(
   ['font-jersey10 text-[1.9375rem] max-xl:text-center'],
   {
     variants: {
-      membersBodyTextColor: {
+      bodyTextColor: {
         green: 'text-green',
         blue: 'text-blue',
         white: 'text-white',
@@ -32,23 +32,23 @@ export const membersBodyTextVariants = cva(
       },
     },
     defaultVariants: {
-      membersBodyTextColor: 'green',
+      bodyTextColor: 'green',
     },
   }
 );
-export const membersTitleVariants = cva(
+export const titleVariants = cva(
   [
     'px-4 text-[1.9375rem] flex justify-center items-center max-xl:whitespace-nowrap',
   ],
   {
     variants: {
-      membersTitleColor: {
+      titleColor: {
         green: 'bg-green',
         blue: 'bg-blue',
         white: 'bg-white',
         pink: 'bg-pink',
       },
-      membersTitleTextColor: {
+      titleTextColor: {
         green: 'text-green',
         blue: 'text-blue',
         white: 'text-white',
@@ -56,8 +56,8 @@ export const membersTitleVariants = cva(
       },
     },
     defaultVariants: {
-      membersTitleColor: 'green',
-      membersTitleTextColor: 'blue',
+      titleColor: 'green',
+      titleTextColor: 'blue',
     },
   }
 );
@@ -68,9 +68,9 @@ export type Member = {
 };
 
 export interface TeamMembersProps
-  extends VariantProps<typeof membersBorderVariants>,
-    VariantProps<typeof membersBodyTextVariants>,
-    VariantProps<typeof membersTitleVariants> {
+  extends VariantProps<typeof borderVariants>,
+    VariantProps<typeof bodyTextVariants>,
+    VariantProps<typeof titleVariants> {
   group?: string;
   members: Member[];
 }
@@ -78,43 +78,32 @@ export interface TeamMembersProps
 // TODO: Change font size for members
 
 const TeamMembers: React.FC<TeamMembersProps> = ({
-  membersBorderColor,
-  membersBodyTextColor,
-  membersTitleTextColor,
-  group,
+  borderColor,
+  bodyTextColor,
+  titleTextColor,
   members,
 }) => {
   return (
-    <div className={membersBorderVariants({ membersBorderColor })}>
-      <div className="max-xl:hidden absolute top-0 left-6 ">
+    <div className={borderVariants({ borderColor })}>
+      <div className="absolute top-0 left-6 ">
         <div
-          className={membersTitleVariants({
-            membersTitleColor: membersBorderColor,
-            membersTitleTextColor,
+          className={titleVariants({
+            titleColor: borderColor,
+            titleTextColor,
           })}
         >
           MEMBERS
         </div>
       </div>
-      <div className="hidden max-xl:block absolute top-0 right-1/2 translate-x-1/2 ">
-        <div
-          className={membersTitleVariants({
-            membersTitleColor: membersBorderColor,
-            membersTitleTextColor,
-          })}
-        >
-          {group}
-        </div>
-      </div>
       {/* <div className={textVariants({ textColor })}>OVERALL MANAGEMENT</div> */}
-      <div className="grid grid-cols-2 grid-rows-2 max-xl:flex max-xl:flex-col max-xl:justify-center max-xl:items-center">
+      <div className="grid grid-cols-2 grid-rows-2 h-full items-center">
         {members.map((value, index) => {
           return (
-            <div key={index} className="flex flex-col">
-              <p className={membersBodyTextVariants({ membersBodyTextColor })}>
+            <div key={index} className="leading-8 ">
+              <p className={bodyTextVariants({ bodyTextColor })}>
                 {value.role}
               </p>
-              <p className={membersBodyTextVariants({ membersBodyTextColor })}>
+              <p className={bodyTextVariants({ bodyTextColor })}>
                 {value.name}
               </p>
             </div>
