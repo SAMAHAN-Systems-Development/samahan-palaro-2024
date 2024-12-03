@@ -51,25 +51,33 @@ const TWGSection: React.FC<TWGSectionProps> = ({
 
 export default TWGSection;
 
-//   <TWGSection
-//   leftColor={'green'}
-//   groupBorderColor={'blue'}
-//   groupTextColor={'blue'}
-//   teamGroup="OVERALL MANAGEMENT"
-//   rightColor={'pink'}
-//   membersBorderColor={'green'}
-//   membersTitleColor={'blue'}
-//   membersBodyTextColor={'white'}
-//   members={[
-//     { role: 'Overall Event Director', name: 'Aliya Medida' },
-//     {
-//       role: 'Deputy Head for Sporting Events',
-//       name: 'Ferryl Ken Ganhinhin',
-//     },
-//     { role: 'Overall Event Head', name: 'Andy Judd Lumain' },
-//     {
-//       role: 'Head for Correspondence',
-//       name: 'Patricia Amor Estrada',
-//     },
-//   ]}
-// />
+{
+  /* <TWGSection
+        leftColor={'green'}
+        leftSideChild={
+          <TeamGroup borderColor={'blue'} textColor={'blue'}>
+            OVERALL MANAGEMENT
+          </TeamGroup>
+        }
+        rightColor={'pink'}
+        rightSideChild={
+          <TeamMembers
+            borderColor={'green'}
+            titleColor={'blue'}
+            bodyTextColor={'white'}
+            members={[
+              { role: 'Overall Event Director', name: 'Aliya Medida' },
+              {
+                role: 'Deputy Head for Sporting Events',
+                name: 'Ferryl Ken Ganhinhin',
+              },
+              { role: 'Overall Event Head', name: 'Andy Judd Lumain' },
+              {
+                role: 'Head for Correspondence',
+                name: 'Patricia Amor Estrada',
+              },
+            ]}
+          />
+        }
+      /> */
+}

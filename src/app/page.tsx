@@ -16,34 +16,6 @@ export default function Home() {
   return (
     <main>
       {/* add sections here */}
-      <TWGSection
-        leftColor={'green'}
-        leftSideChild={
-          <TeamGroup borderColor={'blue'} textColor={'blue'}>
-            OVERALL MANAGEMENT
-          </TeamGroup>
-        }
-        rightColor={'pink'}
-        rightSideChild={
-          <TeamMembers
-            borderColor={'green'}
-            titleColor={'blue'}
-            bodyTextColor={'white'}
-            members={[
-              { role: 'Overall Event Director', name: 'Aliya Medida' },
-              {
-                role: 'Deputy Head for Sporting Events',
-                name: 'Ferryl Ken Ganhinhin',
-              },
-              { role: 'Overall Event Head', name: 'Andy Judd Lumain' },
-              {
-                role: 'Head for Correspondence',
-                name: 'Patricia Amor Estrada',
-              },
-            ]}
-          />
-        }
-      />
       <HeroSection />
       <ClosingCeremony />
       <SportsSection />
