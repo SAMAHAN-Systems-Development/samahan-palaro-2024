@@ -3,6 +3,9 @@ import SportsSection from '@/components/section/SportsSection';
 import ClosingCeremony from '@/components/ui/ClosingCeremony';
 import HeroSection from '@/components/section/HeroSection';
 import type { Metadata } from 'next';
+import TWGSection from '@/components/section/TWGSection';
+import TeamMembers from '@/components/ui/TeamMembers';
+import TeamGroup from '@/components/ui/TeamGroup';
 
 export const metadata: Metadata = {
   title: 'SAMAHAN Palaro 2024',
