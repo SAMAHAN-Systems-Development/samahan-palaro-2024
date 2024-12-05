@@ -67,8 +67,7 @@ export interface TeamMembersProps
   extends VariantProps<typeof borderVariants>,
     VariantProps<typeof bodyTextVariants>,
     VariantProps<typeof titleVariants> {
-  group?: string;
-  members: Member[];
+  members?: Member[];
 }
 
 const TeamMembers: React.FC<TeamMembersProps> = ({
@@ -91,7 +90,7 @@ const TeamMembers: React.FC<TeamMembersProps> = ({
       </div>
       {/* <div className={textVariants({ textColor })}>OVERALL MANAGEMENT</div> */}
       <div className="min-h-[348px] gap-4 py-12 px-10 grid grid-cols-2 grid-rows-2 h-full items-center">
-        {members.map((value, index) => {
+        {members?.map((value, index) => {
           return (
             <div key={index} className="leading-8 ">
               <p className={bodyTextVariants({ bodyTextColor })}>
