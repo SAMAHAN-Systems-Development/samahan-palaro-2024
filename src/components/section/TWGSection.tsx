@@ -24,15 +24,15 @@ export const rightSideVariants = cva(['flex justify-center items-center p-6'], {
     },
   },
   defaultVariants: {
-    rightColor: 'green',
+    rightColor: 'pink',
   },
 });
 
 export interface TWGSectionProps
   extends VariantProps<typeof leftSideVariants>,
     VariantProps<typeof rightSideVariants> {
-  rightSideChild: React.ReactNode;
-  leftSideChild: React.ReactNode;
+  rightSideChild?: React.ReactNode;
+  leftSideChild?: React.ReactNode;
 }
 
 const TWGSection: React.FC<TWGSectionProps> = ({
