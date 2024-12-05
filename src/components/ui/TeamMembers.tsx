@@ -1,10 +1,11 @@
 import React from 'react';
 import type { VariantProps } from 'class-variance-authority';
 import { cva } from 'class-variance-authority';
+import { Member } from '@/types/member.type';
 
 export const borderVariants = cva(
   [
-    'flex justify-center items-center font-jersey10 border-8 text-[5.3125rem] relative py-12 px-10 h-[348px]',
+    'flex justify-center items-center font-jersey10 border-8 text-[5.3125rem] relative ',
   ],
   {
     variants: {
@@ -32,7 +33,7 @@ export const bodyTextVariants = cva(
       },
     },
     defaultVariants: {
-      bodyTextColor: 'green',
+      bodyTextColor: 'white',
     },
   }
 );
@@ -62,11 +63,6 @@ export const titleVariants = cva(
   }
 );
 
-export type Member = {
-  role: string;
-  name: string;
-};
-
 export interface TeamMembersProps
   extends VariantProps<typeof borderVariants>,
     VariantProps<typeof bodyTextVariants>,
@@ -74,8 +70,6 @@ export interface TeamMembersProps
   group?: string;
   members: Member[];
 }
-
-// TODO: Change font size for members
 
 const TeamMembers: React.FC<TeamMembersProps> = ({
   borderColor,
@@ -96,7 +90,7 @@ const TeamMembers: React.FC<TeamMembersProps> = ({
         </div>
       </div>
       {/* <div className={textVariants({ textColor })}>OVERALL MANAGEMENT</div> */}
-      <div className="grid grid-cols-2 grid-rows-2 h-full items-center">
+      <div className="min-h-[348px] gap-2 py-12 px-10 grid grid-cols-2 grid-rows-2 h-full items-center">
         {members.map((value, index) => {
           return (
             <div key={index} className="leading-8 ">
