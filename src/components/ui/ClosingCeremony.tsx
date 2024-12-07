@@ -4,12 +4,11 @@ import React from 'react';
 import Image from 'next/image';
 import ReadMoreButton from './ReadMoreButton';
 import closingCeremonyData from '../../data/closingCeremonyData.json';
-import Link from 'next/link';
 
 const ClosingCeremony = () => {
   return (
     <div className="mx-auto w-full max-w-full mt-12">
-      {closingCeremonyData.map(({ imageUrl, title, link }, index) => (
+      {closingCeremonyData.map(({ imageUrl, title }, index) => (
         <div key={index} className="flex flex-col w-full bg-blue shadow-lg">
           <div className="relative w-full h-[358px] mt-24 border-24 border-8 border-pink">
             <Image
@@ -29,9 +28,7 @@ const ClosingCeremony = () => {
               </div>
 
               <div className="flex justify-center md:ml-8">
-                <Link href={link} passHref>
-                  <ReadMoreButton bgColor="green" textColor="pink" size="big" url={''} />
-                </Link>
+                <ReadMoreButton bgColor="green" textColor="pink" size="big" url={'https://atenews.ph/palarong-atenista-24-sea-tigers-claw-back-to-overall-champ-title-with-9-golds'} />
               </div>
             </div>
           </div>
@@ -42,3 +39,6 @@ const ClosingCeremony = () => {
 };
 
 export default ClosingCeremony;
+
+
+

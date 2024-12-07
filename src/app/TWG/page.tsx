@@ -1,8 +1,6 @@
 import TWGSection, { TWGSectionProps } from '@/components/section/TWGSection';
 import TeamGroup, { TeamGroupProps } from '@/components/ui/TeamGroup';
 import TeamMembers, { TeamMembersProps } from '@/components/ui/TeamMembers';
-import { Member } from '@/types/member.type';
-import { TWGGroup } from '@/types/twgGroup.type';
 import { getTWGGroups } from '@/utils/getTWGGroups';
 import { Metadata } from 'next';
 import Image from 'next/image';
@@ -121,7 +119,6 @@ const TWG = async () => {
           </span>
         </strong>
       </h1>
-      <div className="min-h-screen bg-blue" />
       {groups.map((group, index) => {
         const colorNumber = index % 4;
         return (
