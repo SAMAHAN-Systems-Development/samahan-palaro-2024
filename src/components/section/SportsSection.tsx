@@ -76,7 +76,7 @@ export default function Test() {
         const { articleColors, sportsWinnerColors } = colorSchemes[index];
 
         return (
-          <div key={index} className="flex min-h-[25vh]">
+          <div key={index} className="grid-cols-1 md:grid-row-2 flex min-h-[25vh]">
             <div
               className={`w-3/5 px-4 py-10 flex justify-center items-center bg-${articleColors.bgColor}`}
             >
