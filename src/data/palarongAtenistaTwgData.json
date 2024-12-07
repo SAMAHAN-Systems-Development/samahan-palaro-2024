@@ -1,0 +1,253 @@
+{
+    "TWG": [
+        {
+            "groupName": "OVERALL MANAGEMENT",
+            "members": [
+                {
+                    "name": "Aliya Medida",
+                    "role": "Overall Event Director"
+                },
+                {
+                    "name": "Andy Judd Lumain",
+                    "role": "Overall Event Head"
+                },
+                {
+                    "name": "Ferryl Ken Ganhinhin",
+                    "role": "Deputy Head for Sporting Events"
+                },
+                {
+                    "name": "Patricia Amor Estrada",
+                    "role": "Head for Correspondence"
+                }
+            ]
+        },
+        {
+            "groupName": "PRODUCTIONS TEAM",
+            "members": [
+                {
+                    "name": "Ken Ryle Hinojales",
+                    "role": "Productions Director"
+                },
+                {
+                    "name": "Maria Katriel Tejada",
+                    "role": "Deputy Productions Director"
+                },
+                {
+                    "name": "Renee Margaux Ramirez",
+                    "role": "Technicals Head"
+                },
+                {
+                    "name": "Demme Gem Taypin",
+                    "role": "Program Head"
+                }
+            ]
+        },
+        {
+            "groupName": "CREATIVES TEAM",
+            "members": [
+                {
+                    "name": "Justin James Carreon",
+                    "role": "Creative Director"
+                },
+                {
+                    "name": "Gwyn Vidanes",
+                    "role": "Deputy Creative Director"
+                },
+                {
+                    "name": "Kianne Shannly Undalok",
+                    "role": "Graphics Team"
+                },
+                {
+                    "name": "Rophe Mia Pinafiel",
+                    "role": "Documentations Team"
+                },
+                {
+                    "name": "Chad Herrera",
+                    "role": "Documentations Team"
+                },
+                {
+                    "name": "Nhorman Baluran",
+                    "role": "Documentations Team"
+                }
+            ]
+        },
+        {
+            "groupName": "COMMUNICATIONS TEAM",
+            "members": [
+                {
+                    "name": "Matthew Payumo",
+                    "role": "Communications Director"
+                },
+                {
+                    "name": "Rustom Olaso",
+                    "role": "Deputy Communications Director"
+                },
+                {
+                    "name": "Lance Allen Tosloc",
+                    "role": "Communications Team"
+                }
+            ]
+        },
+        {
+            "groupName": "SYSTEMS DEVELOPMENT TEAM",
+            "members": [
+                {
+                    "name": "Francis Rhaey Casas",
+                    "role": "Systems Development Director"
+                },
+                {
+                    "name": "Jiyo Valmoria",
+                    "role": "Deputy Systems Development Director"
+                }
+            ]
+        },
+        {
+            "groupName": "FINANCE TEAM",
+            "members": [
+                {
+                    "name": "Mary Clair Clarde",
+                    "role": "Finance Director"
+                },
+                {
+                    "name": "Chang Hyun Park",
+                    "role": "Deputy Finance Director"
+                },
+                {
+                    "name": "Alaisa Kella Abjilina",
+                    "role": "Food Committee Head"
+                },
+                {
+                    "name": "Mickyla Loriene Almadin",
+                    "role": "Deputy Food Committee Head"
+                }
+            ]
+        },
+        {
+            "groupName": "LOGISTICS TEAM",
+            "members": [
+                {
+                    "name": "Rafael Rex Canete",
+                    "role": "Logistics Director"
+                },
+                {
+                    "name": "Avril Luisse Santos",
+                    "role": "Deputy Logistics Director"
+                },
+                {
+                    "name": "Ralph Rainier Abarca",
+                    "role": "Logistics Team"
+                },
+                {
+                    "name": "Tomas Nazareno",
+                    "role": "Logistics Team"
+                }
+            ]
+        },
+        {
+            "groupName": "RESOURCE MANAGEMENT TEAM",
+            "members": [
+                {
+                    "name": "Mary Jastine Lapating",
+                    "role": "Resource Management Director"
+                },
+                {
+                    "name": "Jann Pers Lagman",
+                    "role": "Deputy Resource Management Director"
+                }
+            ]
+        },
+        {
+            "groupName": "DRRM TEAM",
+            "members": [
+                {
+                    "name": "Alex Dave Escalante",
+                    "role": "DRRM Director"
+                },
+                {
+                    "name": "Ethel Marren Guerra",
+                    "role": "DRRM Deputy Director"
+                }
+            ]
+        },
+        {
+            "groupName": "MARSHALLING AND CROWD-CONTROL TEAM",
+            "members": [
+                {
+                    "name": "Shinily Agbon",
+                    "role": "ASSF President"
+                }
+            ]
+        },
+        {
+            "groupName": "TABULATIONS TEAM",
+            "members": [
+                {
+                    "name": "Jan A.G. Adrian Lariego",
+                    "role": "Tabulations Director"
+                },
+                {
+                    "name": "Lorievee Martinez",
+                    "role": "Deputy Tabulations Director"
+                }
+            ]
+        },
+        {
+            "groupName": "AWARDS AND GRIEVANCES TEAM",
+            "members": [
+                {
+                    "name": "Sung Goon Acosta",
+                    "role": "Awards and Grievances Director"
+                },
+                {
+                    "name": "Joie Noreen Garces",
+                    "role": "Deputy Awards and Grievances Director"
+                },
+                {
+                    "name": "Hyacinth Louise Duldulao",
+                    "role": "Awards and Grievances Team"
+                }
+            ]
+        },
+        {
+            "groupName": "SPORTS LIAISONS",
+            "members": [
+                {
+                    "name": "Lendon John Gabato",
+                    "role": "Team Sports Liaisons (Basketball, Volleyball)"
+                },
+                {
+                    "name": "Aibor Kennen Denila",
+                    "role": "Individual and Dual Sports Liaisons (Darts, Badminton, and Table Tennis)"
+                },
+                {
+                    "name": "Mikee Dalumpines",
+                    "role": "Individual and Dual Sports Liaisons (Darts, Badminton, and Table Tennis)"
+                },
+                {
+                    "name": "Nicole Abenojar",
+                    "role": "Individual and Dual Sports Liaisons (Darts, Badminton, and Table Tennis)"
+                },
+                {
+                    "name": "Alessandra Marie Leyma",
+                    "role": "Board Games Liaisons (Chess and Scrabble)"
+                },
+                {
+                    "name": "Shaira Alimpulos",
+                    "role": "Off-Campus Sports Liaisons (Billiards, Football, Swimming)"
+                },
+                {
+                    "name": "Rey Angelo Santella",
+                    "role": "Off-Campus Sports Liaisons (Billiards, Football, Swimming)"
+                },
+                {
+                    "name": "Cai Roxana Reyes",
+                    "role": "ESports (DOTA, Valorant, Mobile Legends)"
+                },
+                {
+                    "name": "Mizael Shimarey Oamil",
+                    "role": "ESports (DOTA, Valorant, Mobile Legends)"
+                }
+            ]
+        }
+    ]
+}
