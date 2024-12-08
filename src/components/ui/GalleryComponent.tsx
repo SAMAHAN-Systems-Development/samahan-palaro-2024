@@ -9,9 +9,9 @@ const galleryStyles = cva('overflow-hidden font-jersey10', {
       square: 'w-1/2 h-96',
     },
     borderColor: {
-      pink: 'border-pink rounded-none border-8',
-      white: 'border-white rounded-none border-8',
-      green: 'border-green rounded-none border-8',
+      pink: 'border border-pink rounded-none border-4',
+      white: 'border border-white rounded-none border-4',
+      green: 'border border-green rounded-none border-4',
     },
     titleColor: {
       pinkWhite: 'bg-pink text-white',
@@ -37,13 +37,13 @@ interface GalleryComponentProps extends VariantProps<typeof galleryStyles> {
   layout?: 'wide' | 'square';
   borderColor?: 'pink' | 'white' | 'green';
   titleColor?:
-  | 'pinkWhite'
-  | 'pinkGreen'
-  | 'pinkBlue'
-  | 'greenPink'
-  | 'greenBlue'
-  | 'whiteBlue'
-  | 'whitePink';
+    | 'pinkWhite'
+    | 'pinkGreen'
+    | 'pinkBlue'
+    | 'greenPink'
+    | 'greenBlue'
+    | 'whiteBlue'
+    | 'whitePink';
   position?: 'upperLeft' | 'upperRight' | 'lowerLeft' | 'lowerRight';
 }
 
@@ -58,14 +58,15 @@ const GalleryComponent: FC<GalleryComponentProps> = ({
   return (
     <div className={`${galleryStyles({ layout, borderColor })} relative`}>
       <div
-        className={`${galleryStyles({ titleColor, position })} min-w-44 text-4 text-3xl text-center mx-14 px-4 z-10`}
+        className={`${galleryStyles({ titleColor, position })} min-w-44 text-4 text-3xl text-center mx-14`}
       >
         {sportName}
       </div>
       <Image
+        width={500}
+        height={500}
         src={`/images/sports-picture/${image}`}
         alt={sportName}
-        fill
         className="object-cover w-full h-full"
       />
     </div>

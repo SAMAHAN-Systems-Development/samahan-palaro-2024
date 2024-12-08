@@ -14,6 +14,7 @@ const HeroSection = () => {
           width={878}
           height={562}
           className="w-full 
+                xsm:max[320px]
                max-w-[400px]
               sm:max-w-[600px] 
               md:max-w-[562px] 
@@ -23,6 +24,7 @@ const HeroSection = () => {
             mr-auto
             h-auto
             max-h-[300px]
+            xsm:max[320px]
             sm:max-h-[400px]
             md:max-h-[500px]
             lg:max-h-[562px]
@@ -47,6 +49,7 @@ const HeroSection = () => {
               mr-auto
               h-auto
               max-h-[300px]
+              xsm:max[320px]
               sm:max-h-[400px]
               md:max-h-[500px]
               lg:max-h-[562px]
@@ -73,6 +76,7 @@ const HeroSection = () => {
           alt=""
           className="w-full 
             !min-w-[200px]
+            xsm:max[320px]
             sm:max-w-[400px] 
             md:max-w-[450px] 
             lg:max-w-[529px]

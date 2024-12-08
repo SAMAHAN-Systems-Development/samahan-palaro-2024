@@ -18,7 +18,10 @@ interface ColorScheme {
   buttonTextColor: ColorType;
 }
 
-const getValidColors = (bgColor: ColorType, borderColor?: ColorType): ColorType[] => {
+const getValidColors = (
+  bgColor: ColorType,
+  borderColor?: ColorType
+): ColorType[] => {
   return COLORS.filter((color) => {
     if (color === bgColor) return false;
     if (
@@ -44,7 +47,8 @@ const calculateColorScheme = (seed: number): ColorScheme => {
   const textColor = validTextColors[(seed + 1) % validTextColors.length];
   const headerColor = validTextColors[(seed + 2) % validTextColors.length];
   const validButtonColors = getValidColors(bgColor, borderColor);
-  const buttonTextColor = validButtonColors[(seed + 3) % validButtonColors.length];
+  const buttonTextColor =
+    validButtonColors[(seed + 3) % validButtonColors.length];
 
   return {
     bgColor,
@@ -76,9 +80,12 @@ export default function Test() {
         const { articleColors, sportsWinnerColors } = colorSchemes[index];
 
         return (
-          <div key={index} className="grid-cols-1 md:grid-row-2 flex min-h-[25vh]">
+          <div
+            key={index}
+            className="grid lg:grid-cols-5 md:grid-cols-1 min-h-[25vh]"
+          >
             <div
-              className={`w-3/5 px-4 py-10 flex justify-center items-center bg-${articleColors.bgColor}`}
+              className={`col-span-1 lg:col-span-3 px-4 py-6 flex justify-center items-center bg-${articleColors.bgColor}`}
             >
               <Article
                 imageUrl={event.articleImage}
@@ -92,7 +99,7 @@ export default function Test() {
               />
             </div>
             <div
-              className={`w-2/5 p-4 flex justify-center items-center bg-${sportsWinnerColors.bgColor}`}
+              className={`col-span-1 lg:col-span-2 px-4 py-6 flex justify-center items-center bg-${sportsWinnerColors.bgColor}`}
             >
               <SportsWinnersContainer
                 game_title={event.game_title}

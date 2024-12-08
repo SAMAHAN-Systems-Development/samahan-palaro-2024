@@ -2,7 +2,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { FC } from 'react';
 
 const readMoreButtonStyles = cva(
-  'font-jersey10 transition-all duration-300 cursor-pointer',
+  'font-jersey10 transition-all cursor-pointer flex items-center justify-center hover:scale-110 hover:transition-all duration-200 hover:ease-in-out',
   {
     variants: {
       bgColor: {
@@ -19,9 +19,9 @@ const readMoreButtonStyles = cva(
       },
       size: {
         responsive:
-          'text-lg sm:text-xl md:text-2xl lg:text-3xl w-32 sm:w-36 md:w-40 lg:w-48 h-8 sm:h-9 md:h-10 lg:h-11',
-        small: 'text-3xl w-48 h-11',
-        big: 'text-5xl w-[332px] h-[102px]',
+          'text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl w-20 sm:w-28 md:w-36 lg:w-40 xl:w-48 h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16',
+        small: 'text-sm w-16 h-6',
+        big: 'text-xl sm:text-2xl md:text-3xl lg:text-4xl w-48 sm:w-60 md:w-72 lg:w-80 h-12 sm:h-16 md:h-20 lg:h-24',
       },
     },
     defaultVariants: {
