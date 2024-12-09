@@ -19,7 +19,9 @@ export const borderVariants = cva(
   }
 );
 export const textVariants = cva(
-  ['font-jersey10 text-[max(4.3125rem,2rem)] leading-[4.3125rem]'],
+  [
+    'font-jersey10 text-[4.3125rem] max-sm:text-[3rem] leading-[4.3125rem] max-sm:leading-[3rem]',
+  ],
   {
     variants: {
       textColor: {
