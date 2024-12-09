@@ -90,7 +90,6 @@ const TeamMembers: React.FC<TeamMembersProps> = ({
           MEMBERS
         </div>
       </div>
-      {/* <div className={textVariants({ textColor })}>OVERALL MANAGEMENT</div> */}
       <div
         className={`min-h-[348px] gap-4 py-12 px-10 grid ${(members?.length ?? 0) > 2 ? 'grid-cols-2' : ''} grid-rows-2 max-sm:flex max-sm:flex-col h-full items-center`}
       >
@@ -114,16 +113,4 @@ const TeamMembers: React.FC<TeamMembersProps> = ({
 export default TeamMembers;
 
 {
-  /* <TeamGroup />
-<TeamMembers
-  members={[
-    { role: 'Overall Event Director', name: 'Aliya Medida' },
-    {
-      role: 'Deputy Head for Sporting Events',
-      name: 'Ferryl Ken Ganhinhin',
-    },
-    { role: 'Overall Event Head', name: 'Andy Judd Lumain' },
-    { role: 'Head for Correspondence', name: 'Patricia Amor Estrada' },
-  ]}
-/> */
 }
