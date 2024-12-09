@@ -83,41 +83,43 @@ const TWG = async () => {
   ];
   return (
     <div className="bg-blue min-h-screen">
-      <h1 className="font-jersey10 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-        <strong className="flex flex-row items-center justify-center gap-3">
-          <span className="flex flex-row">
+      <h1 className="font-jersey10 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-4xl max-sm:text-2xl md:text-6xl lg:text-7xl xl:text-8xl py-4">
+        <span className="flex flex-row items-center justify-center gap-3 max-md:gap-2">
+          <span className="flex flex-row gap-3 max-md:gap-2">
             <Image
               height={'52'}
               width={'52'}
               alt="arrow"
-              className="rotate-180"
+              className="rotate-180 max-md:w-[32px] max-md:h-[32px] max-sm:w-[16px] max-sm:h-[16px] "
               src={'/images/sports-picture/Vector.png'}
             />
             <Image
               height={'52'}
               width={'52'}
               alt="arrow"
-              className="rotate-180"
+              className="rotate-180  max-md:w-[32px] max-md:h-[32px] max-sm:w-[16px] max-sm:h-[16px] "
               src={'/images/sports-picture/Vector.png'}
             />
           </span>
           <span className="text-pink">PALARONG</span>
           <span className="text-green">ATENISTA TWG</span>
-          <span className="flex flex-row">
+          <span className="flex flex-row gap-3 max-md:gap-2">
             <Image
               height={'52'}
               width={'52'}
               alt="arrow"
+              className=" max-md:w-[32px] max-md:h-[32px] max-sm:w-[16px] max-sm:h-[16px] "
               src={'/images/sports-picture/Vector2.png'}
             />
             <Image
               height={'52'}
               width={'52'}
               alt="arrow"
+              className=" max-md:w-[32px] max-md:h-[32px] max-sm:w-[16px] max-sm:h-[16px] "
               src={'/images/sports-picture/Vector2.png'}
             />
           </span>
-        </strong>
+        </span>
       </h1>
       {groups.map((group, index) => {
         const colorNumber = index % 4;

@@ -5,7 +5,7 @@ import { Member } from '@/types/member.type';
 
 export const borderVariants = cva(
   [
-    'flex justify-center items-center font-jersey10 border-8 text-[5.3125rem] relative ',
+    'flex justify-center items-center w-full font-jersey10 border-8 text-[5.3125rem] max-md:text-[3rem] relative ',
   ],
   {
     variants: {
@@ -22,7 +22,9 @@ export const borderVariants = cva(
   }
 );
 export const bodyTextVariants = cva(
-  ['font-jersey10 text-[1.9375rem] max-xl:text-center'],
+  [
+    'font-jersey10 text-[1.9375rem] max-md:text-[1.5rem] max-xl:text-center break-all',
+  ],
   {
     variants: {
       bodyTextColor: {
@@ -89,7 +91,9 @@ const TeamMembers: React.FC<TeamMembersProps> = ({
         </div>
       </div>
       {/* <div className={textVariants({ textColor })}>OVERALL MANAGEMENT</div> */}
-      <div className="min-h-[348px] gap-4 py-12 px-10 grid grid-cols-2 grid-rows-2 h-full items-center">
+      <div
+        className={`min-h-[348px] gap-4 py-12 px-10 grid ${(members?.length ?? 0) > 2 ? 'grid-cols-2' : ''} grid-rows-2 max-sm:flex max-sm:flex-col h-full items-center`}
+      >
         {members?.map((value, index) => {
           return (
             <div key={index} className="leading-8 ">
