@@ -101,7 +101,7 @@ const TWG = async () => {
               src={'/images/sports-picture/Vector.png'}
             />
           </span>
-          <span className="text-pink">PALARONG</span>{' '}
+          <span className="text-pink">PALARONG</span>
           <span className="text-green">ATENISTA TWG</span>
           <span className="flex flex-row">
             <Image

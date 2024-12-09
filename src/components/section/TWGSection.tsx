@@ -14,6 +14,7 @@ export const leftSideVariants = cva(['flex justify-center items-center p-10'], {
     leftColor: 'green',
   },
 });
+
 export const rightSideVariants = cva(['flex justify-center items-center p-6'], {
   variants: {
     rightColor: {
@@ -42,42 +43,19 @@ const TWGSection: React.FC<TWGSectionProps> = ({
   rightColor,
 }) => {
   return (
-    <div className="grid grid-cols-[minmax(0,1fr),minmax(0,1.5fr)] max-xl:flex max-xl:flex-col h-screen max-xl:h-auto">
-      <div className={leftSideVariants({ leftColor })}>{leftSideChild}</div>
-      <div className={rightSideVariants({ rightColor })}>{rightSideChild}</div>
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr,1.5fr] gap-4 min-h-[25vh] h-auto">
+      <div
+        className={`${leftSideVariants({ leftColor })} p-6 md:p-10 flex flex-col justify-center`}
+      >
+        {leftSideChild}
+      </div>
+      <div
+        className={`${rightSideVariants({ rightColor })} p-6 md:p-10 flex flex-col justify-center`}
+      >
+        {rightSideChild}
+      </div>
     </div>
   );
 };
 
 export default TWGSection;
-
-{
-  /* <TWGSection
-        leftColor={'green'}
-        leftSideChild={
-          <TeamGroup borderColor={'blue'} textColor={'blue'}>
-            OVERALL MANAGEMENT
-          </TeamGroup>
-        }
-        rightColor={'pink'}
-        rightSideChild={
-          <TeamMembers
-            borderColor={'green'}
-            titleColor={'blue'}
-            bodyTextColor={'white'}
-            members={[
-              { role: 'Overall Event Director', name: 'Aliya Medida' },
-              {
-                role: 'Deputy Head for Sporting Events',
-                name: 'Ferryl Ken Ganhinhin',
-              },
-              { role: 'Overall Event Head', name: 'Andy Judd Lumain' },
-              {
-                role: 'Head for Correspondence',
-                name: 'Patricia Amor Estrada',
-              },
-            ]}
-          />
-        }
-      /> */
-}
