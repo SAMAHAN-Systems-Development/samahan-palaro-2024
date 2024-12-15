@@ -43,7 +43,7 @@ const TWGSection: React.FC<TWGSectionProps> = ({
   rightColor,
 }) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr,1.5fr] gap-4 min-h-[25vh] h-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-[1fr,1.5fr]  min-h-[25vh] h-auto">
       <div
         className={`${leftSideVariants({ leftColor })} p-6 md:p-10 flex flex-col justify-center`}
       >
