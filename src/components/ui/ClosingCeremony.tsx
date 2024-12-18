@@ -14,10 +14,10 @@ const ClosingCeremony = () => {
             <Image
               src={imageUrl}
               alt={title}
-              layout="fill"
+              fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
-              priority
+              unoptimized
             />
           </div>
 
