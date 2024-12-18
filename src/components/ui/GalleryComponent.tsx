@@ -5,13 +5,13 @@ import Image from 'next/image';
 const galleryStyles = cva('overflow-hidden font-jersey10', {
   variants: {
     layout: {
-      wide: 'w-full h-96',
-      square: 'w-1/2 h-96',
+      wide: 'w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px]',
+      square: 'w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px]',
     },
     borderColor: {
-      pink: 'border-pink rounded-none border-4',
-      white: 'border-white rounded-none border-4',
-      green: 'border-green rounded-none border-4',
+      pink: 'border-pink rounded-none border-8',
+      white: 'border-white rounded-none border-8',
+      green: 'border-green rounded-none border-8',
     },
     titleColor: {
       pinkWhite: 'bg-pink text-white',
@@ -56,21 +56,28 @@ const GalleryComponent: FC<GalleryComponentProps> = ({
   position,
 }) => {
   return (
-    <div className={`${galleryStyles({ layout, borderColor })} relative`}>
-      <div
-        className={`${galleryStyles({ titleColor, position })} min-w-44 text-4 md:text-lg lg:text-3xl px-2 text-center mx-14`}
-      >
-        {sportName}
-      </div>
+    <div
+      className={`${galleryStyles({ layout, borderColor })} relative box-border`}
+    >
+      {sportName && (
+        <div
+          className={`${galleryStyles({ titleColor, position })} min-w-44 text-4 md:text-lg lg:text-3xl p-2 text-center mx-14`}
+        >
+          {sportName}
+        </div>
+      )}
       <Image
-        width={500}
-        height={500}
+        width={600}
+        height={600}
         src={`/images/sports-picture/${image}`}
-        alt={sportName}
+        alt={sportName || "Image"}
         className="object-cover w-full h-full"
+        unoptimized
       />
     </div>
   );
 };
+
+
 
 export default GalleryComponent;

@@ -22,6 +22,7 @@ export default function Gallery() {
     | 'greenBlue'
     | 'whiteBlue'
     | 'whitePink';
+
   const titleColors: Record<BorderColor, TitleColor[]> = {
     pink: ['pinkWhite', 'pinkGreen', 'pinkBlue'],
     green: ['greenPink', 'greenBlue'],
@@ -95,7 +96,7 @@ export default function Gallery() {
                     titleColor={titleColor1}
                     position={getRandom(positions)}
                   />
-                  <p className="font-jersey10 text-lg sm:text-xl md:text-2xl text-center text-white my-4 sm:my-6 mx-4 sm:mx-14">
+                  <p className="font-jersey10 text-lg sm:text-xl md:text-2xl text-center text-white my-14 sm:my-16 mx-4 sm:mx-14">
                     {data[wideIndex].quote}
                   </p>
                 </div>
@@ -126,7 +127,7 @@ export default function Gallery() {
                 )}
               </div>
 
-              <p className="hidden sm:block w-full font-jersey10 text-lg sm:text-xl md:text-2xl text-center text-white my-4 sm:my-6 mx-4 sm:mx-14">
+              <p className="hidden sm:block w-full font-jersey10 text-lg sm:text-xl md:text-2xl text-center text-white my-14 sm:my-16 mx-4 sm:mx-14">
                 {squareIndex1 < data.length && data[squareIndex1]?.quote}
               </p>
 
@@ -142,7 +143,7 @@ export default function Gallery() {
                       titleColor={titleColor2}
                       position={getRandom(positions)}
                     />
-                    <p className="font-jersey10 text-lg sm:text-xl md:text-2xl text-center text-white my-4 sm:my-6 mx-4 sm:mx-14">
+                    <p className="font-jersey10 text-lg sm:text-xl md:text-2xl text-center text-white my-14 sm:my-16 mx-4 sm:mx-14">
                       {data[squareIndex1].quote}
                     </p>
                   </div>
@@ -157,7 +158,7 @@ export default function Gallery() {
                       titleColor={titleColor3}
                       position={getRandom(positions)}
                     />
-                    <p className="font-jersey10 text-lg sm:text-xl md:text-2xl text-center text-white my-4 sm:my-6 mx-4 sm:mx-14">
+                    <p className="font-jersey10 text-lg sm:text-xl md:text-2xl text-center text-white my-14 sm:my-16 mx-4 sm:mx-14">
                       {data[squareIndex2].quote}
                     </p>
                   </div>
