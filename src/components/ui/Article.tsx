@@ -78,7 +78,7 @@ export default function Component({
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover"
-          priority
+          unoptimized
         />
       </div>
       <div className="w-5/12 flex flex-col">
