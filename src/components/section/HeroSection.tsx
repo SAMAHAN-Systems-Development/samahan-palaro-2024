@@ -4,93 +4,43 @@ import Image from 'next/image';
 const HeroSection = () => {
   return (
     // Added optional hover animation, please comment in PR if to be removed
-    <div className="relative flex justify-between items-center w-full">
-      {/* Left side - Logo with shadow */}
-      <div className="relative w-fit ml-[10%] lg:ml-[15%]">
-        {/* Shadow Image - Bottom Layer */}
-        <Image
-          src="/images/hero-pictures/shadow.svg"
-          alt=""
-          width={878}
-          height={562}
-          className="w-full 
-                xsm:max[320px]
-               max-w-[400px]
-              sm:max-w-[600px] 
-              md:max-w-[562px] 
-              lg:max-w-[562px] 
-                          xl:max-w-[878px]
-
-            mr-auto
-            h-auto
-            max-h-[300px]
-            xsm:max[320px]
-            sm:max-h-[400px]
-            md:max-h-[500px]
-            lg:max-h-[562px]
-            z-0
-            opacity-30"
-        />
-
-        {/* Hero Logo - Top Layer */}
-        <div className="absolute inset-0">
+    <div className="relative flex">
+      <div className="w-8/12 relative flex justify-center items-center p-8 sm:p-10 md:p-10 ">
+        {/* Shadow layer */}
+        <div className="absolute inset-0 z-0 flex justify-center items-center p-8 sm:p-10 md:p-10 -translate-y-2">
           <Image
-            src="/images/hero-pictures/Hero_Logo.svg"
+            src="/images/hero-pictures/Shadow.png"
             alt=""
-            width={878}
-            height={562}
-            className="w-full 
-              max-w-[400px]
-              sm:max-w-[600px] 
-              md:max-w-[562px] 
-              lg:max-w-[562px] 
-                          xl:max-w-[878px]
+            width={1300}
+            height={1300}
+            className="object-cover max-w-full max-h-full opacity-30"
+            unoptimized
+          />
+        </div>
 
-              mr-auto
-              h-auto
-              max-h-[300px]
-              xsm:max[320px]
-              sm:max-h-[400px]
-              md:max-h-[500px]
-              lg:max-h-[562px]
-              xl:max-h-[562px]
-
-              object-cover
-              z-10
-              hover:transform 
-              hover:translate-x-2 
-              hover:drop-shadow-xl 
-              hover:transition-all 
-              duration-200 
-              hover:ease-in-out"
+        {/* Top layer */}
+        <div className="relative z-10 hover:transform hover:translate-x-2 hover:drop-shadow-xl hover:transition-all duration-200 hover:ease-in-out -translate-y-2">
+          <Image
+            src="/images/hero-pictures/Hero_Logo.png"
+            alt=""
+            width={1300}
+            height={1300}
+            className="object-cover max-w-full max-h-full"
+            unoptimized
           />
         </div>
       </div>
-
-      {/* Right side image */}
-      <div className="relative flex-shrink-0 w-[25%] ">
+      
+      {/* Right Layer */}
+      <div className="w-4/12">
         <Image
           src="/images/hero-pictures/Right-Image.png"
-          width={529}
-          height={773}
           alt=""
-          className="w-full 
-            !min-w-[200px]
-            xsm:max[320px]
-            sm:max-w-[400px] 
-            md:max-w-[450px] 
-            lg:max-w-[529px]
-            xl:max-w-[529px]
-            2xl:max-w-[529px]
-            h-auto
-            min-h-[300px]
-            sm:max-h-[490px]
-            md:max-h-[550px]
-            lg:max-h-[773px]
-            object-contain
-            ml-auto"
-          priority
-        />
+          width={100}
+          height={100}
+          className="object-cover w-full h-full"
+          unoptimized
+        ></Image>
       </div>
     </div>
   );
