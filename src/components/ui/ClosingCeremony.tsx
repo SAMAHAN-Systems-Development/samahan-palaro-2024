@@ -21,13 +21,13 @@ const ClosingCeremony = () => {
                 unoptimized
               />
             </div>
-            <div className="w-full p-8 px-48">
+            <div className="w-full p-8 md:px-48">
               <div className="flex flex-col md:flex-row items-center justify-between mb-6">
                 <div className="font-vt323 text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white text-right flex-1 mb-4 md:mb-0">
                   {title}
                 </div>
 
-                <div className="flex justify-center">
+                <div className="md:ml-8 flex justify-center">
                   <ReadMoreButton
                     bgColor="green"
                     textColor="pink"
