@@ -1,4 +1,3 @@
-// import HeroSection from '@/components/ui/HeroSection';
 import SportsSection from '@/components/section/SportsSection';
 import ClosingCeremony from '@/components/ui/ClosingCeremony';
 import HeroSection from '@/components/section/HeroSection';

@@ -13,7 +13,7 @@ const textStyles = cva('', {
     },
     size: {
       content: 'font-chakrapetch text-xs sm:text-base md:text-lg lg:text-lg',
-      header: 'font-jersey10 text-xl sm:text-2xl md:text-3xl lg:text-4xl',
+      header: 'font-vt323 text-xl sm:text-2xl md:text-3xl lg:text-4xl',
     },
   },
   defaultVariants: {

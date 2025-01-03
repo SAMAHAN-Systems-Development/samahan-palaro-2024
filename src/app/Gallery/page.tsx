@@ -12,17 +12,10 @@ const getRandom = <T,>(arr: readonly T[]): T =>
   arr[Math.floor(Math.random() * arr.length)];
 export default function Gallery() {
   const borderColors = ['pink', 'white', 'green'] as const;
-  type BorderColor = (typeof borderColors)[number];
+  type BorderColor = typeof borderColors[number];
 
-  type TitleColor =
-    | 'pinkWhite'
-    | 'pinkGreen'
-    | 'pinkBlue'
-    | 'greenPink'
-    | 'greenBlue'
-    | 'whiteBlue'
-    | 'whitePink';
-
+  // Define the title colors associated with each border color
+  type TitleColor = 'pinkWhite' | 'pinkGreen' | 'pinkBlue' | 'greenPink' | 'greenBlue' | 'whiteBlue' | 'whitePink';
   const titleColors: Record<BorderColor, TitleColor[]> = {
     pink: ['pinkWhite', 'pinkGreen', 'pinkBlue'],
     green: ['greenPink', 'greenBlue'],
@@ -56,8 +49,8 @@ export default function Gallery() {
       </div>
 
       {/* Gallery header */}
-      <div className="flex flex-row justify-center items-center lg:pt-8 sm:pt-2 pt-4 md:pt-8 lg:pb-24 px-4 sm:px-10 md:pb-18 sm:pb-16 pb-12  text-center">
-        <h1 className="font-jersey10 text-green pr-4 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+      <div className="flex justify-center items-center pt-8 pb-24 px-10 text-center">
+        <h1 className="font-vt323 text-green pr-4 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
           <span className="text-pink">PALARO</span> PHOTO GALLERY
         </h1>
         <Image
@@ -96,7 +89,7 @@ export default function Gallery() {
                     titleColor={titleColor1}
                     position={getRandom(positions)}
                   />
-                  <p className="font-jersey10 text-lg sm:text-xl md:text-2xl text-center text-white my-14 sm:my-16 mx-4 sm:mx-14">
+                  <p className="font-vt323 text-2xl text-center text-white my-8 mx-14">
                     {data[wideIndex].quote}
                   </p>
                 </div>
@@ -126,8 +119,7 @@ export default function Gallery() {
                   />
                 )}
               </div>
-
-              <p className="hidden sm:block w-full font-jersey10 text-lg sm:text-xl md:text-2xl text-center text-white my-14 sm:my-16 mx-4 sm:mx-14">
+              <p className="hidden sm:block w-full font-vt323 text-2xl text-center text-white my-8 mx-14">
                 {squareIndex1 < data.length && data[squareIndex1]?.quote}
               </p>
 
@@ -143,7 +135,7 @@ export default function Gallery() {
                       titleColor={titleColor2}
                       position={getRandom(positions)}
                     />
-                    <p className="font-jersey10 text-lg sm:text-xl md:text-2xl text-center text-white my-14 sm:my-16 mx-4 sm:mx-14">
+                    <p className="font-vt323 text-2xl text-center text-white my-8 mx-14">
                       {data[squareIndex1].quote}
                     </p>
                   </div>
@@ -158,7 +150,7 @@ export default function Gallery() {
                       titleColor={titleColor3}
                       position={getRandom(positions)}
                     />
-                    <p className="font-jersey10 text-lg sm:text-xl md:text-2xl text-center text-white my-14 sm:my-16 mx-4 sm:mx-14">
+                    <p className="font-vt323 text-2xl text-center text-white my-8 mx-14">
                       {data[squareIndex2].quote}
                     </p>
                   </div>

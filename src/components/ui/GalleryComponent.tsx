@@ -2,7 +2,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { FC } from 'react';
 import Image from 'next/image';
 
-const galleryStyles = cva('overflow-hidden font-jersey10', {
+const galleryStyles = cva('overflow-hidden font-vt323', {
   variants: {
     layout: {
       wide: 'w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px]',

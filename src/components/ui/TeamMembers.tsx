@@ -5,7 +5,7 @@ import { Member } from '@/types/member.type';
 
 export const borderVariants = cva(
   [
-    'w-full font-jersey10 border-8 text-[5.3125rem] max-md:text-[3rem] relative ',
+    'flex justify-center items-center font-vt323 border-8 text-[5.3125rem] relative ',
   ],
   {
     variants: {
@@ -22,9 +22,7 @@ export const borderVariants = cva(
   }
 );
 export const bodyTextVariants = cva(
-  [
-    'font-jersey10 text-[1.9375rem] max-md:text-[1.5rem] max-xl:text-center break-all',
-  ],
+  ['font-vt323 text-2xl sm:text-4xl md:text-[1.9375rem] max-xl:text-center'],
   {
     variants: {
       bodyTextColor: {
@@ -41,7 +39,7 @@ export const bodyTextVariants = cva(
 );
 export const titleVariants = cva(
   [
-    'px-4 text-[1.9375rem] flex justify-center items-center max-xl:whitespace-nowrap',
+    'px-4 text-2xl sm:text-4xl md:text-[1.9375rem] flex justify-center items-center max-xl:whitespace-nowrap',
   ],
   {
     variants: {
@@ -67,8 +65,8 @@ export const titleVariants = cva(
 
 export interface TeamMembersProps
   extends VariantProps<typeof borderVariants>,
-    VariantProps<typeof bodyTextVariants>,
-    VariantProps<typeof titleVariants> {
+  VariantProps<typeof bodyTextVariants>,
+  VariantProps<typeof titleVariants> {
   members?: Member[];
 }
 
@@ -90,9 +88,7 @@ const TeamMembers: React.FC<TeamMembersProps> = ({
           MEMBERS
         </div>
       </div>
-      <div
-        className={`min-h-[348px] gap-4 py-16 px-10 grid ${(members?.length ?? 0) > 2 ? 'grid-cols-2' : ''} grid-rows-2 max-sm:flex max-sm:flex-col h-full items-center`}
-      >
+      <div className="min-h-[348px] gap-4 py-12 px-10 grid grid-cols-1 sm:grid-cols-2 grid-rows-2 h-full items-center">
         {members?.map((value, index) => {
           return (
             <div key={index} className="leading-8 px-6">

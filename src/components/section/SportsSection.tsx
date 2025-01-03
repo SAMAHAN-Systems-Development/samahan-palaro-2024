@@ -80,12 +80,9 @@ export default function Test() {
         const { articleColors, sportsWinnerColors } = colorSchemes[index];
 
         return (
-          <div
-            key={index}
-            className="grid lg:grid-cols-5 md:grid-cols-1 min-h-[25vh]"
-          >
+          <div key={index} className="grid-cols-1 md:grid-cols-2 flex flex-col md:flex-row min-h-[25vh]">
             <div
-              className={`col-span-1 lg:col-span-3 px-4 py-6 flex justify-center items-center bg-${articleColors.bgColor}`}
+              className={`w-full md:w-3/5 px-4 py-10 flex justify-center items-center bg-${articleColors.bgColor}`}
             >
               <Article
                 imageUrl={event.articleImage}
@@ -99,7 +96,7 @@ export default function Test() {
               />
             </div>
             <div
-              className={`col-span-1 lg:col-span-2 px-4 py-6 flex justify-center items-center bg-${sportsWinnerColors.bgColor}`}
+              className={`w-full md:w-2/5 p-4 flex justify-center items-center bg-${sportsWinnerColors.bgColor}`}
             >
               <SportsWinnersContainer
                 game_title={event.game_title}
