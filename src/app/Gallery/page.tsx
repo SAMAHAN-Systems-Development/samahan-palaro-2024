@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   description: '',
 };
 
-const getRandom = <T,>(arr: readonly T[]): T => arr[Math.floor(Math.random() * arr.length)];
+const getRandom = <T,>(arr: readonly T[]): T =>
+  arr[Math.floor(Math.random() * arr.length)];
 export default function Gallery() {
-
   const borderColors = ['pink', 'white', 'green'] as const;
   type BorderColor = typeof borderColors[number];
 
@@ -22,7 +22,6 @@ export default function Gallery() {
     white: ['whiteBlue', 'whitePink'],
   };
 
-  // Function to get random border and title color pair
   const getRandomColorPair = () => {
     const randomBorderColor = getRandom(borderColors);
     const matchingTitleColors = titleColors[randomBorderColor];
@@ -30,8 +29,13 @@ export default function Gallery() {
     return { borderColor: randomBorderColor, titleColor: randomTitleColor };
   };
 
-  // Define the positions for elements
-  const positions = ['upperLeft', 'upperRight', 'lowerLeft', 'lowerRight'] as const;
+  const positions = [
+    'upperLeft',
+    'upperRight',
+    'lowerLeft',
+    'lowerRight',
+  ] as const;
+
   return (
     <main className="bg-blue pt-20">
       {/* Display the first item */}
@@ -61,7 +65,7 @@ export default function Gallery() {
       {/* Gallery Loop */}
       <div>
         {Array.from({ length: Math.ceil((data.length - 1) / 3) }, (_, i) => {
-          const wideIndex = 1 + i * 3; // Start with data[1] and then every third item
+          const wideIndex = 1 + i * 3; // Start with data[1] and then every
           const squareIndex1 = 2 + i * 3; // Start with data[2] and then every third item after
           const squareIndex2 = 3 + i * 3; // Start with data[3] and then every third item after
 

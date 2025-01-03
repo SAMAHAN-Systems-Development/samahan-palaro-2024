@@ -91,10 +91,11 @@ const TeamMembers: React.FC<TeamMembersProps> = ({
       <div className="min-h-[348px] gap-4 py-12 px-10 grid grid-cols-1 sm:grid-cols-2 grid-rows-2 h-full items-center">
         {members?.map((value, index) => {
           return (
-            <div key={index} className="leading-8 ">
+            <div key={index} className="leading-8 px-6">
               <p className={bodyTextVariants({ bodyTextColor })}>
                 {value.role}
               </p>
+              <p className="h-1"></p>
               <p className={bodyTextVariants({ bodyTextColor })}>
                 {value.name}
               </p>

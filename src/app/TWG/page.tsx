@@ -31,7 +31,7 @@ const TWG = async () => {
       },
       members: {
         borderColor: 'pink',
-        titleColor: 'white',
+        titleTextColor: 'white',
         bodyTextColor: 'white',
       },
     },
@@ -46,7 +46,7 @@ const TWG = async () => {
       },
       members: {
         borderColor: 'green',
-        titleColor: 'blue',
+        titleTextColor: 'blue',
         bodyTextColor: 'white',
       },
     },
@@ -61,7 +61,7 @@ const TWG = async () => {
       },
       members: {
         borderColor: 'blue',
-        titleColor: 'pink',
+        titleTextColor: 'green',
         bodyTextColor: 'blue',
       },
     },
@@ -76,11 +76,132 @@ const TWG = async () => {
       },
       members: {
         borderColor: 'blue',
-        titleColor: 'white',
+        titleTextColor: 'white',
         bodyTextColor: 'white',
       },
     },
+    {
+      section: {
+        leftColor: 'green',
+        rightColor: 'blue',
+      },
+      group: {
+        borderColor: 'pink',
+        textColor: 'blue',
+      },
+      members: {
+        borderColor: 'green',
+        titleTextColor: 'pink',
+        bodyTextColor: 'white',
+      },
+    },
+    {
+      section: {
+        leftColor: 'pink',
+        rightColor: 'white',
+      },
+      group: {
+        borderColor: 'blue',
+        textColor: 'white',
+      },
+      members: {
+        borderColor: 'pink',
+        titleTextColor: 'white',
+        bodyTextColor: 'blue',
+      },
+    },
+    {
+      section: {
+        leftColor: 'blue',
+        rightColor: 'pink',
+      },
+      group: {
+        borderColor: 'green',
+        textColor: 'green',
+      },
+      members: {
+        borderColor: 'white',
+        titleTextColor: 'blue',
+        bodyTextColor: 'white',
+      },
+    },
+    {
+      section: {
+        leftColor: 'white',
+        rightColor: 'blue',
+      },
+      group: {
+        borderColor: 'blue',
+        textColor: 'blue',
+      },
+      members: {
+        borderColor: 'pink',
+        titleTextColor: 'green',
+        bodyTextColor: 'green',
+      },
+    },
+    {
+      section: {
+        leftColor: 'pink',
+        rightColor: 'green',
+      },
+      group: {
+        borderColor: 'green',
+        textColor: 'white',
+      },
+      members: {
+        borderColor: 'blue',
+        titleTextColor: 'white',
+        bodyTextColor: 'blue',
+      },
+    },
+    {
+      section: {
+        leftColor: 'green',
+        rightColor: 'white',
+      },
+      group: {
+        borderColor: 'blue',
+        textColor: 'blue',
+      },
+      members: {
+        borderColor: 'green',
+        titleTextColor: 'pink',
+        bodyTextColor: 'pink',
+      },
+    },
+    {
+      section: {
+        leftColor: 'blue',
+        rightColor: 'pink',
+      },
+      group: {
+        borderColor: 'white',
+        textColor: 'white',
+      },
+      members: {
+        borderColor: 'green',
+        titleTextColor: 'blue',
+        bodyTextColor: 'white',
+      },
+    },
+    {
+      section: {
+        leftColor: 'white',
+        rightColor: 'green',
+      },
+      group: {
+        borderColor: 'pink',
+        textColor: 'pink',
+      },
+      members: {
+        borderColor: 'pink',
+        titleTextColor: 'white',
+        bodyTextColor: 'blue',
+      },
+    },
   ];
+
   return (
     <div className="bg-blue min-h-screen">
       <h1 className="font-vt323 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-4xl xsm:text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
@@ -119,10 +240,10 @@ const TWG = async () => {
               src={'/images/sports-picture/Vector2.png'}
             />
           </span>
-        </strong>
+        </span>
       </h1>
       {groups.map((group, index) => {
-        const colorNumber = index % 4;
+        const colorNumber = index % colors.length;
         return (
           <TWGSection
             key={index}

@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from 'class-variance-authority';
 import { FC } from 'react';
 
-// Border Styles
+// Border Styles with Responsive Text Sizes
 const borderTextStyles = cva(['font-chakra-petch'], {
   variants: {
     borderColor: {
@@ -16,14 +16,19 @@ const borderTextStyles = cva(['font-chakra-petch'], {
       white: 'text-white',
       pink: 'text-pink',
     },
+    size: {
+      content: 'text-xs sm:text-base md:text-lg lg:text-lg',
+      header: 'text-xl sm:text-2xl md:text-3xl lg:text-4xl',
+    },
   },
   defaultVariants: {
     borderColor: 'blue',
     textColor: 'blue',
+    size: 'content',
   },
 });
 
-// Title Text Color
+// Title Text Color with Responsive Text Sizes
 const titleStyles = cva(['font-chakra-petch'], {
   variants: {
     titleTextColor: {
@@ -32,9 +37,14 @@ const titleStyles = cva(['font-chakra-petch'], {
       white: 'text-white',
       pink: 'text-pink',
     },
+    size: {
+      content: 'text-xs sm:text-base md:text-lg lg:text-lg',
+      header: 'text-xl sm:text-2xl md:text-3xl lg:text-4xl',
+    },
   },
   defaultVariants: {
     titleTextColor: 'blue',
+    size: 'header',
   },
 });
 
@@ -43,6 +53,7 @@ type TextColorVariants = VariantProps<typeof borderTextStyles>['textColor'];
 type TitleTextColorVariants = VariantProps<
   typeof titleStyles
 >['titleTextColor'];
+type SizeVariants = VariantProps<typeof borderTextStyles>['size'];
 
 interface Winner {
   place: string;
@@ -55,6 +66,7 @@ interface SportsWinnerContainerProps {
   borderColor: BorderColorVariants;
   textColor: TextColorVariants;
   titleTextColor: TitleTextColorVariants;
+  size?: SizeVariants; // New prop for size
 }
 
 const SportsWinnerContainer: FC<SportsWinnerContainerProps> = ({
@@ -63,6 +75,7 @@ const SportsWinnerContainer: FC<SportsWinnerContainerProps> = ({
   borderColor,
   textColor,
   titleTextColor,
+  size = 'content', // Default size is 'content'
 }) => {
   const renderWinners = () => {
     const hasVariants = winners.some(
@@ -99,7 +112,9 @@ const SportsWinnerContainer: FC<SportsWinnerContainerProps> = ({
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
           {Object.entries(groupedWinners).map(([groupName, groupWinners]) => (
             <div key={groupName} className="flex-1">
-              <p className={`font-bold mb-2`}>{groupName}</p>
+              <p className={`font-bold mb-2 ${borderTextStyles({ size })}`}>
+                {groupName}
+              </p>
               {groupWinners.map((winner, index) => (
                 <div key={index} className="mb-2">
                   <p>{winner.place.split(' ')[1]} Place</p>
@@ -129,13 +144,15 @@ const SportsWinnerContainer: FC<SportsWinnerContainerProps> = ({
       className={`${borderTextStyles({
         borderColor,
         textColor,
+        size,
       })} border-4 px-4 sm:px-8 pb-4 flex flex-col gap-4 text-center text-xl font-medium rounded-sm shadow-sm`}
     >
       <div>
         <h1
-          className={`!text-3xl py-2 px-3 !font-semibold bg-${borderColor} ${titleStyles(
+          className={`!py-2 px-3 !font-semibold bg-${borderColor} ${titleStyles(
             {
               titleTextColor,
+              size: 'header',
             }
           )}`}
         >

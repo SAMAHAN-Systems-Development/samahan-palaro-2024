@@ -18,7 +18,10 @@ interface ColorScheme {
   buttonTextColor: ColorType;
 }
 
-const getValidColors = (bgColor: ColorType, borderColor?: ColorType): ColorType[] => {
+const getValidColors = (
+  bgColor: ColorType,
+  borderColor?: ColorType
+): ColorType[] => {
   return COLORS.filter((color) => {
     if (color === bgColor) return false;
     if (
@@ -44,7 +47,8 @@ const calculateColorScheme = (seed: number): ColorScheme => {
   const textColor = validTextColors[(seed + 1) % validTextColors.length];
   const headerColor = validTextColors[(seed + 2) % validTextColors.length];
   const validButtonColors = getValidColors(bgColor, borderColor);
-  const buttonTextColor = validButtonColors[(seed + 3) % validButtonColors.length];
+  const buttonTextColor =
+    validButtonColors[(seed + 3) % validButtonColors.length];
 
   return {
     bgColor,
