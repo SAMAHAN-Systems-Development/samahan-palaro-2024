@@ -12,6 +12,7 @@ const config: Config = {
         chakrapetch: ['var(--font-chakra-petch)'],
         actay: ['var(--font-actay)'],
         jersey10: ['var(--font-jersey-10)'],
+        vt323: ['var(--font-vt323)'],
       },
     },
     colors: {

@@ -83,37 +83,39 @@ const TWG = async () => {
   ];
   return (
     <div className="bg-blue min-h-screen">
-      <h1 className="font-jersey10 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+      <h1 className="font-vt323 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-4xl xsm:text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
         <strong className="flex flex-row items-center justify-center gap-3">
-          <span className="flex flex-row">
+          <span className="my-4 flex flex-row">
             <Image
-              height={'52'}
-              width={'52'}
+              height={'20'}
+              width={'20'}
               alt="arrow"
-              className="rotate-180"
+              className="flex rotate-180 lg:h-16 lg:w-16 md:h-14 md:w-14"
               src={'/images/sports-picture/Vector.png'}
             />
             <Image
-              height={'52'}
-              width={'52'}
+              height={'20'}
+              width={'20'}
               alt="arrow"
-              className="rotate-180"
+              className="flex rotate-180 lg:h-16 lg:w-16 md:h-14 md:w-14"
               src={'/images/sports-picture/Vector.png'}
             />
           </span>
           <span className="text-pink">PALARONG</span>{' '}
-          <span className="text-green">ATENISTA TWG</span>
+          <span className="text-green whitespace-nowrap">ATENISTA TWG</span>
           <span className="flex flex-row">
             <Image
-              height={'52'}
-              width={'52'}
+              height={'20'}
+              width={'20'}
               alt="arrow"
+              className="flex lg:h-16 lg:w-16 md:h-14 md:w-14"
               src={'/images/sports-picture/Vector2.png'}
             />
             <Image
-              height={'52'}
-              width={'52'}
+              height={'20'}
+              width={'20'}
               alt="arrow"
+              className="flex lg:h-16 lg:w-16 md:h-14 md:w-14"
               src={'/images/sports-picture/Vector2.png'}
             />
           </span>

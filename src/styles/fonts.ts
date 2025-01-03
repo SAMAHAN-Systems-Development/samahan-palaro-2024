@@ -1,6 +1,14 @@
 import { Jersey_10 } from 'next/font/google';
 import { Chakra_Petch } from 'next/font/google';
+import { VT323 } from 'next/font/google';
 import localFont from 'next/font/local';
+
+export const vt323 = VT323({
+  variable: '--font-vt323',
+  weight: ['400'],
+  display: 'swap',
+  subsets: ['latin'],
+});
 
 export const chakrapetch = Chakra_Petch({
   variable: '--font-chakra-petch',

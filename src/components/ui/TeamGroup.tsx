@@ -19,7 +19,7 @@ export const borderVariants = cva(
   }
 );
 export const textVariants = cva(
-  ['font-jersey10 text-[max(4.3125rem,2rem)] leading-[4.3125rem]'],
+  ['font-vt323 text-4xl md:text-[max(4.3125rem,2rem)] leading-[4.3125rem]'],
   {
     variants: {
       textColor: {
@@ -53,7 +53,7 @@ export const boxVariants = cva(
 
 export interface TeamGroupProps
   extends VariantProps<typeof borderVariants>,
-    VariantProps<typeof textVariants> {
+  VariantProps<typeof textVariants> {
   children?: React.ReactNode;
 }
 

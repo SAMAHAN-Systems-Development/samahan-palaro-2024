@@ -12,7 +12,7 @@ const getRandom = <T,>(arr: readonly T[]): T => arr[Math.floor(Math.random() * a
 export default function Gallery() {
 
   const borderColors = ['pink', 'white', 'green'] as const;
-  type BorderColor = typeof borderColors[number]; 
+  type BorderColor = typeof borderColors[number];
 
   // Define the title colors associated with each border color
   type TitleColor = 'pinkWhite' | 'pinkGreen' | 'pinkBlue' | 'greenPink' | 'greenBlue' | 'whiteBlue' | 'whitePink';
@@ -46,7 +46,7 @@ export default function Gallery() {
 
       {/* Gallery header */}
       <div className="flex justify-center items-center pt-8 pb-24 px-10 text-center">
-        <h1 className="font-jersey10 text-green pr-4 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+        <h1 className="font-vt323 text-green pr-4 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
           <span className="text-pink">PALARO</span> PHOTO GALLERY
         </h1>
         <Image
@@ -85,7 +85,7 @@ export default function Gallery() {
                     titleColor={titleColor1}
                     position={getRandom(positions)}
                   />
-                  <p className="font-jersey10 text-2xl text-center text-white my-8 mx-14">
+                  <p className="font-vt323 text-2xl text-center text-white my-8 mx-14">
                     {data[wideIndex].quote}
                   </p>
                 </div>
@@ -115,7 +115,7 @@ export default function Gallery() {
                   />
                 )}
               </div>
-              <p className="hidden sm:block w-full font-jersey10 text-2xl text-center text-white my-8 mx-14">
+              <p className="hidden sm:block w-full font-vt323 text-2xl text-center text-white my-8 mx-14">
                 {squareIndex1 < data.length && data[squareIndex1]?.quote}
               </p>
 
@@ -131,7 +131,7 @@ export default function Gallery() {
                       titleColor={titleColor2}
                       position={getRandom(positions)}
                     />
-                    <p className="font-jersey10 text-2xl text-center text-white my-8 mx-14">
+                    <p className="font-vt323 text-2xl text-center text-white my-8 mx-14">
                       {data[squareIndex1].quote}
                     </p>
                   </div>
@@ -146,7 +146,7 @@ export default function Gallery() {
                       titleColor={titleColor3}
                       position={getRandom(positions)}
                     />
-                    <p className="font-jersey10 text-2xl text-center text-white my-8 mx-14">
+                    <p className="font-vt323 text-2xl text-center text-white my-8 mx-14">
                       {data[squareIndex2].quote}
                     </p>
                   </div>

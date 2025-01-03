@@ -5,7 +5,7 @@ import { Member } from '@/types/member.type';
 
 export const borderVariants = cva(
   [
-    'flex justify-center items-center font-jersey10 border-8 text-[5.3125rem] relative ',
+    'flex justify-center items-center font-vt323 border-8 text-[5.3125rem] relative ',
   ],
   {
     variants: {
@@ -22,7 +22,7 @@ export const borderVariants = cva(
   }
 );
 export const bodyTextVariants = cva(
-  ['font-jersey10 text-[1.9375rem] max-xl:text-center'],
+  ['font-vt323 text-2xl sm:text-4xl md:text-[1.9375rem] max-xl:text-center'],
   {
     variants: {
       bodyTextColor: {
@@ -39,7 +39,7 @@ export const bodyTextVariants = cva(
 );
 export const titleVariants = cva(
   [
-    'px-4 text-[1.9375rem] flex justify-center items-center max-xl:whitespace-nowrap',
+    'px-4 text-2xl sm:text-4xl md:text-[1.9375rem] flex justify-center items-center max-xl:whitespace-nowrap',
   ],
   {
     variants: {
@@ -65,8 +65,8 @@ export const titleVariants = cva(
 
 export interface TeamMembersProps
   extends VariantProps<typeof borderVariants>,
-    VariantProps<typeof bodyTextVariants>,
-    VariantProps<typeof titleVariants> {
+  VariantProps<typeof bodyTextVariants>,
+  VariantProps<typeof titleVariants> {
   members?: Member[];
 }
 
@@ -88,8 +88,7 @@ const TeamMembers: React.FC<TeamMembersProps> = ({
           MEMBERS
         </div>
       </div>
-      {/* <div className={textVariants({ textColor })}>OVERALL MANAGEMENT</div> */}
-      <div className="min-h-[348px] gap-4 py-12 px-10 grid grid-cols-2 grid-rows-2 h-full items-center">
+      <div className="min-h-[348px] gap-4 py-12 px-10 grid grid-cols-1 sm:grid-cols-2 grid-rows-2 h-full items-center">
         {members?.map((value, index) => {
           return (
             <div key={index} className="leading-8 ">
@@ -108,18 +107,3 @@ const TeamMembers: React.FC<TeamMembersProps> = ({
 };
 
 export default TeamMembers;
-
-{
-  /* <TeamGroup />
-<TeamMembers
-  members={[
-    { role: 'Overall Event Director', name: 'Aliya Medida' },
-    {
-      role: 'Deputy Head for Sporting Events',
-      name: 'Ferryl Ken Ganhinhin',
-    },
-    { role: 'Overall Event Head', name: 'Andy Judd Lumain' },
-    { role: 'Head for Correspondence', name: 'Patricia Amor Estrada' },
-  ]}
-/> */
-}

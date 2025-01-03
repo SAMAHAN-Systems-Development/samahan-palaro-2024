@@ -7,7 +7,7 @@ import closingCeremonyData from '../../data/closingCeremonyData.json';
 
 const ClosingCeremony = () => {
   return (
-    <div className="mx-auto w-full max-w-full mt-12">
+    <div className="mx-auto w-full max-w-full">
       {closingCeremonyData.map(({ imageUrl, title }, index) => (
         <div key={index} className="flex flex-col w-full bg-blue shadow-lg">
           <div className="relative w-full h-[358px] mt-24 border-24 border-8 border-pink">
@@ -20,10 +20,9 @@ const ClosingCeremony = () => {
               priority
             />
           </div>
-
           <div className="w-full p-8 px-48">
             <div className="flex flex-col md:flex-row items-center justify-between mb-6">
-              <div className="font-jersey10 text-[60px] text-white text-right flex-1 mb-4 md:mb-0">
+              <div className="font-vt323 text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white text-right flex-1 mb-4 md:mb-0">
                 {title}
               </div>
 
