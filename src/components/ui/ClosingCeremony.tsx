@@ -42,7 +42,8 @@ const ClosingCeremony = () => {
           </div>
         ))}
       </div>
-      );
+    </div>
+  );
 };
 
-      export default ClosingCeremony;
+export default ClosingCeremony;
