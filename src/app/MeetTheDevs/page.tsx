@@ -95,7 +95,7 @@ const MeetTheDevs = () => {
 
   return (
     <div className="xsm:px-20 sm:pt-32 text-center flex flex-col items-center justify-center font-chakrapetch mt-16">
-      <h1 className="xl:text-2xl xsm:text-[1.04169rem] font-semibold text-3xl">
+      <h1 className="xl:text-2xl lg:text-2xl md:text-2xl xsm:text-[1.04169rem] font-semibold text-3xl">
         Meet the Developers
       </h1>
       <p className="text-xl mt-7">
@@ -119,7 +119,6 @@ const MeetTheDevs = () => {
 
       {/* Team Heads Section */}
       <div className="mt-12 flex flex-col gap-8">
-        {/* Convert pairs to vertical on small screens */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
           {teamHeads.slice(0, 2).map((head, index) => (
             <Card
@@ -152,25 +151,18 @@ const MeetTheDevs = () => {
         </div>
       </div>
 
-      {/* Developers Section - Convert rows to vertical on small screens */}
-      <div className="mt-12 flex flex-col gap-8">
-        {[0, 1].map((rowIndex) => (
-          <div
-            key={`dev-row-${rowIndex}`}
-            className="flex flex-col md:flex-row justify-center items-center gap-8"
-          >
-            {developers
-              .slice(rowIndex * 4, (rowIndex + 1) * 4)
-              .map((dev, index) => (
-                <Card
-                  key={`dev-${rowIndex}-${index}`}
-                  name={dev.name}
-                  position={dev.position}
-                  imageUrl={dev.imageUrl}
-                />
-              ))}
-          </div>
-        ))}
+      {/* Developers Section - Updated for consistent 2-column layout at medium screens */}
+      <div className="mt-12  max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 justify-items-center">
+          {developers.map((dev, index) => (
+            <Card
+              key={`dev-${index}`}
+              name={dev.name}
+              position={dev.position}
+              imageUrl={dev.imageUrl}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
