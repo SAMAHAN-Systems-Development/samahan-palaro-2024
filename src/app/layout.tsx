@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import { actay, chakrapetch, jersey10, vt323 } from '@/styles/fonts';
 import Navbar from '@/components/ui/Navbar/Navbar';
+import Footer from '@/components/ui/Footer';
 
 export default function RootLayout({
   children,
@@ -14,6 +15,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
