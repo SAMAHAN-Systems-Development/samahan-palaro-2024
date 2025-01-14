@@ -12,39 +12,39 @@ const MeetTheDevs = () => {
   const projectManager: Developer = {
     name: 'Jan Patrick Matayabas',
     position: 'Project Manager',
-    imageUrl: '/images/dev-pictures/matayabas.png',
+    imageUrl: '/images/dev-pictures/matayabas.jpg',
   };
 
   const teamHeads: Developer[] = [
     {
       name: 'Francis Rhaey Casas',
       position: 'DevOps Engineer',
-      imageUrl: '/images/dev-pictures/casas.png',
+      imageUrl: '/images/dev-pictures/casas.jpg',
     },
     {
       name: 'Jiyo Seth Valmoria',
       position: 'QA Engineer',
-      imageUrl: '/images/dev-pictures/valmoria.png',
+      imageUrl: '/images/dev-pictures/valmoria.jpg',
     },
     {
       name: 'Angelli Alkuino',
       position: 'UI/UX Head',
-      imageUrl: '/images/dev-pictures/alkuino.png',
+      imageUrl: '/images/dev-pictures/alkuino.jpg',
     },
     {
       name: 'Karl Justin Natividad',
       position: 'UI/UX Developer',
-      imageUrl: '/images/dev-pictures/natividad.png',
+      imageUrl: '/images/dev-pictures/natividad.jpg',
     },
     {
       name: 'Paolo Luis Ramirez',
       position: 'Frontend Head',
-      imageUrl: '/images/dev-pictures/ramirez.png',
+      imageUrl: '/images/dev-pictures/ramirez.jpg',
     },
     {
       name: 'Ivan Sam Wabina',
       position: 'Backend Head',
-      imageUrl: '/images/dev-pictures/wabina.png',
+      imageUrl: '/images/dev-pictures/wabina.jpg',
     },
   ];
 
@@ -53,43 +53,43 @@ const MeetTheDevs = () => {
     {
       name: 'Nica Zoe Dable',
       position: 'Frontend Developer',
-      imageUrl: '/images/dev-pictures/dable.png',
+      imageUrl: '/images/dev-pictures/dable.jpg',
     },
     {
       name: 'Mariel Mabano',
       position: 'Frontend Developer',
-      imageUrl: '/images/dev-pictures/mabano.png',
+      imageUrl: '/images/dev-pictures/mabano.jpg',
     },
     {
       name: 'Ram Christian Nacar',
       position: 'Frontend Developer',
-      imageUrl: '/images/dev-pictures/nacar.png',
+      imageUrl: '/images/dev-pictures/nacar.jpg',
     },
     {
       name: 'Loeejee Miguel Lawas Dulaugon',
       position: 'Frontend Developer',
-      imageUrl: '/images/dev-pictures/dulaugon.png',
+      imageUrl: '/images/dev-pictures/dulaugon.jpg',
     },
     // Second row of developers (4)
     {
       name: 'Mae Angela Espera',
       position: 'Frontend Developer',
-      imageUrl: '/images/dev-pictures/espera.png',
+      imageUrl: '/images/dev-pictures/espera.jpg',
     },
     {
       name: 'John Kyle Lampa',
       position: 'Frontend Developer',
-      imageUrl: '/images/dev-pictures/lampa.png',
+      imageUrl: '/images/dev-pictures/lampa.jpg',
     },
     {
       name: 'Kervi Asombrado',
       position: 'Frontend Developer',
-      imageUrl: '/images/dev-pictures/asombrado.png',
+      imageUrl: '/images/dev-pictures/asombrado.jpg',
     },
     {
       name: 'Marc Linnus Vales',
       position: 'Frontend Developer',
-      imageUrl: '/images/dev-pictures/vales.png',
+      imageUrl: '/images/dev-pictures/vales.jpg',
     },
   ];
 
