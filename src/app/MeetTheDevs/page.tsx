@@ -1,6 +1,12 @@
 import Link from 'next/link';
 import React from 'react';
 import Card from '../../components/ui/Card';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Meet the Developers | SAMAHAN Palaro 2024',
+  description: 'Meet the developers behind the SAMAHAN Palaro 2024 website.',
+};
 
 interface Developer {
   name: string;
