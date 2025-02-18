@@ -65,8 +65,8 @@ export const titleVariants = cva(
 
 export interface TeamMembersProps
   extends VariantProps<typeof borderVariants>,
-  VariantProps<typeof bodyTextVariants>,
-  VariantProps<typeof titleVariants> {
+    VariantProps<typeof bodyTextVariants>,
+    VariantProps<typeof titleVariants> {
   members?: Member[];
 }
 
