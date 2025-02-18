@@ -2,6 +2,7 @@ import SportsSection from '@/components/section/SportsSection';
 import ClosingCeremony from '@/components/ui/ClosingCeremony';
 import HeroSection from '@/components/section/HeroSection';
 import type { Metadata } from 'next';
+import Description from '@/components/section/Description';
 
 export const metadata: Metadata = {
   title: 'SAMAHAN Palaro 2024',
@@ -12,9 +13,10 @@ export default function Home() {
   return (
     <main>
       {/* add sections here */}
-      <HeroSection />
-      <ClosingCeremony />
-      <SportsSection />
+      {/* <HeroSection /> */}
+      <Description />
+      {/* <ClosingCeremony />
+      <SportsSection /> */}
     </main>
   );
 }
