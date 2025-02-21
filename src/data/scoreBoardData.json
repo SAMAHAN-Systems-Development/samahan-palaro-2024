@@ -1,0 +1,171 @@
+[
+  {
+    "categoryType": "Advanced Games",
+    "days": [
+      {
+        "day": "Day 1",
+        "sportEvents": [
+          {
+            "sportEvent": "Basketball Men",
+            "games": [
+              {
+                "gameSequence": "firstGame",
+                "teams": [
+                  {
+                    "id": 1,
+                    "image": "bm.png",
+                    "teamName": "BM",
+                    "teamScore": "101"
+                  },
+                  {
+                    "id": 2,
+                    "image": "bm.png",
+                    "teamName": "BM",
+                    "teamScore": "99"
+                  }
+                ]
+              },
+              {
+                "gameSequence": "secondGame",
+                "teams": [
+                  {
+                    "id": 3,
+                    "image": "SON.png",
+                    "teamName": "SON",
+                    "teamScore": "22"
+                  },
+                  {
+                    "id": 4,
+                    "image": "ss.png",
+                    "teamName": "SS",
+                    "teamScore": "23"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "sportEvent": "Volleyball Men",
+            "games": [
+              {
+                "gameSequence": "firstGame",
+                "teams": [
+                  {
+                    "id": 1,
+                    "image": "bm.png",
+                    "teamName": "BM",
+                    "teamScore": "21"
+                  },
+                  {
+                    "id": 2,
+                    "image": "bm.png",
+                    "teamName": "BM",
+                    "teamScore": "23"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": "Day 2",
+        "sportEvents": [
+          {
+            "sportEvent": "Basketball Men",
+            "games": [
+              {
+                "gameSequence": "firstGame",
+                "teams": [
+                  {
+                    "id": 1,
+                    "image": "bm.png",
+                    "teamName": "BM",
+                    "teamScore": "101"
+                  },
+                  {
+                    "id": 2,
+                    "image": "bm.png",
+                    "teamName": "BM",
+                    "teamScore": "99"
+                  }
+                ]
+              },
+              {
+                "gameSequence": "secondGame",
+                "teams": [
+                  {
+                    "id": 3,
+                    "image": "SON.png",
+                    "teamName": "SON",
+                    "teamScore": "22"
+                  },
+                  {
+                    "id": 4,
+                    "image": "ss.png",
+                    "teamName": "SS",
+                    "teamScore": "23"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "sportEvent": "Volleyball Men",
+            "games": [
+              {
+                "gameSequence": "firstGame",
+                "teams": [
+                  {
+                    "id": 1,
+                    "image": "bm.png",
+                    "teamName": "BM",
+                    "teamScore": "21"
+                  },
+                  {
+                    "id": 2,
+                    "image": "bm.png",
+                    "teamName": "BM",
+                    "teamScore": "23"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryType": "Semi Finals Games",
+    "days": [
+      {
+        "day": "Day 1",
+        "sportEvents": [
+          {
+            "sportEvent": "Basketball Men",
+            "games": [
+              {
+                "gameSequence": "semiFinalGame1",
+                "teams": [
+                  {
+                    "id": 5,
+                    "image": "teamA.png",
+                    "teamName": "Team A",
+                    "teamScore": "110"
+                  },
+                  {
+                    "id": 6,
+                    "image": "teamB.png",
+                    "teamName": "Team B",
+                    "teamScore": "105"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
