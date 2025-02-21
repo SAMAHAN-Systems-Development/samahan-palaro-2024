@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main>
       {/* add sections here */}
-      {/* <HeroSection /> */}
+      <HeroSection />
       <Description />
       {/* <ClosingCeremony />
       <SportsSection /> */}
