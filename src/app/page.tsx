@@ -3,6 +3,7 @@ import ClosingCeremony from '@/components/ui/ClosingCeremony';
 import HeroSection from '@/components/section/HeroSection';
 import type { Metadata } from 'next';
 import Description from '@/components/section/Description';
+import ClusterModal from '@/components/ui/ClusterModal';
 
 export const metadata: Metadata = {
   title: 'SAMAHAN Palaro 2024',
@@ -15,6 +16,7 @@ export default function Home() {
       {/* add sections here */}
       <HeroSection />
       <Description />
+      <ClusterModal />
       {/* <ClosingCeremony />
       <SportsSection /> */}
     </main>
