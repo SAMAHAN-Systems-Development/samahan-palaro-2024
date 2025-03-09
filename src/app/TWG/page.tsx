@@ -242,27 +242,25 @@ const TWG = async () => {
           </span>
         </strong>
       </h1>
-      {
-        groups.map((group, index) => {
-          const colorNumber = index % colors.length;
-          return (
-            <TWGSection
-              key={index}
-              {...colors[colorNumber].section}
-              leftSideChild={
-                <TeamGroup {...colors[colorNumber].group}>{group.name}</TeamGroup>
-              }
-              rightSideChild={
-                <TeamMembers
-                  {...colors[colorNumber].members}
-                  members={group.members}
-                />
-              }
-            />
-          );
-        })
-      }
-    </div >
+      {groups.map((group, index) => {
+        const colorNumber = index % colors.length;
+        return (
+          <TWGSection
+            key={index}
+            {...colors[colorNumber].section}
+            leftSideChild={
+              <TeamGroup {...colors[colorNumber].group}>{group.name}</TeamGroup>
+            }
+            rightSideChild={
+              <TeamMembers
+                {...colors[colorNumber].members}
+                members={group.members}
+              />
+            }
+          />
+        );
+      })}
+    </div>
   );
 };
 
