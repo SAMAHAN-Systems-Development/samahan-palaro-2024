@@ -24,7 +24,7 @@ const Footer = () => {
 
             <p>
               Developed by
-              <Link href="/MeetTheDevs">
+              <Link href="/meet_the_devs">
                 <strong> SAMAHAN Systems Development </strong>
               </Link>
             </p>
