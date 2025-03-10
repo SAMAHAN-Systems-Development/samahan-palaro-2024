@@ -23,7 +23,7 @@ const medalColors = {
 const getMedalImage = (
   sportCategory: string,
   eventName: string,
-  placement: 'Gold' | 'Silver' | 'Bronze',
+  placement: 'Silver' | 'Gold' | 'Bronze',
   teamData: Record<string, any>
 ) => {
   const categoryData = teamData[sportCategory];
@@ -42,51 +42,49 @@ const EventRow: React.FC<EventRowProps> = ({
   eventName,
   teamData,
 }) => (
-  <div className="border-4 sm:border-8 border-blue mb-4 overflow-hidden">
+  <div className="border-4 sm:border-8 border-blue mb-2 overflow-hidden">
+    {' '}
+    {/* Reduced margin */}
     <div>
       {/* Event Name */}
-      <div className="font-vt323 text-3xl sm:text-4xl md:text-5xl px-4 pt-4 bg-white text-blue flex items-center justify-center font-bold">
+      <div className="font-vt323 text-3xl sm:text-4xl md:text-5xl px-4 pt-2 bg-white text-blue flex items-center justify-center font-bold">
         {eventName.toUpperCase()}
       </div>
 
       {/* Medal Labels */}
-      <div className="flex text-xs sm:text-sm md:text-base font-bold pt-4">
-        {['Gold', 'Silver', 'Bronze'].map((medal) => (
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 relative mt-8">
+        {' '}
+        {/* Reduced gap and margin-top */}
+        {['Silver', 'Gold', 'Bronze'].map((medal) => (
           <div
             key={medal}
-            className="font-vt323 text-lg sm:text-2xl md:text-4xl py-2 px-2 sm:px-4 flex-1 text-center relative"
+            className={`flex flex-col items-center
+              ${medal === 'Gold' ? 'sm:-mt-4 relative z-20' : ''} 
+            `}
           >
-            <span
-              className={`inline-block  py-1 rounded bg-blue-900 ${medalColors[medal]}`}
-            >
-              {medalDisplayName[medal]}
-            </span>
+            <div className="font-vt323 text-lg sm:text-2xl md:text-4xl py-1 px-2 sm:px-4 text-center">
+              <span
+                className={`inline-block py-1 rounded bg-blue-900 ${medalColors[medal]}`}
+              >
+                {medalDisplayName[medal]}
+              </span>
+            </div>
+            <div className="flex justify-center items-center min-w-[80px]">
+              <Image
+                src={getMedalImage(
+                  sportCategory,
+                  eventName,
+                  medal as 'Gold' | 'Silver' | 'Bronze',
+                  teamData
+                )}
+                alt={`${eventName} ${medal}`}
+                width={medal === 'Gold' ? 180 : 130}
+                height={medal === 'Gold' ? 180 : 130}
+                className={`${medal === 'Gold' ? 'scale-105' : ''}`}
+              />
+            </div>
           </div>
         ))}
-      </div>
-
-      {/* Medal Images */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4">
-        {['Gold', 'Silver', 'Bronze'].map((medal) => {
-          const teamImage = getMedalImage(
-            sportCategory,
-            eventName,
-            medal as 'Gold' | 'Silver' | 'Bronze',
-            teamData
-          );
-          return (
-            <div key={medal} className="flex justify-center items-center">
-              <div className="flex justify-center items-center min-w-[80px]">
-                <Image
-                  src={teamImage}
-                  alt={`${eventName} ${medal}`}
-                  width={150}
-                  height={150}
-                />
-              </div>
-            </div>
-          );
-        })}
       </div>
     </div>
   </div>

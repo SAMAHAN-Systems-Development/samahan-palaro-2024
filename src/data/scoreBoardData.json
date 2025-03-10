@@ -7,17 +7,17 @@
     },
     "Basketball Women": {
       "Gold": "bm.png",
-      "Silver": "nsm.png",
+      "Silver": "SON.png",
       "Bronze": "acc.png"
     },
     "Volleyball Men": {
       "Gold": "ss.png",
-      "Silver": "humlet.png",
+      "Silver": "bm.png",
       "Bronze": "ea.png"
     },
     "Volleyball Women": {
       "Gold": "SON.png",
-      "Silver": "bm.png",
+      "Silver": "humlet.png",
       "Bronze": "ea.png"
     },
     "Football": {
@@ -38,8 +38,8 @@
       "Bronze": "acc.png"
     },
     "Table Tennis Singles Women": {
-      "Gold": "bm.png",
-      "Silver": "ea.png",
+      "Gold": "ss.png",
+      "Silver": "acc.png",
       "Bronze": "nsm.png"
     },
     "Table Tennis Doubles Women": {
@@ -48,14 +48,14 @@
       "Bronze": "SON.png"
     },
     "Badminton Singles Men": {
-      "Gold": "nsm.png",
+      "Gold": "ea.png",
       "Silver": "acc.png",
       "Bronze": "cs.png"
     },
     "Badminton Doubles Men": {
       "Gold": "ss.png",
       "Silver": "bm.png",
-      "Bronze": "nsm.png"
+      "Bronze": "ea.png"
     },
     "Badminton Singles Women": {
       "Gold": "ss.png",
@@ -63,7 +63,7 @@
       "Bronze": "bm.png"
     },
     "Badminton Doubles Women": {
-      "Gold": "ss.png",
+      "Gold": "SON.png",
       "Silver": "ss.png",
       "Bronze": "acc.png"
     }
@@ -72,78 +72,78 @@
     "Swimming Men": {
       "Gold": "bm.png",
       "Silver": "ss.png",
-      "Bronze": "ss.png"
+      "Bronze": "SON.png"
     },
     "Swimming Women": {
-      "Gold": "nsm.png",
-      "Silver": "nsm.png",
-      "Bronze": "ss.png"
+      "Gold": "ea.png",
+      "Silver": "ss.png",
+      "Bronze": "SON.png"
     },
     "Swimming Team": {
-      "Gold": "nsm.png",
-      "Silver": "ss.png",
+      "Gold": "ea.png",
+      "Silver": "bm.png",
       "Bronze": "ss.png"
     }
   },
   "Mind Sports": {
     "Chess Men": {
-      "Gold": "nsm.png",
+      "Gold": "ea.png",
       "Silver": "acc.png",
       "Bronze": "ss.png"
     },
     "Chess Women": {
       "Gold": "acc.png",
       "Silver": "nsm.png",
-      "Bronze": "nsm.png"
+      "Bronze": "ea.png"
     },
     "Scrabble Men": {
       "Gold": "ss.png",
       "Silver": "acc.png",
-      "Bronze": "cs.png"
+      "Bronze": "humlet.png"
     },
     "Scrabble Women": {
-      "Gold": "ss.png",
-      "Silver": "acc.png",
+      "Gold": "acc.png",
+      "Silver": "bm.png",
       "Bronze": "cs.png"
     },
     "Billiards Men": {
-      "Gold": "ss.png",
-      "Silver": "ss.png",
-      "Bronze": "bm.png"
+      "Gold": "ea.png",
+      "Silver": "SON.png",
+      "Bronze": "soe.png"
     },
     "Billiards Women": {
-      "Gold": "ss.png",
+      "Gold": "SON.png",
       "Silver": "ss.png",
-      "Bronze": "ss.png"
+      "Bronze": "bm.png"
     }
   },
   "Target Sports": {
     "Darts Men": {
-      "Gold": "ss.png",
-      "Silver": "nsm.png",
-      "Bronze": "nsm.png"
+      "Gold": "ea.png",
+      "Silver": "humlet.png",
+      "Bronze": "SON.png"
     },
     "Darts Women": {
-      "Gold": "cs.png",
-      "Silver": "ss.png",
+      "Gold": "SON.png",
+      "Silver": "humlet.png",
       "Bronze": "nsm.png"
     }
   },
   "Esports": {
     "DOTA2": {
-      "Gold": "ss.png",
-      "Silver": "nsm.png",
-      "Bronze": "cs.png"
+      "Gold": "ea.png",
+      "Silver": "cs.png",
+      "Bronze": "bm.png"
     },
     "MLBB": {
-      "Gold": "ss.png",
+      "Gold": "ea.png",
       "Silver": "acc.png",
-      "Bronze": "nsm.png"
+      "Bronze": "ss.png"
     },
     "VALORANT": {
       "Gold": "bm.png",
-      "Silver": "nsm.png",
-      "Bronze": "nsm.png"
+      "Silver": "cs.png",
+      "Bronze": "SON.png"
     }
   },
   "Performance Sports": {
