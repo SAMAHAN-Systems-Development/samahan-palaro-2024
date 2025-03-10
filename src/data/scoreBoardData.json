@@ -1,171 +1,156 @@
-[
-  {
-    "categoryType": "Advanced Games",
-    "days": [
-      {
-        "day": "Day 1",
-        "sportEvents": [
-          {
-            "sportEvent": "Basketball Men",
-            "games": [
-              {
-                "gameSequence": "firstGame",
-                "teams": [
-                  {
-                    "id": 1,
-                    "image": "bm.png",
-                    "teamName": "BM",
-                    "teamScore": "101"
-                  },
-                  {
-                    "id": 2,
-                    "image": "bm.png",
-                    "teamName": "BM",
-                    "teamScore": "99"
-                  }
-                ]
-              },
-              {
-                "gameSequence": "secondGame",
-                "teams": [
-                  {
-                    "id": 3,
-                    "image": "SON.png",
-                    "teamName": "SON",
-                    "teamScore": "22"
-                  },
-                  {
-                    "id": 4,
-                    "image": "ss.png",
-                    "teamName": "SS",
-                    "teamScore": "23"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "sportEvent": "Volleyball Men",
-            "games": [
-              {
-                "gameSequence": "firstGame",
-                "teams": [
-                  {
-                    "id": 1,
-                    "image": "bm.png",
-                    "teamName": "BM",
-                    "teamScore": "21"
-                  },
-                  {
-                    "id": 2,
-                    "image": "bm.png",
-                    "teamName": "BM",
-                    "teamScore": "23"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "day": "Day 2",
-        "sportEvents": [
-          {
-            "sportEvent": "Basketball Men",
-            "games": [
-              {
-                "gameSequence": "firstGame",
-                "teams": [
-                  {
-                    "id": 1,
-                    "image": "bm.png",
-                    "teamName": "BM",
-                    "teamScore": "101"
-                  },
-                  {
-                    "id": 2,
-                    "image": "bm.png",
-                    "teamName": "BM",
-                    "teamScore": "99"
-                  }
-                ]
-              },
-              {
-                "gameSequence": "secondGame",
-                "teams": [
-                  {
-                    "id": 3,
-                    "image": "SON.png",
-                    "teamName": "SON",
-                    "teamScore": "22"
-                  },
-                  {
-                    "id": 4,
-                    "image": "ss.png",
-                    "teamName": "SS",
-                    "teamScore": "23"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "sportEvent": "Volleyball Men",
-            "games": [
-              {
-                "gameSequence": "firstGame",
-                "teams": [
-                  {
-                    "id": 1,
-                    "image": "bm.png",
-                    "teamName": "BM",
-                    "teamScore": "21"
-                  },
-                  {
-                    "id": 2,
-                    "image": "bm.png",
-                    "teamName": "BM",
-                    "teamScore": "23"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
+{
+  "Team Sports": {
+    "Basketball Men": {
+      "Gold": "bm.png",
+      "Silver": "ea.png",
+      "Bronze": "ss.png"
+    },
+    "Basketball Women": {
+      "Gold": "bm.png",
+      "Silver": "nsm.png",
+      "Bronze": "acc.png"
+    },
+    "Volleyball Men": {
+      "Gold": "ss.png",
+      "Silver": "humlet.png",
+      "Bronze": "ea.png"
+    },
+    "Volleyball Women": {
+      "Gold": "SON.png",
+      "Silver": "bm.png",
+      "Bronze": "ea.png"
+    },
+    "Football": {
+      "Gold": "ea.png",
+      "Silver": "nsm.png",
+      "Bronze": "bm.png"
+    }
   },
-  {
-    "categoryType": "Semi Finals Games",
-    "days": [
-      {
-        "day": "Day 1",
-        "sportEvents": [
-          {
-            "sportEvent": "Basketball Men",
-            "games": [
-              {
-                "gameSequence": "semiFinalGame1",
-                "teams": [
-                  {
-                    "id": 5,
-                    "image": "teamA.png",
-                    "teamName": "Team A",
-                    "teamScore": "110"
-                  },
-                  {
-                    "id": 6,
-                    "image": "teamB.png",
-                    "teamName": "Team B",
-                    "teamScore": "105"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
+  "Racket Sports": {
+    "Table Tennis Singles Men": {
+      "Gold": "acc.png",
+      "Silver": "soe.png",
+      "Bronze": "bm.png"
+    },
+    "Table Tennis Doubles Men": {
+      "Gold": "bm.png",
+      "Silver": "ea.png",
+      "Bronze": "acc.png"
+    },
+    "Table Tennis Singles Women": {
+      "Gold": "bm.png",
+      "Silver": "ea.png",
+      "Bronze": "nsm.png"
+    },
+    "Table Tennis Doubles Women": {
+      "Gold": "nsm.png",
+      "Silver": "ss.png",
+      "Bronze": "SON.png"
+    },
+    "Badminton Singles Men": {
+      "Gold": "nsm.png",
+      "Silver": "acc.png",
+      "Bronze": "cs.png"
+    },
+    "Badminton Doubles Men": {
+      "Gold": "ss.png",
+      "Silver": "bm.png",
+      "Bronze": "nsm.png"
+    },
+    "Badminton Singles Women": {
+      "Gold": "ss.png",
+      "Silver": "nsm.png",
+      "Bronze": "bm.png"
+    },
+    "Badminton Doubles Women": {
+      "Gold": "ss.png",
+      "Silver": "ss.png",
+      "Bronze": "acc.png"
+    }
+  },
+  "Water Sports": {
+    "Swimming Men": {
+      "Gold": "bm.png",
+      "Silver": "ss.png",
+      "Bronze": "ss.png"
+    },
+    "Swimming Women": {
+      "Gold": "nsm.png",
+      "Silver": "nsm.png",
+      "Bronze": "ss.png"
+    },
+    "Swimming Team": {
+      "Gold": "nsm.png",
+      "Silver": "ss.png",
+      "Bronze": "ss.png"
+    }
+  },
+  "Mind Sports": {
+    "Chess Men": {
+      "Gold": "nsm.png",
+      "Silver": "acc.png",
+      "Bronze": "ss.png"
+    },
+    "Chess Women": {
+      "Gold": "acc.png",
+      "Silver": "nsm.png",
+      "Bronze": "nsm.png"
+    },
+    "Scrabble Men": {
+      "Gold": "ss.png",
+      "Silver": "acc.png",
+      "Bronze": "cs.png"
+    },
+    "Scrabble Women": {
+      "Gold": "ss.png",
+      "Silver": "acc.png",
+      "Bronze": "cs.png"
+    },
+    "Billiards Men": {
+      "Gold": "ss.png",
+      "Silver": "ss.png",
+      "Bronze": "bm.png"
+    },
+    "Billiards Women": {
+      "Gold": "ss.png",
+      "Silver": "ss.png",
+      "Bronze": "ss.png"
+    }
+  },
+  "Target Sports": {
+    "Darts Men": {
+      "Gold": "ss.png",
+      "Silver": "nsm.png",
+      "Bronze": "nsm.png"
+    },
+    "Darts Women": {
+      "Gold": "cs.png",
+      "Silver": "ss.png",
+      "Bronze": "nsm.png"
+    }
+  },
+  "Esports": {
+    "DOTA2": {
+      "Gold": "ss.png",
+      "Silver": "nsm.png",
+      "Bronze": "cs.png"
+    },
+    "MLBB": {
+      "Gold": "ss.png",
+      "Silver": "acc.png",
+      "Bronze": "nsm.png"
+    },
+    "VALORANT": {
+      "Gold": "bm.png",
+      "Silver": "nsm.png",
+      "Bronze": "nsm.png"
+    }
+  },
+  "Performance Sports": {
+    "Cheerdance": {
+      "Gold": "SON.png",
+      "Silver": "bm.png",
+      "Bronze": "acc.png"
+    }
   }
-]
+}

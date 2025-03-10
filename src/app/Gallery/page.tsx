@@ -12,10 +12,17 @@ const getRandom = <T,>(arr: readonly T[]): T =>
   arr[Math.floor(Math.random() * arr.length)];
 export default function Gallery() {
   const borderColors = ['pink', 'white', 'green'] as const;
-  type BorderColor = typeof borderColors[number];
+  type BorderColor = (typeof borderColors)[number];
 
   // Define the title colors associated with each border color
-  type TitleColor = 'pinkWhite' | 'pinkGreen' | 'pinkBlue' | 'greenPink' | 'greenBlue' | 'whiteBlue' | 'whitePink';
+  type TitleColor =
+    | 'pinkWhite'
+    | 'pinkGreen'
+    | 'pinkBlue'
+    | 'greenPink'
+    | 'greenBlue'
+    | 'whiteBlue'
+    | 'whitePink';
   const titleColors: Record<BorderColor, TitleColor[]> = {
     pink: ['pinkWhite', 'pinkGreen', 'pinkBlue'],
     green: ['greenPink', 'greenBlue'],
