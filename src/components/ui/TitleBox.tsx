@@ -47,8 +47,8 @@ const extractSportName = (title: string): string => {
     ' individual',
     ' male',
     ' female',
-    'and',
-    'mixed',
+    ' and',
+    ' mixed',
   ];
 
   let result = lowerTitle;
