@@ -1,4 +1,5 @@
 import GalleryComponent from '@/components/ui/GalleryComponent';
+import TitleBox from '@/components/ui/TitleBox';
 import type { Metadata } from 'next';
 import data from '@/data/sportGalleryData.json';
 import Image from 'next/image';
@@ -71,23 +72,47 @@ export default function Gallery() {
 
       {/* Gallery Loop */}
       <div>
-        {Array.from({ length: Math.ceil((data.length - 1) / 3) }, (_, i) => {
-          const wideIndex = 1 + i * 3; // Start with data[1] and then every
-          const squareIndex1 = 2 + i * 3; // Start with data[2] and then every third item after
-          const squareIndex2 = 3 + i * 3; // Start with data[3] and then every third item after
+        {Array.from({ length: Math.ceil((data.length - 1) / 4) }, (_, i) => {
+          const smallWideIndex = 1 + i * 4;
+          const wideIndex = 2 + i * 4; // Start with data[1] and then every
+          const squareIndex1 = 3 + i * 4; // Start with data[2] and then every third item after
+          const squareIndex2 = 4 + i * 4; // Start with data[3] and then every third item after
 
+          const { borderColor: boxColor } = getRandomColorPair();
           const { borderColor: borderColor1, titleColor: titleColor1 } =
             getRandomColorPair();
           const { borderColor: borderColor2, titleColor: titleColor2 } =
             getRandomColorPair();
           const { borderColor: borderColor3, titleColor: titleColor3 } =
             getRandomColorPair();
+          const { borderColor: borderColor4, titleColor: titleColor4 } =
+            getRandomColorPair();
 
           return (
             <div key={i} className="flex flex-wrap">
+              {/* Titlebox and small wide layout item */}
+              <div className="hidden sm:flex w-full justify-between ">
+                <TitleBox
+                  sportName={data[smallWideIndex].title}
+                  layout="normal"
+                  borderColor={boxColor}
+                  titleColor={boxColor}
+                />
+                {smallWideIndex < data.length && (
+                  <GalleryComponent
+                    image={data[smallWideIndex].image}
+                    sportName={data[smallWideIndex].title}
+                    layout="s_wide"
+                    borderColor={borderColor4}
+                    titleColor={titleColor4}
+                    position={getRandom(positions)}
+                  />
+                )}
+              </div>
+
               {/* Wide layout item */}
               {wideIndex < data.length && (
-                <div className="w-full">
+                <div className="hidden sm:flex w-full">
                   <GalleryComponent
                     image={data[wideIndex].image}
                     sportName={data[wideIndex].title}
@@ -96,9 +121,6 @@ export default function Gallery() {
                     titleColor={titleColor1}
                     position={getRandom(positions)}
                   />
-                  <p className="font-vt323 text-2xl text-center text-white my-8 mx-14">
-                    {data[wideIndex].quote}
-                  </p>
                 </div>
               )}
 
@@ -126,14 +148,41 @@ export default function Gallery() {
                   />
                 )}
               </div>
-              <p className="hidden sm:block w-full font-vt323 text-2xl text-center text-white my-8 mx-14">
-                {squareIndex1 < data.length && data[squareIndex1]?.quote}
-              </p>
 
               {/* Render everything in wide layout for small screens */}
               <div className="block sm:hidden w-full">
+                <TitleBox
+                  sportName={data[smallWideIndex].title}
+                  layout="wide"
+                  borderColor={boxColor}
+                  titleColor={boxColor}
+                />
+                {smallWideIndex < data.length && (
+                  <div className="w-full ">
+                    <GalleryComponent
+                      image={data[smallWideIndex].image}
+                      sportName={data[smallWideIndex].title}
+                      layout="wide"
+                      borderColor={borderColor4}
+                      titleColor={titleColor4}
+                      position={getRandom(positions)}
+                    />
+                  </div>
+                )}
+                {wideIndex < data.length && (
+                  <div className="w-full ">
+                    <GalleryComponent
+                      image={data[wideIndex].image}
+                      sportName={data[wideIndex].title}
+                      layout="wide"
+                      borderColor={borderColor1}
+                      titleColor={titleColor1}
+                      position={getRandom(positions)}
+                    />
+                  </div>
+                )}
                 {squareIndex1 < data.length && (
-                  <div className="w-full mb-4">
+                  <div className="w-full ">
                     <GalleryComponent
                       image={data[squareIndex1].image}
                       sportName={data[squareIndex1].title}
@@ -142,13 +191,10 @@ export default function Gallery() {
                       titleColor={titleColor2}
                       position={getRandom(positions)}
                     />
-                    <p className="font-vt323 text-2xl text-center text-white my-8 mx-14">
-                      {data[squareIndex1].quote}
-                    </p>
                   </div>
                 )}
                 {squareIndex2 < data.length && (
-                  <div className="w-full mb-4">
+                  <div className="w-full ">
                     <GalleryComponent
                       image={data[squareIndex2].image}
                       sportName={data[squareIndex2].title}
@@ -157,9 +203,6 @@ export default function Gallery() {
                       titleColor={titleColor3}
                       position={getRandom(positions)}
                     />
-                    <p className="font-vt323 text-2xl text-center text-white my-8 mx-14">
-                      {data[squareIndex2].quote}
-                    </p>
                   </div>
                 )}
               </div>
