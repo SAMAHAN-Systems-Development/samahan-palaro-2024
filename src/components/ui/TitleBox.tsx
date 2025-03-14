@@ -19,7 +19,7 @@ const titleBoxStyles = cva('overflow-hidden font-vt323', {
     },
     bgColor: {
       pink: 'bg-pink',
-      white: 'bg-white',
+      blue: 'bg-blue',
       green: 'bg-green',
     },
   },
@@ -30,7 +30,7 @@ interface TitleBoxComponentProps extends VariantProps<typeof titleBoxStyles> {
   layout?: 'wide' | 'normal';
   borderColor?: 'pink' | 'white' | 'green';
   titleColor?: 'pink' | 'white' | 'green';
-  bgColor?: 'pink' | 'white' | 'green';
+  bgColor?: 'pink' | 'blue' | 'green';
 }
 
 const extractSportName = (title: string): string => {
@@ -74,14 +74,14 @@ const TitleBox: FC<TitleBoxComponentProps> = ({
 
   return (
     <div
-      className={`${titleBoxStyles({ layout })} flex justify-center items-center`}
+      className={`${titleBoxStyles({ layout, bgColor })} flex justify-center items-center`}
     >
       <div
-        className={`${titleBoxStyles({ borderColor })} relative flex items-center h-fit w-fit`}
+        className={`${titleBoxStyles({ borderColor })} mx-5 relative flex items-center h-fit w-fit`}
       >
         {sportName && (
           <div
-            className={`${titleBoxStyles({ titleColor })} min-w-44 text-7xl p-2 text-center mx-14`}
+            className={`${titleBoxStyles({ titleColor })} min-w-44 text-5xl md:text-6xl lg:text-7xl p-2 text-center mx-14`}
           >
             {extractedSportName}
           </div>
