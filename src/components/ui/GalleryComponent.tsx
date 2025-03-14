@@ -62,7 +62,7 @@ const GalleryComponent: FC<GalleryComponentProps> = ({
     >
       {sportName && (
         <div
-          className={`${galleryStyles({ titleColor, position })} min-w-44 text-4 md:text-lg lg:text-3xl p-2 text-center mx-14`}
+          className={`${galleryStyles({ titleColor, position })} min-w-44 text-2xl md:text-3xl lg:text-4xl p-2 md:p-3 lg:p-4 text-center mx-14`}
         >
           {sportName}
         </div>
