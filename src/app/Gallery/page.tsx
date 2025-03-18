@@ -1,4 +1,5 @@
 import GalleryComponent from '@/components/ui/GalleryComponent';
+import TitleBox from '@/components/ui/TitleBox';
 import type { Metadata } from 'next';
 import data from '@/data/sportGalleryData.json';
 import Image from 'next/image';
@@ -13,6 +14,9 @@ const getRandom = <T,>(arr: readonly T[]): T =>
 export default function Gallery() {
   const borderColors = ['pink', 'white', 'green'] as const;
   type BorderColor = (typeof borderColors)[number];
+
+  const bgColors = ['pink', 'green', 'blue'] as const;
+  type BgColor = (typeof bgColors)[number];
 
   // Define the title colors associated with each border color
   type TitleColor =
@@ -29,11 +33,28 @@ export default function Gallery() {
     white: ['whiteBlue', 'whitePink'],
   };
 
+  const getValidBgColor = (borderColor: BorderColor): BgColor => {
+    // Filter out green if borderColor is white (to avoid contrast issues)
+    const availableBgColors = bgColors.filter((color) => {
+      if (color === 'green' && borderColor === 'white') return false; // green bg + white border is bad contrast
+      if (color === borderColor) return false;
+      return true;
+    });
+
+    return getRandom(availableBgColors);
+  };
+
   const getRandomColorPair = () => {
     const randomBorderColor = getRandom(borderColors);
     const matchingTitleColors = titleColors[randomBorderColor];
     const randomTitleColor = getRandom(matchingTitleColors);
-    return { borderColor: randomBorderColor, titleColor: randomTitleColor };
+    const randomBgColor = getValidBgColor(randomBorderColor);
+
+    return {
+      borderColor: randomBorderColor,
+      titleColor: randomTitleColor,
+      bgColor: randomBgColor,
+    };
   };
 
   const positions = [
@@ -45,23 +66,34 @@ export default function Gallery() {
 
   return (
     <main className="bg-blue pt-20">
-      {/* Display the first item */}
-      <div>
-        <GalleryComponent
-          image={data[0].image}
-          sportName={data[0].title}
-          layout="wide"
-          borderColor="green"
-        />
-      </div>
-
       {/* Gallery header */}
       <div className="flex justify-center items-center pt-8 pb-24 px-10 text-center">
-        <h1 className="font-vt323 text-green pr-4 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-          <span className="text-pink">PALARO</span> PHOTO GALLERY
-        </h1>
         <Image
           src="/images/sports-picture/Vector.png"
+          alt="Gallery Opening Image"
+          width={50}
+          height={50}
+          className="rotate-180 object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
+        />
+        <Image
+          src="/images/sports-picture/Vector.png"
+          alt="Gallery Opening Image"
+          width={50}
+          height={50}
+          className="rotate-180 object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
+        />
+        <h1 className="font-vt323 text-green px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+          <span className="text-pink">BEHIND</span> THE SCENES
+        </h1>
+        <Image
+          src="/images/sports-picture/Vector2.png"
+          alt="Gallery Opening Image"
+          width={50}
+          height={50}
+          className="object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
+        />
+        <Image
+          src="/images/sports-picture/Vector2.png"
           alt="Gallery Opening Image"
           width={50}
           height={50}
@@ -71,23 +103,49 @@ export default function Gallery() {
 
       {/* Gallery Loop */}
       <div>
-        {Array.from({ length: Math.ceil((data.length - 1) / 3) }, (_, i) => {
-          const wideIndex = 1 + i * 3; // Start with data[1] and then every
-          const squareIndex1 = 2 + i * 3; // Start with data[2] and then every third item after
-          const squareIndex2 = 3 + i * 3; // Start with data[3] and then every third item after
+        {Array.from({ length: Math.ceil((data.length - 1) / 4) }, (_, i) => {
+          const smallWideIndex = 1 + i * 4;
+          const wideIndex = 2 + i * 4; // Start with data[1] and then every
+          const squareIndex1 = 3 + i * 4; // Start with data[2] and then every third item after
+          const squareIndex2 = 4 + i * 4; // Start with data[3] and then every third item after
 
+          const { borderColor: boxColor, bgColor: boxBgColor } =
+            getRandomColorPair();
           const { borderColor: borderColor1, titleColor: titleColor1 } =
             getRandomColorPair();
           const { borderColor: borderColor2, titleColor: titleColor2 } =
             getRandomColorPair();
           const { borderColor: borderColor3, titleColor: titleColor3 } =
             getRandomColorPair();
+          const { borderColor: borderColor4, titleColor: titleColor4 } =
+            getRandomColorPair();
 
           return (
             <div key={i} className="flex flex-wrap">
+              {/* Titlebox and small wide layout item */}
+              <div className="hidden sm:flex w-full justify-between ">
+                <TitleBox
+                  sportName={data[smallWideIndex].title}
+                  layout="normal"
+                  borderColor={boxColor}
+                  titleColor={boxColor}
+                  bgColor={boxBgColor}
+                />
+                {smallWideIndex < data.length && (
+                  <GalleryComponent
+                    image={data[smallWideIndex].image}
+                    sportName={data[smallWideIndex].title}
+                    layout="s_wide"
+                    borderColor={borderColor4}
+                    titleColor={titleColor4}
+                    position={getRandom(positions)}
+                  />
+                )}
+              </div>
+
               {/* Wide layout item */}
               {wideIndex < data.length && (
-                <div className="w-full">
+                <div className="hidden sm:flex w-full">
                   <GalleryComponent
                     image={data[wideIndex].image}
                     sportName={data[wideIndex].title}
@@ -96,9 +154,6 @@ export default function Gallery() {
                     titleColor={titleColor1}
                     position={getRandom(positions)}
                   />
-                  <p className="font-vt323 text-2xl text-center text-white my-8 mx-14">
-                    {data[wideIndex].quote}
-                  </p>
                 </div>
               )}
 
@@ -126,14 +181,42 @@ export default function Gallery() {
                   />
                 )}
               </div>
-              <p className="hidden sm:block w-full font-vt323 text-2xl text-center text-white my-8 mx-14">
-                {squareIndex1 < data.length && data[squareIndex1]?.quote}
-              </p>
 
               {/* Render everything in wide layout for small screens */}
               <div className="block sm:hidden w-full">
+                <TitleBox
+                  sportName={data[smallWideIndex].title}
+                  layout="wide"
+                  borderColor={boxColor}
+                  titleColor={boxColor}
+                  bgColor={boxBgColor}
+                />
+                {smallWideIndex < data.length && (
+                  <div className="w-full ">
+                    <GalleryComponent
+                      image={data[smallWideIndex].image}
+                      sportName={data[smallWideIndex].title}
+                      layout="wide"
+                      borderColor={borderColor4}
+                      titleColor={titleColor4}
+                      position={getRandom(positions)}
+                    />
+                  </div>
+                )}
+                {wideIndex < data.length && (
+                  <div className="w-full ">
+                    <GalleryComponent
+                      image={data[wideIndex].image}
+                      sportName={data[wideIndex].title}
+                      layout="wide"
+                      borderColor={borderColor1}
+                      titleColor={titleColor1}
+                      position={getRandom(positions)}
+                    />
+                  </div>
+                )}
                 {squareIndex1 < data.length && (
-                  <div className="w-full mb-4">
+                  <div className="w-full ">
                     <GalleryComponent
                       image={data[squareIndex1].image}
                       sportName={data[squareIndex1].title}
@@ -142,13 +225,10 @@ export default function Gallery() {
                       titleColor={titleColor2}
                       position={getRandom(positions)}
                     />
-                    <p className="font-vt323 text-2xl text-center text-white my-8 mx-14">
-                      {data[squareIndex1].quote}
-                    </p>
                   </div>
                 )}
                 {squareIndex2 < data.length && (
-                  <div className="w-full mb-4">
+                  <div className="w-full ">
                     <GalleryComponent
                       image={data[squareIndex2].image}
                       sportName={data[squareIndex2].title}
@@ -157,9 +237,6 @@ export default function Gallery() {
                       titleColor={titleColor3}
                       position={getRandom(positions)}
                     />
-                    <p className="font-vt323 text-2xl text-center text-white my-8 mx-14">
-                      {data[squareIndex2].quote}
-                    </p>
                   </div>
                 )}
               </div>
