@@ -8,7 +8,7 @@ const currentYear = getCurrentYear();
 
 const Footer = () => {
   return (
-    <div className="px-8 py-5 font-chakrapetch pb-10 text-center w-full flex justify-center items-center mt-[2.625rem] bg-blue text-white">
+    <div className="px-8 py-5 font-chakrapetch pb-10 text-center w-full flex justify-center items-center bg-blue text-white">
       <div className="flex flex-col w-full mx-[50px]">
         <div
           id="credits"

@@ -1,4 +1,3 @@
-import SportsSection from '@/components/section/SportsSection';
 import HeroSection from '@/components/section/HeroSection';
 import type { Metadata } from 'next';
 import Description from '@/components/section/Description';

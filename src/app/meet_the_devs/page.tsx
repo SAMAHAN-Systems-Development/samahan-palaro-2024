@@ -100,7 +100,7 @@ const MeetTheDevs = () => {
   ];
 
   return (
-    <div className="xsm:px-20 sm:pt-32 text-center flex flex-col items-center justify-center font-chakrapetch mt-16">
+    <div className="xsm:px-20 sm:pt-32 text-center flex flex-col items-center justify-center font-chakrapetch mb-40">
       <h1 className="xl:text-2xl lg:text-2xl md:text-2xl xsm:text-[1.04169rem] font-semibold text-3xl">
         Meet the Developers
       </h1>
