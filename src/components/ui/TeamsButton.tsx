@@ -2,10 +2,24 @@ import React from 'react';
 import Image from 'next/image';
 import imageMap from '@/utils/imageMapper';
 
+type MedalPlacement = 'Gold' | 'Silver' | 'Bronze';
+
+type EventData = {
+  [eventName: string]: {
+    [key in MedalPlacement]?: string;
+  } & Record<string, string>;
+};
+
+type TeamData = {
+  [sportCategory: string]: {
+    [key in MedalPlacement]?: string;
+  } & EventData;
+};
+
 type EventRowProps = {
   sportCategory: string;
   eventName: string;
-  teamData: Record<string, any>;
+  teamData: TeamData;
 };
 
 const medalDisplayName = {
@@ -23,8 +37,8 @@ const medalColors = {
 const getMedalImage = (
   sportCategory: string,
   eventName: string,
-  placement: 'Silver' | 'Gold' | 'Bronze',
-  teamData: Record<string, any>
+  placement: MedalPlacement,
+  teamData: TeamData
 ) => {
   const categoryData = teamData[sportCategory];
   if (categoryData) {
@@ -64,9 +78,9 @@ const EventRow: React.FC<EventRowProps> = ({
           >
             <div className="font-vt323 text-lg sm:text-2xl md:text-4xl py-1 px-2 sm:px-4 text-center">
               <span
-                className={`inline-block py-1 rounded bg-blue-900 ${medalColors[medal]}`}
+                className={`inline-block py-1 rounded bg-blue-900 ${medalColors[medal as keyof typeof medalColors]}`}
               >
-                {medalDisplayName[medal]}
+                {medalDisplayName[medal as keyof typeof medalDisplayName]}
               </span>
             </div>
             <div className="flex justify-center items-center min-w-[80px]">
@@ -74,7 +88,7 @@ const EventRow: React.FC<EventRowProps> = ({
                 src={getMedalImage(
                   sportCategory,
                   eventName,
-                  medal as 'Gold' | 'Silver' | 'Bronze',
+                  medal as MedalPlacement,
                   teamData
                 )}
                 alt={`${eventName} ${medal}`}
