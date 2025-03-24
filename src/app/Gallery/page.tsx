@@ -80,6 +80,7 @@ export default function Gallery() {
           alt="Gallery Opening Image"
           width={50}
           height={50}
+          priority
           className="rotate-180 object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
         />
         <h1 className="font-vt323 text-green px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
@@ -90,6 +91,7 @@ export default function Gallery() {
           alt="Gallery Opening Image"
           width={50}
           height={50}
+          priority
           className="object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
         />
         <Image
