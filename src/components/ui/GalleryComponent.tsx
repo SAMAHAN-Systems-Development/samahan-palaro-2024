@@ -38,13 +38,13 @@ interface GalleryComponentProps extends VariantProps<typeof galleryStyles> {
   layout?: 's_wide' | 'wide' | 'square';
   borderColor?: 'pink' | 'white' | 'green';
   titleColor?:
-    | 'pinkWhite'
-    | 'pinkGreen'
-    | 'pinkBlue'
-    | 'greenPink'
-    | 'greenBlue'
-    | 'whiteBlue'
-    | 'whitePink';
+  | 'pinkWhite'
+  | 'pinkGreen'
+  | 'pinkBlue'
+  | 'greenPink'
+  | 'greenBlue'
+  | 'whiteBlue'
+  | 'whitePink';
   position?: 'upperLeft' | 'upperRight' | 'lowerLeft' | 'lowerRight';
 }
 

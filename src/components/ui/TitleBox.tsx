@@ -81,7 +81,7 @@ const TitleBox: FC<TitleBoxComponentProps> = ({
       >
         {sportName && (
           <div
-            className={`${titleBoxStyles({ titleColor })} min-w-44 text-5xl md:text-6xl lg:text-7xl p-2 text-center mx-14`}
+            className={`${titleBoxStyles({ titleColor })} min-w-44 text-5xl md:text-6xl lg:text-8xl p-2 text-center`}
           >
             {extractedSportName}
           </div>

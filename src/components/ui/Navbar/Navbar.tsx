@@ -10,7 +10,7 @@ const Navbar: FC = () => {
 
   const menuItems = [
     { href: '/', label: 'HOME' },
-    { href: '/gallery', label: 'GALLERY' },
+    { href: '/Gallery', label: 'GALLERY' },
     { href: '/TWG', label: 'TWG' },
   ];
 
@@ -41,8 +41,8 @@ const Navbar: FC = () => {
 
           <ul
             className={`flex flex-col lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0 py-4 font-vt323 ${isMenuOpen
-                ? 'absolute top-[100px] left-0 w-full bg-blue shadow-lg'
-                : 'hidden lg:flex lg:justify-end'
+              ? 'absolute top-[100px] left-0 w-full bg-blue shadow-lg'
+              : 'hidden lg:flex lg:justify-end'
               }`}
           >
             {menuItems.map(({ href, label }) => (
