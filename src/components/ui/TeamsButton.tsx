@@ -57,7 +57,6 @@ const EventRow: React.FC<EventRowProps> = ({
   teamData,
 }) => (
   <div className="border-4 sm:border-8 border-blue mb-2 overflow-hidden">
-    {' '}
     {/* Reduced margin */}
     <div>
       {/* Event Name */}
@@ -67,12 +66,14 @@ const EventRow: React.FC<EventRowProps> = ({
 
       {/* Medal Labels */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 relative mt-8">
-        {' '}
         {/* Reduced gap and margin-top */}
-        {['Silver', 'Gold', 'Bronze'].map((medal) => (
+        {['Gold', 'Silver', 'Bronze'].map((medal) => (
           <div
             key={medal}
             className={`flex flex-col items-center
+               ${medal === 'Gold' ? 'sm:order-2' : ''}
+              ${medal === 'Silver' ? 'sm:order-1' : ''}
+              ${medal === 'Bronze' ? 'sm:order-3' : ''}
               ${medal === 'Gold' ? 'sm:-mt-4 relative z-20' : ''} 
             `}
           >
@@ -92,9 +93,9 @@ const EventRow: React.FC<EventRowProps> = ({
                   teamData
                 )}
                 alt={`${eventName} ${medal}`}
-                width={medal === 'Gold' ? 180 : 130}
-                height={medal === 'Gold' ? 180 : 130}
-                className={`${medal === 'Gold' ? 'scale-105' : ''}`}
+                width={130}
+                height={130}
+                className={`w-[130px] h-[130px] md:w-[${medal === 'Gold' ? '180px' : '130px'}] md:h-[${medal === 'Gold' ? '180px' : '130px'}] ${medal === 'Gold' ? 'md:scale-105' : ''}`}
               />
             </div>
           </div>
