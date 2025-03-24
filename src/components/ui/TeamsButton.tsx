@@ -44,9 +44,9 @@ const getMedalImage = (
   if (categoryData) {
     const eventData = categoryData[eventName];
     if (eventData && typeof eventData === 'object' && eventData[placement]) {
-      return imageMap[eventData[placement]] || null;
+      return imageMap[eventData[placement] as keyof typeof imageMap] || null;
     }
-    return imageMap[categoryData[placement]] || null;
+    return imageMap[categoryData[placement] as keyof typeof imageMap] || null;
   }
   return null;
 };
@@ -86,12 +86,14 @@ const EventRow: React.FC<EventRowProps> = ({
             </div>
             <div className="flex justify-center items-center min-w-[80px]">
               <Image
-                src={getMedalImage(
-                  sportCategory,
-                  eventName,
-                  medal as MedalPlacement,
-                  teamData
-                )}
+                src={
+                  getMedalImage(
+                    sportCategory,
+                    eventName,
+                    medal as MedalPlacement,
+                    teamData
+                  ) || '/placeholder.png'
+                }
                 alt={`${eventName} ${medal}`}
                 width={130}
                 height={130}
