@@ -1,4 +1,5 @@
-import type { Config } from 'tailwindcss';
+import { type Config } from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 const config: Config = {
   content: [
@@ -14,12 +15,12 @@ const config: Config = {
         jersey10: ['var(--font-jersey-10)'],
         vt323: ['var(--font-vt323)'],
       },
-    },
-    colors: {
-      green: 'rgb(var(--color-green) / <alpha-value>)',
-      blue: 'rgb(var(--color-blue) / <alpha-value>)',
-      white: 'rgb(var(--color-white) / <alpha-value>)',
-      pink: 'rgb(var(--color-pink) / <alpha-value>)',
+      colors: {
+        green: 'rgb(var(--color-green) / <alpha-value>)',
+        blue: 'rgb(var(--color-blue) / <alpha-value>)',
+        white: 'rgb(var(--color-white) / <alpha-value>)',
+        pink: 'rgb(var(--color-pink) / <alpha-value>)',
+      },
     },
     screens: {
       xsm: '0px',
@@ -32,4 +33,5 @@ const config: Config = {
   },
   plugins: [],
 } satisfies Config;
+
 export default config;

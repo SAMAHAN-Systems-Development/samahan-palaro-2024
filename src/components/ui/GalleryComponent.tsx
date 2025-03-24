@@ -5,6 +5,7 @@ import Image from 'next/image';
 const galleryStyles = cva('overflow-hidden font-vt323', {
   variants: {
     layout: {
+      s_wide: 'w-3/5 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px]',
       wide: 'w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px]',
       square: 'w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px]',
     },
@@ -34,7 +35,7 @@ const galleryStyles = cva('overflow-hidden font-vt323', {
 interface GalleryComponentProps extends VariantProps<typeof galleryStyles> {
   image: string;
   sportName: string;
-  layout?: 'wide' | 'square';
+  layout?: 's_wide' | 'wide' | 'square';
   borderColor?: 'pink' | 'white' | 'green';
   titleColor?:
     | 'pinkWhite'
@@ -61,7 +62,7 @@ const GalleryComponent: FC<GalleryComponentProps> = ({
     >
       {sportName && (
         <div
-          className={`${galleryStyles({ titleColor, position })} min-w-44 text-4 md:text-lg lg:text-3xl p-2 text-center mx-14`}
+          className={`${galleryStyles({ titleColor, position })} min-w-44 text-2xl md:text-3xl lg:text-4xl p-2 md:p-3 lg:p-4 text-center mx-14`}
         >
           {sportName}
         </div>
@@ -70,14 +71,13 @@ const GalleryComponent: FC<GalleryComponentProps> = ({
         width={600}
         height={600}
         src={`/images/sports-picture/${image}`}
-        alt={sportName || "Image"}
+        alt={sportName || 'Image'}
         className="object-cover w-full h-full"
-        unoptimized
+        quality={75}
+        priority={true}
       />
     </div>
   );
 };
-
-
 
 export default GalleryComponent;

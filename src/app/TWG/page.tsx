@@ -213,6 +213,7 @@ const TWG = async () => {
               alt="arrow"
               className="flex rotate-180 lg:h-16 lg:w-16 md:h-14 md:w-14"
               src={'/images/sports-picture/Vector.png'}
+              quality={50}
             />
             <Image
               height={'20'}
@@ -220,6 +221,7 @@ const TWG = async () => {
               alt="arrow"
               className="flex rotate-180 lg:h-16 lg:w-16 md:h-14 md:w-14"
               src={'/images/sports-picture/Vector.png'}
+              quality={50}
             />
           </span>
           <span className="text-pink">PALARONG</span>{' '}
@@ -242,27 +244,25 @@ const TWG = async () => {
           </span>
         </strong>
       </h1>
-      {
-        groups.map((group, index) => {
-          const colorNumber = index % colors.length;
-          return (
-            <TWGSection
-              key={index}
-              {...colors[colorNumber].section}
-              leftSideChild={
-                <TeamGroup {...colors[colorNumber].group}>{group.name}</TeamGroup>
-              }
-              rightSideChild={
-                <TeamMembers
-                  {...colors[colorNumber].members}
-                  members={group.members}
-                />
-              }
-            />
-          );
-        })
-      }
-    </div >
+      {groups.map((group, index) => {
+        const colorNumber = index % colors.length;
+        return (
+          <TWGSection
+            key={index}
+            {...colors[colorNumber].section}
+            leftSideChild={
+              <TeamGroup {...colors[colorNumber].group}>{group.name}</TeamGroup>
+            }
+            rightSideChild={
+              <TeamMembers
+                {...colors[colorNumber].members}
+                members={group.members}
+              />
+            }
+          />
+        );
+      })}
+    </div>
   );
 };
 

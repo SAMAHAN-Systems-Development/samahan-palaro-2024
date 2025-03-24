@@ -1,9 +1,9 @@
-import SportsSection from '@/components/section/SportsSection';
-import ClosingCeremony from '@/components/ui/ClosingCeremony';
 import HeroSection from '@/components/section/HeroSection';
 import type { Metadata } from 'next';
 import Description from '@/components/section/Description';
-import ClusterModal from '@/components/ui/ClusterModal';
+
+import ScoreboardPage from '@/app/event_winners/page';
+
 
 export const metadata: Metadata = {
   title: 'SAMAHAN Palaro 2024',
@@ -16,9 +16,9 @@ export default function Home() {
       {/* add sections here */}
       <HeroSection />
       <Description />
-      
-      {/* <ClosingCeremony />
-      <SportsSection /> */}
+
+      <ScoreboardPage />
+
     </main>
   );
 }
