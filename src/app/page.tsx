@@ -16,7 +16,7 @@ export default function Home() {
       {/* add sections here */}
       <HeroSection />
       <Description />
-      <ClusterModal />
+      
       {/* <ClosingCeremony />
       <SportsSection /> */}
     </main>
