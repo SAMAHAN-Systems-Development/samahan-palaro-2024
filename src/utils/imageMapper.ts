@@ -9,9 +9,8 @@ import humletImage from '../../public/images/cluster-animals/humlet.png';
 import nsmImage from '../../public/images/cluster-animals/nsm.png';
 import soeImage from '../../public/images/cluster-animals/soe.png';
 import accImage from '../../public/images/cluster-animals/acc.png';
-import { ImageMap } from '@/types';
 
-const imageMap: ImageMap = {
+const imageMap = {
   'SON.png': sonImage,
   'ss.png': ssImage,
   'bm.png': bmImage,
