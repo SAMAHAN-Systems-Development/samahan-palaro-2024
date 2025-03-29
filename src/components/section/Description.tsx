@@ -12,7 +12,7 @@ const Description = () => {
   return (
     <>
       <div
-        className="bg-blue font-jersey10 text-white font-normal align-middle justify-center text-center 
+        className="bg-blue font-vt323 text-white font-normal align-middle justify-center text-center 
                 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 
                 pt-7 sm:pt-11 md:pt-16 lg:pt-20 xl:pt-24 2xl:pt-28 
                 pb-6 sm:pb-8 md:pb-10 lg:pb-12 xl:pb-14 2xl:pb-16 
