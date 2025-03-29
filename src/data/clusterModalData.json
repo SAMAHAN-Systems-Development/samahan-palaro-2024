@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "game_title": "Advanced Games for Basketball",
+        "description": "Lorem ipsum sit dolor amet lorem ipsum gwapo si patrick this is just a placeholder",
+        "image": "cs.png"
+
+    },
+    {
+        "id":2,
+        "game_title": "Advanced Games for Soccer",
+        "description": "Lorem ipsum sit dolor amet lorem ipsum gwapo si patrick this is just a placeholder",
+        "image": "cs.png"
+
+    },
+    {
+        "id":3,
+        "game_title": "Advanced Games for Badminton",
+        "description": "Lorem ipsum sit dolor amet lorem ipsum gwapo si patrick this is just a placeholder",
+        "image": "cs.png"
+
+    }
+]
