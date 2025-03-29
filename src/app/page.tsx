@@ -16,9 +16,7 @@ export default function Home() {
       {/* add sections here */}
       <HeroSection />
       <Description />
-
       <ScoreboardPage />
-
     </main>
   );
 }
