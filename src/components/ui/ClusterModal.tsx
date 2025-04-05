@@ -28,7 +28,7 @@ const ClusterModal: React.FC<ClusterModalProps> = ({ isOpen, onClose, sportData 
                 </button>
 
                 {/* First Row */}
-                <div className="bg-green p-4">
+                <div className="bg-green p-4 md:row-span-1 row-span-2">
                     <Image
                         width={500}
                         height={500}
