@@ -1,59 +1,77 @@
 import React from 'react'
-import clusterData from '../../data/clusterModalData.json'
 import Image from 'next/image';
-const ClusterModal = () => {
-  return (
-    <div className="grid grid-rows-2 grid-cols-3 gap-2 bg-blue p-3 m-3 w-1/2 font-jersey10 text-blue">
-    {/* First Row */}
-    <div className="bg-green p-4">
-        <Image
-            width={500}
-            height={500}
-            className="object-cover w-full h-full"
-            src={`/images/cluster-animals/${clusterData[0].image}`}
-            alt="image"
-        />
-    </div>
-    <div className="bg-green p-4 col-span-2">
-        <div>
-            <h1 className="text-6xl">{clusterData[0].game_title}</h1>
-            <p className="text-lg pt-4">{clusterData[0].description}</p>
+
+interface ClusterModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+    sportData: {
+        id?: number;
+        game_title: string;
+        description: string;
+        image: string;
+    };
+}
+
+const ClusterModal: React.FC<ClusterModalProps> = ({ isOpen, onClose, sportData }) => {
+    if (!isOpen) return null;
+
+    return (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div className="grid grid-rows-2 grid-cols-3 gap-2 bg-blue p-3 m-3 w-3/4 md:w-2/3 lg:w-1/2 font-vt323 text-blue relative">
+                <button
+                    onClick={onClose}
+                    className="absolute -top-4 -right-4 bg-red-500 text-white w-8 h-8 rounded-full"
+                >
+                    X
+                </button>
+
+                {/* First Row */}
+                <div className="bg-green p-4">
+                    <Image
+                        width={500}
+                        height={500}
+                        className="object-cover w-full h-full"
+                        src={`/images/cluster-animals/${sportData.image}`}
+                        alt="image"
+                    />
+                </div>
+                <div className="bg-green p-4 col-span-2">
+                    <div>
+                        <h1 className="text-6xl">{sportData.game_title}</h1>
+                        <p className="text-lg pt-4">{sportData.description}</p>
+                    </div>
+                </div>
+                {/* Second Row */}
+                <div className="bg-pink p-4">
+                    <Image
+                        width={500}
+                        height={500}
+                        className="object-cover w-full h-full"
+                        src={`/images/sports-picture/Billiards.JPG`}
+                        alt="image"
+                    />
+                </div>
+                <div className="bg-green p-4">
+                    <Image
+                        width={500}
+                        height={500}
+                        className="object-cover w-full h-full"
+                        src={`/images/sports-picture/Billiards.JPG`}
+                        alt="image"
+                    />
+                </div>
+                <div className="bg-pink p-4">
+                    <Image
+                        width={500}
+                        height={500}
+                        className="object-cover w-full h-full"
+                        src={`/images/sports-picture/Billiards.JPG`}
+                        alt="image"
+                    />
+                </div>
+            </div>
         </div>
-    </div>
-
-    {/* Second Row */}
-    <div className="bg-pink p-4">
-        <Image
-            width={500}
-            height={500}
-            className="object-cover w-full h-full"
-            src={`/images/sports-picture/Billiards.JPG`}
-            alt="image"
-        />
-    </div>
-    <div className="bg-green p-4">
-        <Image
-            width={500}
-            height={500}
-            className="object-cover w-full h-full"
-            src={`/images/sports-picture/Billiards.JPG`}
-            alt="image"
-        />
-    </div>
-    <div className="bg-pink p-4">
-        <Image
-            width={500}
-            height={500}
-            className="object-cover w-full h-full"
-            src={`/images/sports-picture/Billiards.JPG`}
-            alt="image"
-        />
-    </div>
-
-</div>
-
-  
-  )
+    )
 }
 
 export default ClusterModal

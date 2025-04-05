@@ -1,12 +1,40 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { EventRow } from '@/components/ui/TeamsButton';
 import scoreBoardData from '@/data/scoreBoardData.json';
+import clusterData from '@/data/clusterModalData.json';
 import Image from 'next/image';
 import Arrow from '../../../public/images/Arrow.svg';
+import ClusterModal from '@/components/ui/ClusterModal';
+
+interface SportData {
+  game_title: string;
+  description: string;
+  image: string;
+}
 
 const ScoreboardPage = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedSport, setSelectedSport] = useState<SportData | null>(null);
+
+  const handleEventClick = (sport: string) => {
+    // Find matching sport in cluster data
+    const matchingSport = clusterData.find(
+      (item) => item.game_title.includes(sport)
+    );
+
+    // Use matching sport if found, or create a default object
+    const sportData = matchingSport || {
+      game_title: sport,
+      description: "No description available", // More neutral default
+      image: "cs.png" // default image
+    };
+
+    setSelectedSport(sportData);
+    setModalOpen(true);
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-blue w-full text-white">
       <div className="flex-1 p-4 h-screen">
@@ -27,7 +55,11 @@ const ScoreboardPage = () => {
             <div className="bg-white p-6 rounded-lg w-full mb-12">
               <div className="grid grid-cols-1 gap-4">
                 {Object.entries(sports).map(([sport]) => (
-                  <div key={sport} className="mb-8">
+                  <div
+                    key={sport}
+                    className="mb-8 cursor-pointer"
+                    onClick={() => handleEventClick(sport)}
+                  >
                     <div className="grid grid-cols-1 gap-2">
                       <EventRow
                         sportCategory={category}
@@ -42,6 +74,15 @@ const ScoreboardPage = () => {
           </div>
         ))}
       </div>
+
+      {/* Modal */}
+      {selectedSport && (
+        <ClusterModal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          sportData={selectedSport}
+        />
+      )}
     </div>
   );
 };
