@@ -1,7 +1,7 @@
 // src/utils/imageMapper.ts
 
 import sonImage from '../../public/images/cluster-animals/SON.png';
-import ssImage from '../../public/images/cluster-animals/ss.png';
+import ssImage from '../../public/images/cluster-animals/SS.png';
 import bmImage from '../../public/images/cluster-animals/bm.png';
 import csImage from '../../public/images/cluster-animals/cs.png';
 import eaImage from '../../public/images/cluster-animals/ea.png';
