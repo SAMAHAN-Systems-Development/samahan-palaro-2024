@@ -8,27 +8,59 @@ const HeroSection = () => {
       {/* Left side - Logo with shadow */}
       <div className="relative w-fit ml-[10%] lg:ml-[15%]">
         {/* Shadow Image - Bottom Layer */}
-        <div
+        <Image
+          src="/images/hero-pictures/shadow.svg"
+          priority={true}
+          alt=""
+          quality={75}
+          width={878}
+          height={562}
           className="w-full 
-          max-w-[400px]
-          sm:max-w-[600px] 
-          md:max-w-[562px] 
-          lg:max-w-[562px] 
-          xl:max-w-[878px]
-          h-[300px]
-          sm:h-[400px]
-          md:h-[500px]
-          lg:h-[562px]"
-        >
-          {/* Hero Logo - Top Layer */}
+               max-w-[400px]
+              sm:max-w-[600px] 
+              md:max-w-[562px] 
+              lg:max-w-[562px] 
+                          xl:max-w-[878px]
+
+            mr-auto
+            h-auto
+            max-h-[300px]
+            sm:max-h-[400px]
+            md:max-h-[500px]
+            lg:max-h-[562px]
+            z-0
+            opacity-30"
+        />
+
+        {/* Hero Logo - Top Layer */}
+        <div className="absolute inset-0">
           <Image
-            priority={true}
             src="/images/hero-pictures/Hero_Logo.svg"
             alt=""
             width={878}
+            priority={true}
+            quality={75}
             height={562}
-            className="w-full h-full object-contain
-         
+            className="w-full 
+              max-w-[400px]
+              sm:max-w-[600px] 
+              md:max-w-[562px] 
+              lg:max-w-[562px] 
+                          xl:max-w-[878px]
+
+              mr-auto
+              h-auto
+              max-h-[300px]
+              sm:max-h-[400px]
+              md:max-h-[500px]
+              lg:max-h-[562px]
+              xl:max-h-[562px]
+
+              object-cover
+              z-10
+              hover:transform 
+              hover:translate-x-2 
+              hover:drop-shadow-xl 
               hover:transition-all 
               duration-200 
               hover:ease-in-out"
