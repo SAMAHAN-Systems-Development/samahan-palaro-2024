@@ -17,7 +17,7 @@ const Navbar: FC = () => {
   return (
     <div className="relative z-50">
       <nav className="font-vt323 bg-blue shadow-lg border-b-8 border-green">
-        <div className="w-full mx-auto flex justify-between p-4">
+        <div className=" sticky w-full mx-auto flex justify-between p-4">
           <div className="flex items-center">
             <div className="block lg:hidden mr-4">
               <button
@@ -40,10 +40,11 @@ const Navbar: FC = () => {
           </div>
 
           <ul
-            className={`flex flex-col lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0 py-4 font-vt323 ${isMenuOpen
-              ? 'absolute top-[100px] left-0 w-full bg-blue shadow-lg'
-              : 'hidden lg:flex lg:justify-end mx-8'
-              }`}
+            className={`flex flex-col lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0 py-4 font-vt323 ${
+              isMenuOpen
+                ? 'absolute top-[100px] left-0 w-full bg-blue shadow-lg'
+                : 'hidden lg:flex lg:justify-end'
+            }`}
           >
             {menuItems.map(({ href, label }) => (
               <li

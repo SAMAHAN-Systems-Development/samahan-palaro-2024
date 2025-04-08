@@ -73,7 +73,7 @@ const GalleryComponent: FC<GalleryComponentProps> = ({
         src={`/images/sports-picture/${image}`}
         alt={sportName || 'Image'}
         className="object-cover w-full h-full"
-        quality={75}
+        quality={90}
         priority={true}
       />
     </div>
