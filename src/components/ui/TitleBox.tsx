@@ -59,6 +59,13 @@ const extractSportName = (title: string): string => {
 
   result = result.trim();
   result = result.charAt(0).toUpperCase() + result.slice(1);
+  // Handle special case for multi-word sports
+  if (result.includes(' ')) {
+    const words = result.split(' ');
+    return words
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  }
 
   return result;
 };
