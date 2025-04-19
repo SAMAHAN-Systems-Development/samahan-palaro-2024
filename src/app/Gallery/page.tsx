@@ -65,42 +65,50 @@ export default function Gallery() {
   ] as const;
 
   return (
-    <main className="bg-blue pt-20">
+    <main className="bg-blue min-h-screen">
       {/* Gallery header */}
-      <div className="flex justify-center items-center pt-8 pb-24 px-10 text-center">
-        <Image
-          src="/images/sports-picture/Vector.png"
-          alt="Gallery Opening Image"
-          width={50}
-          height={50}
-          className="rotate-180 object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
-        />
-        <Image
-          src="/images/sports-picture/Vector.png"
-          alt="Gallery Opening Image"
-          width={50}
-          height={50}
-          priority
-          className="rotate-180 ml-3 object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
-        />
-        <h1 className="font-vt323 text-green px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-          <span className="text-pink">BEHIND</span> THE SCENES
+      <div className="py-20">
+        <h1 className="font-vt323 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-4xl xsm:text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+          <strong className="flex flex-row items-center justify-center gap-3">
+            <div className="mx-10 flex flex-row">
+              <Image
+                src="/images/sports-picture/Vector.png"
+                alt="Gallery Opening Image"
+                width={50}
+                height={50}
+                className="rotate-180 object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
+              />
+              <Image
+                src="/images/sports-picture/Vector.png"
+                alt="Gallery Opening Image"
+                width={50}
+                height={50}
+                priority
+                className="rotate-180 ml-3 object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
+              />
+            </div>
+            <h1 className="font-vt323 text-green px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">
+              <span className="text-pink">BEHIND</span> THE SCENES
+            </h1>
+            <div className="mx-10 flex flex-row">
+              <Image
+                src="/images/sports-picture/Vector2.png"
+                alt="Gallery Opening Image"
+                width={50}
+                height={50}
+                priority
+                className="object-contain mr-3 w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
+              />
+              <Image
+                src="/images/sports-picture/Vector2.png"
+                alt="Gallery Opening Image"
+                width={50}
+                height={50}
+                className="object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
+              />
+            </div>
+          </strong>
         </h1>
-        <Image
-          src="/images/sports-picture/Vector2.png"
-          alt="Gallery Opening Image"
-          width={50}
-          height={50}
-          priority
-          className="object-contain mr-3 w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
-        />
-        <Image
-          src="/images/sports-picture/Vector2.png"
-          alt="Gallery Opening Image"
-          width={50}
-          height={50}
-          className="object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
-        />
       </div>
 
       {/* Gallery Loop */}
