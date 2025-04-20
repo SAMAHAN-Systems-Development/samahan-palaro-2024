@@ -51,6 +51,21 @@ const getMedalImage = (
   return null;
 };
 
+const imageSizes = {
+  Gold: {
+    width: 250,
+    height: 250,
+  },
+  Silver: {
+    width: 130,
+    height: 130,
+  },
+  Bronze: {
+    width: 130,
+    height: 130,
+  },
+};
+
 const EventRow: React.FC<EventRowProps> = ({
   sportCategory,
   eventName,
@@ -71,10 +86,10 @@ const EventRow: React.FC<EventRowProps> = ({
           <div
             key={medal}
             className={`flex flex-col items-center
-               ${medal === 'Gold' ? 'sm:order-2' : ''}
+              ${medal === 'Gold' ? 'sm:order-2' : ''}
               ${medal === 'Silver' ? 'sm:order-1' : ''}
               ${medal === 'Bronze' ? 'sm:order-3' : ''}
-              ${medal === 'Gold' ? 'sm:-mt-4 relative z-20' : ''} 
+              ${medal === 'Gold' ? 'sm:-mt-8 relative z-20' : ''} 
             `}
           >
             <div className="font-vt323 text-lg sm:text-2xl md:text-4xl py-1 px-2 sm:px-4 text-center">
@@ -85,6 +100,7 @@ const EventRow: React.FC<EventRowProps> = ({
               </span>
             </div>
             <div className="flex justify-center items-center min-w-[80px]">
+              {/* if (getMedalImage === ) */}
               <Image
                 src={
                   getMedalImage(
@@ -95,9 +111,13 @@ const EventRow: React.FC<EventRowProps> = ({
                   ) || '/placeholder.png'
                 }
                 alt={`${eventName} ${medal}`}
-                width={130}
-                height={130}
-                className={`w-[130px] h-[130px] md:w-[${medal === 'Gold' ? '180px' : '130px'}] md:h-[${medal === 'Gold' ? '180px' : '130px'}] ${medal === 'Gold' ? 'md:scale-105' : ''}`}
+                width={imageSizes[medal as keyof typeof imageSizes].width}
+                height={imageSizes[medal as keyof typeof imageSizes].height}
+                className={`mb-4
+                  object-contain
+                  ${medal === 'Gold' ? 'w-[245px] h-[245px] md:scale-105' : 'w-[130px] h-[130px]'}
+                `}
+                priority={medal === 'Gold'}
               />
             </div>
           </div>
