@@ -69,7 +69,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right side image */}
-      <div className="relative flex-shrink-0 w-[25%] hidden lg:block">
+      <div className="relative flex-shrink-0 w-[35%] hidden lg:block">
         <Image
           src="/images/hero-pictures/Right-Image.png"
           width={529}

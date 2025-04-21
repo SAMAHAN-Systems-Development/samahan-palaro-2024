@@ -20,15 +20,15 @@ const ScoreboardPage = () => {
 
   const handleEventClick = (sport: string) => {
     // Find matching sport in cluster data
-    const matchingSport = clusterData.find(
-      (item) => item.game_title.includes(sport)
+    const matchingSport = clusterData.find((item) =>
+      item.game_title.includes(sport)
     );
 
     // Use matching sport if found, or create a default object
     const sportData = matchingSport || {
       game_title: sport,
-      description: "No description available", // More neutral default
-      image: "cs.png" // default image
+      description: 'No description available', // More neutral default
+      image: 'cs.png', // default image
     };
 
     setSelectedSport(sportData);
@@ -36,12 +36,12 @@ const ScoreboardPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-blue w-full text-white">
-      <div className="flex-1 p-4 h-screen">
+    <div className="min-h-screen min-w-screen flex flex-col bg-blue w-full text-white">
+      <div className="flex-1 p-4 h-screen w-screen">
         {Object.entries(scoreBoardData).map(([category, sports]) => (
           <div key={category} className="w-full max-w-5xl mx-auto">
-            <div className="flex flex-row items-center gap-4">
-              <h2 className="text-7xl mb-4 text-green font-jersey10">
+            <div className="flex flex-row items-center  gap-4 sm2:w-full sm2:h-[50px]  md:w-full">
+              <h2 className="text-7xl mb-4 text-green font-jersey10 sm2:text-[40px] md:text-6xl">
                 {category}
               </h2>
               <Image
