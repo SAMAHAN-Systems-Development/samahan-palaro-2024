@@ -4,7 +4,6 @@ import Description from '@/components/section/Description';
 
 import ScoreboardPage from '@/app/event_winners/page';
 
-
 export const metadata: Metadata = {
   title: 'SAMAHAN Palaro 2024',
   description: 'The official Samahan Palaro 2024 Website.',
@@ -12,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <main className="">
       {/* add sections here */}
       <HeroSection />
       <Description />
