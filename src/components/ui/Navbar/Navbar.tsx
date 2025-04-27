@@ -20,11 +20,11 @@ const Navbar: FC = () => {
     <div className="relative z-50">
       <nav className="font-vt323 bg-blue shadow-lg border-b-8 border-green">
         <div className=" sticky w-full mx-auto flex justify-between p-4">
-          <div className="flex items-center ml-10">
+          <div className="flex items-center">
             <div className="block lg:hidden mr-4">
               <button
                 onClick={() => setMenuOpen(!isMenuOpen)}
-                className="block lg:hidden  font-bold text-green font-vt323 cursor-pointer mr-4"
+                className="block lg:hidden font-bold text-green font-vt323 text-3xl cursor-pointer"
               >
                 {isMenuOpen ? 'X' : '☰'}
               </button>
@@ -37,17 +37,16 @@ const Navbar: FC = () => {
                 width={125}
                 height={125}
                 alt="Palaro Logo"
-                className="h-10 w-52"
+                className="h-5 w-24 sm:h-6 sm:w-36 md:h-10 md:w-52"
               />
             </Link>
           </div>
 
           <ul
-            className={`flex flex-col mr-6 lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0 py-4 font-vt323 ${
-              isMenuOpen
-                ? 'absolute top-[100px] left-0 w-full bg-blue shadow-lg'
-                : 'hidden lg:flex lg:justify-end'
-            }`}
+            className={`flex flex-col mr-6 lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0 py-4 font-vt323 ${isMenuOpen
+              ? 'absolute top-[50px] left-0 w-full bg-blue shadow-lg'
+              : 'hidden lg:flex lg:justify-end'
+              }`}
           >
             {menuItems.map(({ href, label }) => {
               const isCurrent = pathname === href;

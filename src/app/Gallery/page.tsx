@@ -87,8 +87,10 @@ export default function Gallery() {
                 className="rotate-180 ml-3 object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
               />
             </div>
-            <h1 className="font-vt323 text-green px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">
-              <span className="text-pink">BEHIND</span> THE SCENES
+            <h1 className="font-vt323 px-0 lg:px-0 xl:px-4 text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl font-bold">
+              <span className="text-pink">BEHIND</span>{' '}
+              <span className="text-green">THE</span>{' '}
+              <span className="text-green">SCENES</span>
             </h1>
             <div className="mx-10 flex flex-row">
               <Image

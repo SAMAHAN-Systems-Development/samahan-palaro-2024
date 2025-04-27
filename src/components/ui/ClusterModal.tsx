@@ -9,17 +9,19 @@ interface ClusterModalProps {
         game_title: string;
         description: string;
         image: string;
+        galleryImages?: string[]; // Array of additional images
     };
 }
 
 const ClusterModal: React.FC<ClusterModalProps> = ({ isOpen, onClose, sportData }) => {
     if (!isOpen) return null;
 
+    // Default image to use if galleryImages aren't provided
+    const defaultImage = "/images/palaro-card.png";
+
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
             <div className="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-2 gap-2 bg-blue p-3 m-3 w-3/4 h-2/3 md:w-2/3 lg:w-1/2 font-vt323 text-blue relative">
-
-
                 <button
                     onClick={onClose}
                     className="absolute -top-4 -right-4 bg-red-500 text-white w-8 h-8 rounded-full"
@@ -44,13 +46,15 @@ const ClusterModal: React.FC<ClusterModalProps> = ({ isOpen, onClose, sportData 
                     </div>
                 </div>
                 {/* Second Row */}
-                <div className=" hidden md:block bg-pink p-4">
+                <div className="hidden md:block bg-pink p-4">
                     <Image
                         width={500}
                         height={500}
                         className="object-cover w-full h-full"
-                        src={`/images/sports-picture/Billiards.JPG`}
-                        alt="image"
+                        src={sportData.galleryImages && sportData.galleryImages[0]
+                            ? `/images/sports-picture/${sportData.galleryImages[0]}`
+                            : defaultImage}
+                        alt={`${sportData.game_title} gallery image 1`}
                     />
                 </div>
                 <div className="hidden md:block bg-green p-4">
@@ -58,8 +62,10 @@ const ClusterModal: React.FC<ClusterModalProps> = ({ isOpen, onClose, sportData 
                         width={500}
                         height={500}
                         className="object-cover w-full h-full"
-                        src={`/images/sports-picture/Billiards.JPG`}
-                        alt="image"
+                        src={sportData.galleryImages && sportData.galleryImages[1]
+                            ? `/images/sports-picture/${sportData.galleryImages[1]}`
+                            : defaultImage}
+                        alt={`${sportData.game_title} gallery image 2`}
                     />
                 </div>
                 <div className="hidden md:block bg-pink p-4">
@@ -67,8 +73,10 @@ const ClusterModal: React.FC<ClusterModalProps> = ({ isOpen, onClose, sportData 
                         width={500}
                         height={500}
                         className="object-cover w-full h-full"
-                        src={`/images/sports-picture/Billiards.JPG`}
-                        alt="image"
+                        src={sportData.galleryImages && sportData.galleryImages[2]
+                            ? `/images/sports-picture/${sportData.galleryImages[2]}`
+                            : defaultImage}
+                        alt={`${sportData.game_title} gallery image 3`}
                     />
                 </div>
             </div>
