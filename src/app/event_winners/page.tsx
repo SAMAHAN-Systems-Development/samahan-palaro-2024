@@ -40,12 +40,12 @@ const ScoreboardPage = () => {
       <div className="flex-1 p-4 h-screen w-screen">
         {Object.entries(scoreBoardData).map(([category, sports]) => (
           <div key={category} className="w-full max-w-5xl mx-auto">
-            <div className="flex flex-row items-center  gap-4 sm2:w-full sm2:h-[50px]  md:w-full">
-              <h2 className="text-7xl mb-4 text-green font-jersey10 sm2:text-[40px] md:text-6xl">
+            <div className="flex flex-row items-center gap-4 sm2:w-full h-min pb-3 md:w-full">
+              <h2 className="text-7xl text-green font-jersey10 sm2:text-[40px] md:text-6xl">
                 {category}
               </h2>
               <Image
-                className="mb-4"
+                className=""
                 src={Arrow}
                 alt="Arrow icon"
                 width={65}
