@@ -1,6 +1,6 @@
 'use client';
 
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from './public/palaro-logo.png';
@@ -15,6 +15,22 @@ const Navbar: FC = () => {
     { href: '/TWG', label: 'TWG' },
   ];
   const pathname = usePathname();
+
+  // Automatically close the menu on screen resize
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 992) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div className="relative z-50">
