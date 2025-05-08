@@ -204,47 +204,52 @@ const TWG = async () => {
 
   return (
     <div className="bg-blue min-h-screen">
-      <div className="py-20">
-        <h1 className="font-vt323 sm:pr-6 md:pr-8 lg:pr-10 xl:pr-12 text-4xl xsm:text-2xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-          <strong className="flex flex-row items-center justify-center gap-3">
-            <div className="mx-10 flex flex-row">
-              <Image
-                src="/images/sports-picture/Vector.png"
-                alt="Gallery Opening Image"
-                width={50}
-                height={50}
-                className="rotate-180 object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
-              />
-              <Image
-                src="/images/sports-picture/Vector.png"
-                alt="Gallery Opening Image"
-                width={50}
-                height={50}
-                priority
-                className="rotate-180 ml-3 object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
-              />
-            </div>
+      <div className="py-10 sm:py-16 md:py-20">
+        <div className="flex flex-row items-center justify-center w-full">
+          {/* Left arrows container */}
+          <div className="flex flex-row items-center justify-end space-x-2 flex-1">
+            <Image
+              src="/images/sports-picture/Vector.png"
+              alt="Left arrow"
+              width={50}
+              height={50}
+              className="rotate-180 object-contain w-6 sm:w-8 md:w-10 lg:w-12 xl:w-16"
+            />
+            <Image
+              src="/images/sports-picture/Vector.png"
+              alt="Left arrow"
+              width={50}
+              height={50}
+              priority
+              className="rotate-180 object-contain w-6 sm:w-8 md:w-10 lg:w-12 xl:w-16"
+            />
+          </div>
+
+          {/* Center text */}
+          <h1 className="font-vt323 text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold whitespace-nowrap px-3 sm:px-4 md:px-6 lg:px-8 xl:px-10">
             <span className="text-pink">PALARONG</span>{' '}
-            <span className="text-green whitespace-nowrap">ATENISTA TWG</span>
-            <div className="mx-10 flex flex-row">
-              <Image
-                src="/images/sports-picture/Vector2.png"
-                alt="Gallery Opening Image"
-                width={50}
-                height={50}
-                priority
-                className="object-contain mr-3 w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
-              />
-              <Image
-                src="/images/sports-picture/Vector2.png"
-                alt="Gallery Opening Image"
-                width={50}
-                height={50}
-                className="object-contain w-8 sm:w-12 md:w-14 lg:w-18 xl:w-20"
-              />
-            </div>
-          </strong>
-        </h1>
+            <span className="text-green">ATENISTA TWG</span>
+          </h1>
+
+          {/* Right arrows container */}
+          <div className="flex flex-row items-center justify-start space-x-2 flex-1">
+            <Image
+              src="/images/sports-picture/Vector2.png"
+              alt="Right arrow"
+              width={50}
+              height={50}
+              priority
+              className="object-contain w-6 sm:w-8 md:w-10 lg:w-12 xl:w-16"
+            />
+            <Image
+              src="/images/sports-picture/Vector2.png"
+              alt="Right arrow"
+              width={50}
+              height={50}
+              className="object-contain w-6 sm:w-8 md:w-10 lg:w-12 xl:w-16"
+            />
+          </div>
+        </div>
       </div>
       {groups.map((group, index) => {
         const colorNumber = index % colors.length;
