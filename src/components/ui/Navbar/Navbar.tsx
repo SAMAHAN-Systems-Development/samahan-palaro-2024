@@ -11,7 +11,7 @@ const Navbar: FC = () => {
 
   const menuItems = [
     { href: '/', label: 'HOME' },
-    { href: '/Gallery', label: 'GALLERY' },
+    { href: '/gallery', label: 'GALLERY' },
     { href: '/TWG', label: 'TWG' },
   ];
   const pathname = usePathname();
