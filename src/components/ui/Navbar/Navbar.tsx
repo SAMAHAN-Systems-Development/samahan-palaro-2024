@@ -3,7 +3,6 @@
 import { FC, useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from './public/palaro-logo.png';
 import { usePathname } from 'next/navigation';
 
 const Navbar: FC = () => {
@@ -49,20 +48,21 @@ const Navbar: FC = () => {
             <Link href="/">
               <Image
                 id="palaro-logo"
-                src={logo.src}
-                width={125}
-                height={125}
+                src="/images/palaro-logo.png"
+                width={1125}
+                height={217}
                 alt="Palaro Logo"
-                className="h-5 w-24 sm:h-6 sm:w-36 md:h-10 md:w-52"
+                className="h-5 w-24 sm:h-6 sm:w-36 md:h-10 md:w-52 object-contain"
               />
             </Link>
           </div>
 
           <ul
-            className={`flex flex-col mr-6 lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0 py-4 font-vt323 ${isMenuOpen
-              ? 'absolute top-[50px] left-0 w-full bg-blue shadow-lg'
-              : 'hidden lg:flex lg:justify-end'
-              }`}
+            className={`flex flex-col mr-6 lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0 py-4 font-vt323 ${
+              isMenuOpen
+                ? 'absolute top-[50px] left-0 w-full bg-blue shadow-lg'
+                : 'hidden lg:flex lg:justify-end'
+            }`}
           >
             {menuItems.map(({ href, label }) => {
               const isCurrent = pathname === href;
