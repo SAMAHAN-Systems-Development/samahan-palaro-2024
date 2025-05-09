@@ -11,8 +11,8 @@ const Navbar: FC = () => {
 
   const menuItems = [
     { href: '/', label: 'HOME' },
-    { href: '/Gallery', label: 'GALLERY' },
-    { href: '/TWG', label: 'TWG' },
+    { href: '/gallery', label: 'GALLERY' },
+    { href: '/twg', label: 'TWG' },
   ];
   const pathname = usePathname();
 
@@ -59,10 +59,11 @@ const Navbar: FC = () => {
           </div>
 
           <ul
-            className={`flex flex-col mr-6 lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0 py-4 font-vt323 ${isMenuOpen
-              ? 'absolute top-[50px] left-0 w-full bg-blue shadow-lg'
-              : 'hidden lg:flex lg:justify-end'
-              }`}
+            className={`flex flex-col mr-6 lg:flex-row items-center lg:space-x-8 space-y-4 lg:space-y-0 py-4 font-vt323 ${
+              isMenuOpen
+                ? 'absolute top-[50px] left-0 w-full bg-blue shadow-lg'
+                : 'hidden lg:flex lg:justify-end'
+            }`}
           >
             {menuItems.map(({ href, label }) => {
               const isCurrent = pathname === href;
