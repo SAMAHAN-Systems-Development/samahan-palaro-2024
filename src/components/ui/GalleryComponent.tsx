@@ -1,5 +1,5 @@
 import { cva, type VariantProps } from 'class-variance-authority';
-import { FC } from 'react';
+import type { FC } from 'react';
 import Image from 'next/image';
 
 const galleryStyles = cva('overflow-hidden font-vt323', {
@@ -51,31 +51,47 @@ interface GalleryComponentProps extends VariantProps<typeof galleryStyles> {
 const GalleryComponent: FC<GalleryComponentProps> = ({
   image,
   sportName,
-  layout,
-  borderColor,
-  titleColor,
-  position,
+  layout = 'wide',
+  borderColor = 'pink',
+  titleColor = 'pinkWhite',
+  position = 'upperLeft',
 }) => {
+  // Calculate appropriate sizes based on layout
+  const getSizes = () => {
+    switch (layout) {
+      case 's_wide':
+        return '(max-width: 768px) 60vw, (max-width: 1200px) 60vw, 60vw';
+      case 'wide':
+        return '100vw';
+      case 'square':
+        return '(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 50vw';
+      default:
+        return '100vw';
+    }
+  };
+
   return (
     <div
       className={`${galleryStyles({ layout, borderColor })} relative box-border`}
     >
       {sportName && (
         <div
-          className={`${galleryStyles({ titleColor, position })} min-w-44 text-2xl md:text-3xl lg:text-4xl p-2 md:p-3 lg:p-4 text-center mx-14`}
+          className={`${galleryStyles({ titleColor, position })} min-w-44 text-2xl md:text-3xl lg:text-4xl p-2 md:p-3 lg:p-4 text-center mx-14 z-10`}
         >
           {sportName}
         </div>
       )}
-      <Image
-        width={600}
-        height={600}
-        src={`/images/sports-picture/${image}`}
-        alt={sportName || 'Image'}
-        className="object-cover w-full h-full"
-        quality={90}
-        priority={true}
-      />
+      <div className="relative w-full h-full">
+        <Image
+          fill
+          src={`/images/sports-picture/${image}`}
+          alt={sportName || 'Image'}
+          className="object-cover"
+          sizes={getSizes()}
+          quality={90}
+          priority={true}
+        />
+      </div>
     </div>
   );
 };
