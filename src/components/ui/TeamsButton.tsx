@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import imageMap from '@/utils/imageMapper';
+// import imageMap from '@/utils/imageMapper';
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 type MedalPlacement = 'Gold' | 'Silver' | 'Bronze';
 
@@ -44,9 +46,11 @@ const getMedalImage = (
   if (categoryData) {
     const eventData = categoryData[eventName];
     if (eventData && typeof eventData === 'object' && eventData[placement]) {
-      return imageMap[eventData[placement] as keyof typeof imageMap] || null;
+      // return imageMap[eventData[placement] as keyof typeof imageMap] || null;
+      return `${basePath}/images/cluster-animals/${eventData[placement]}`;
     }
-    return imageMap[categoryData[placement] as keyof typeof imageMap] || null;
+    // return imageMap[categoryData[placement] as keyof typeof imageMap] || null;
+    return `${basePath}/images/cluster-animals/${categoryData[placement]}`;
   }
   return null;
 };
