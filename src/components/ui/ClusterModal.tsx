@@ -30,19 +30,24 @@ const ClusterModal: React.FC<ClusterModalProps> = ({ isOpen, onClose, sportData 
                 </button>
 
                 {/* First Row */}
-                <div className="bg-green p-4 md:row-span-1 row-span-2">
-                    <Image
-                        width={500}
-                        height={500}
-                        className="object-cover w-full h-full"
-                        src={`/images/cluster-animals/${sportData.image}`}
-                        alt="image"
-                    />
+                <div className="bg-green p-2 md:p-4 flex items-center justify-center md:row-span-1">
+                    <div className="relative w-full h-full aspect-square">
+                        <Image
+                            fill
+                            sizes="(max-width: 768px) 100px, (max-width: 1200px) 200px, 300px"
+                            className="object-contain"
+                            src={`/images/cluster-animals/${sportData.image}`}
+                            alt={`${sportData.game_title} team logo`}
+                            priority
+                        />
+                    </div>
                 </div>
-                <div className="bg-green p-4 md:col-span-2">
-                    <div>
-                        <h1 className="text-6xl">{sportData.game_title}</h1>
-                        <p className="text-lg pt-4">{sportData.description}</p>
+                <div className="bg-green p-4 md:col-span-2 md:row-span-1 row-span-2 flex flex-col">
+                    <div className="flex flex-col h-full">
+                        <h1 className="text-3xl md:text-3xl lg:text-4xl mb-2">{sportData.game_title}</h1>
+                        <div className="overflow-y-auto flex-grow pr-2 custom-scrollbar">
+                            <p className="text-xl lg:text-lg xl:text-large">{sportData.description}</p>
+                        </div>
                     </div>
                 </div>
                 {/* Second Row */}
