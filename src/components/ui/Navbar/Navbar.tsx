@@ -3,7 +3,6 @@
 import { FC, useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from './public/palaro-logo.png';
 import { usePathname } from 'next/navigation';
 
 const Navbar: FC = () => {
@@ -49,7 +48,7 @@ const Navbar: FC = () => {
             <Link href="/">
               <Image
                 id="palaro-logo"
-                src={logo.src}
+                src="/images/palaro-logo.png"
                 width={125}
                 height={125}
                 alt="Palaro Logo"
