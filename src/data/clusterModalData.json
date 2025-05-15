@@ -17,7 +17,7 @@
         "game_title": "Volleyball Men",
         "description": "Dominating their way in the championship match by winning the first 3 sets, the Social Sciences (SS) Dragons claimed their first-ever podium and gold against the two-time champion Business and Management (BM) Vipers in the Palarong Atenista 2024 volleyball finals, securing a 3-0 victory.",
         "image": "SS.png",
-        "galleryImages": ["VolleyballMen.JPG", "VolleyballMen2.jpg", ""]
+        "galleryImages": ["VolleyballMen.JPG", "VolleyballMen2.JPG", ""]
 
 
     },
@@ -25,21 +25,21 @@
         "game_title": "Volleyball Women",
         "description": "Coming back to the golden podium after their 2022 title, the School of Nursing (SON) Panthers dominated the court of women’s volleyball in the Palarong Atenista ‘24 over the Humanities and Letters (HUMLET) Wolves, 3-0.",
         "image": "SON.png",
-        "galleryImages": ["VolleyballWomen.JPG", "VolleyballWomen2.jpg", ""]
+        "galleryImages": ["VolleyballWomen.JPG", "VolleyballWomen2.JPG", ""]
     },
     {
         "game_title": "Football",
         "description": "The School of Engineering and Architecture (SEA) Tigers celebrated a triumphant victory as they led the football match against the Natural Sciences and Mathematics (NSM) Falcons, securing a 2-0 win to claim the championship title for the second consecutive year. ",
         "image": "ea.png",
-        "galleryImages": ["Football.jpg", "Football2.jpg", "Football3.jpg"]
+        "galleryImages": ["Football.JPG", "Football2.JPG", "Football3.JPG"]
     },
 
-    
+
     {
         "game_title": "Table Tennis Singles Men",
         "description": "The Accountancy (ACC) Griffins secured the championship title in the Table Tennis Men’s singles category, while the Business and Management (B&M) Vipers seized gold in the doubles category after a tight match against the School of Engineering and Architecture (SEA) Tigers.",
         "image": "acc.png",
-        "galleryImages": ["TableTennisMen2.jpg", "TableTennisMenSingles.jpg", "TableTennisMenSignles2.jpg"]
+        "galleryImages": ["TableTennisMen2.JPG", "TableTennisMenSingles.JPG", "TableTennisMenSignles2.JPG"]
 
 
     },
@@ -47,7 +47,7 @@
         "game_title": "Table Tennis Doubles Men",
         "description": "The Accountancy (ACC) Griffins secured the championship title in the Table Tennis Men’s singles category, while the Business and Management (B&M) Vipers seized gold in the doubles category after a tight match against the School of Engineering and Architecture (SEA) Tigers.",
         "image": "bm.png",
-        "galleryImages": ["TableTennisMen.jpg", "TableTennisMenDouble.jpg", "TableTennisMenDouble2.jpg"]
+        "galleryImages": ["TableTennisMen.JPG", "TableTennisMenDouble.JPG", "TableTennisMenDouble2.JPG"]
 
 
     },
@@ -55,7 +55,7 @@
         "game_title": "Table Tennis Singles Women",
         "description": "The Social Science (SS) Dragons escaped a dogfight against the Accountancy (ACC) Griffins in the 2024 Palarong Atenista women’s Table Tennis singles championship, with the Natural Sciences and Mathematics (NSM) Falcons cruised against opponents to go back-to back in the women’s doubles. ",
         "image": "SS.png",
-        "galleryImages": ["TableTennisWomen.jpg", "TableTennisWomenSingle.jpg", "TableTennisWomenSingle2.jpg"]
+        "galleryImages": ["TableTennisWomen.JPG", "TableTennisWomenSingle.JPG", "TableTennisWomenSingle2.JPG"]
 
 
     },
@@ -63,7 +63,7 @@
         "game_title": "Table Tennis Doubles Women",
         "description": "The Social Science (SS) Dragons escaped a dogfight against the Accountancy (ACC) Griffins in the 2024 Palarong Atenista women’s Table Tennis singles championship, with the Natural Sciences and Mathematics (NSM) Falcons cruised against opponents to go back-to back in the women’s doubles. ",
         "image": "nsm.png",
-        "galleryImages": ["TableTennisWomen2.jpg", "TableTennisWomenDouble.jpg", "TableTennisWomenDouble2.jpg"]
+        "galleryImages": ["TableTennisWomen2.JPG", "TableTennisWomenDouble.JPG", "TableTennisWomenDouble2.JPG"]
 
 
     },
@@ -71,7 +71,7 @@
         "game_title": "Badminton Singles Men",
         "description": "The Social Sciences (SS) Dragons secured the gold podium for a second time around in the badminton doubles category, while the School of Engineering and Architecture (SEA) Tigers emerged victorious in the singles category during the recently concluded Palarong Atenista 2024 men’s badminton tournament.",
         "image": "ea.png",
-        "galleryImages": ["BadmintonMen.jpg", "PA_2024_102.jpg", "PA_2024_98.jpg"]
+        "galleryImages": ["BadmintonMen.JPG", "PA_2024_102.JPG", "PA_2024_98.JPG"]
 
 
     },
@@ -79,7 +79,7 @@
         "game_title": "Badminton Doubles Men",
         "description": "The Social Sciences (SS) Dragons secured the gold podium for a second time around in the badminton doubles category, while the School of Engineering and Architecture (SEA) Tigers emerged victorious in the singles category during the recently concluded Palarong Atenista 2024 men’s badminton tournament.",
         "image": "SS.png",
-        "galleryImages": ["BadmintonMen2.jpg", "PA_2024_85.jpg", "PA_2024_100.jpg"]
+        "galleryImages": ["BadmintonMen2.JPG", "PA_2024_85.JPG", "PA_2024_100.JPG"]
 
 
     },
@@ -87,7 +87,7 @@
         "game_title": "Badminton Singles Women",
         "description": "The Social Sciences (SS) Dragons claimed the championship title in the badminton singles category, while the School of Nursing (SON) Panthers clinched victory in the doubles category of the Palarong Atenista 2024 women’s badminton tournament.",
         "image": "SS.png",
-        "galleryImages": ["PA_2024_83.JPG", "PA_2024_84.jpg", "PA_2024_86.jpg"]
+        "galleryImages": ["PA_2024_83.JPG", "PA_2024_84.JPG", "PA_2024_86.JPG"]
 
 
     },
@@ -95,7 +95,7 @@
         "game_title": "Badminton Doubles Women",
         "description": "The Social Sciences (SS) Dragons claimed the championship title in the badminton singles category, while the School of Nursing (SON) Panthers clinched victory in the doubles category of the Palarong Atenista 2024 women’s badminton tournament.",
         "image": "SON.png",
-        "galleryImages": ["BadmintonWomen2.jpg", "BadmintonWomen.jpg", "PA_2024_81.jpg"]
+        "galleryImages": ["BadmintonWomen2.JPG", "BadmintonWomen.JPG", "PA_2024_81.JPG"]
 
 
     },
@@ -103,84 +103,84 @@
         "game_title": "Swimming Men",
         "description": "The Business and Management (B&M) Vipers surged through the water and took home the gold in the Men’s Singles Swimming Tournament in the Palarong Atenista ‘24.",
         "image": "bm.png",
-        "galleryImages": ["SwimmingMen.jpg", "SwimmingMen2.jpg", "PA_2024_267.jpg"]
+        "galleryImages": ["SwimmingMen.JPG", "SwimmingMen2.JPG", "PA_2024_267.JPG"]
 
     },
     {
         "game_title": "Swimming Women",
         "description": "Riding on the momentum of their victory last season, the School of Engineering and Architecture (SEA) Tigers seized another win in the recently concluded Women’s Singles Swimming Tournament in the Palarong Atenista ‘24.",
         "image": "ea.png",
-        "galleryImages": ["SwimmingWomen.jpg", "SwimmingWomen2.jpg", "PA_2024_266.jpg"]
+        "galleryImages": ["SwimmingWomen.JPG", "SwimmingWomen2.JPG", "PA_2024_266.JPG"]
 
     },
     {
         "game_title": "Swimming Team",
         "description": "",
         "image": "cs.png",
-        "galleryImages": ["PA_2024_271.jpg", "PA_2024_272.jpg", "PA_2024_273.jpg"]
+        "galleryImages": ["PA_2024_271.JPG", "PA_2024_272.JPG", "PA_2024_273.JPG"]
 
     },
     {
         "game_title": "Chess Men",
         "description": "Clawing his way in the championship match, the School of Engineering and Architecture Tigers’ Francis Liane Francisco beat undefeated Accountancy Griffins’ Ray Abie Karfael Campaña in a 2-1 finals escape.",
         "image": "ea.png",
-        "galleryImages": ["ChessMen.jpg", "ChessMen2.jpg", "PA_2024_105.jpg"]
+        "galleryImages": ["ChessMen.JPG", "ChessMen2.JPG", "PA_2024_105.JPG"]
 
     },
     {
         "game_title": "Chess Women",
         "description": "Remaining undefeated throughout the competition, Accountancy (ACC) Griffins’ Mel Glamoura Olanda gave her cluster a back-to-back gold after triumphing against Natural Sciences and Mathematics (NSM) Falcons’ Aess Anndee Maquiling in this year’s Palarong Atenista. ",
         "image": "acc.png",
-        "galleryImages": ["ChessWomen.jpg", "ChessWomen2.jpg", "PA_2024_108.jpg"]
+        "galleryImages": ["ChessWomen.JPG", "ChessWomen2.JPG", "PA_2024_108.JPG"]
 
     },
     {
         "game_title": "Scrabble Men",
         "description": "Beating last year’s champion, the Social Science (SS) Dragons brought home the gold medal over the Accountancy (ACC) Griffins through a 2-0 win in the Palarong Atenista 2024 Men’s Scrabble tournament. SS Dragons’ Cian Athen Sy held an early lead, winning the first round with a score of 312 – 276. The Dragons’ bet then maintained this momentum in the second round with a score of 312 – 286 in the final match.",
         "image": "SS.png",
-        "galleryImages": ["ScrabbleMen.jpg", "PA_2024_135.jpg", ""]
+        "galleryImages": ["ScrabbleMen.JPG", "PA_2024_135.JPG", ""]
 
     },
     {
         "game_title": "Scrabble Women",
         "description": "With a 2-0 win, the Accountancy (ACC) Griffins secured a back-to-back championship title in the Palarong Atenista 2024 Women’s Scrabble tournament. ACC Griffins’ Regine Cabel, who was also her cluster’s representative last year, won the first finals game against B&M Vipers’ Chrystanni Gregore with a close lead of 311 – 286. The second finals game saw her secure the two-time championship with another close lead of 318 – 287. ",
         "image": "acc.png",
-        "galleryImages": ["ScrabbleWomen.jpg", "ScrabbleWomen2.jpg", ""]
+        "galleryImages": ["ScrabbleWomen.JPG", "ScrabbleWomen2.JPG", ""]
 
     },
     {
         "game_title": "Billiards Men",
         "description": "In a notable first for this year’s Palarong Atenista, the School of Nursing (SON) Panthers and School of Engineering and Architecture (SEA) Tigers emerged victorious in the newly added billiards competition in this year’s Palarong Atenista. ",
         "image": "SON.png",
-        "galleryImages": ["Billiards.jpg", "PA_2024_41.jpg", "PA_2024_40.jpg"]
+        "galleryImages": ["Billiards.JPG", "PA_2024_41.JPG", "PA_2024_40.JPG"]
 
     },
     {
         "game_title": "Billiards Women",
         "description": "In a notable first for this year’s Palarong Atenista, the School of Nursing (SON) Panthers and School of Engineering and Architecture (SEA) Tigers emerged victorious in the newly added billiards competition in this year’s Palarong Atenista. ",
         "image": "ea.png",
-        "galleryImages": ["Billiards4.jpg", "Billiards3.jpg", "PA_2024_56.jpg"]
+        "galleryImages": ["Billiards4.JPG", "Billiards3.JPG", "PA_2024_56.JPG"]
 
     },
     {
         "game_title": "Darts Men",
         "description": "The School of Engineering and Architecture (SEA) Tigers dominated the game and bagged the champion title for the 501 Darts Men Category in this year’s Palarong Atenista ‘24.",
         "image": "ea.png",
-        "galleryImages": ["DartsMen.jpg", "DartsMen2.jpg", "PA_2024_112.jpg"]
+        "galleryImages": ["DartsMen.JPG", "DartsMen2.JPG", "PA_2024_112.JPG"]
 
     },
     {
         "game_title": "Darts Women",
         "description": "The School of Nursing (SON) Panther secured the championship medal, besting the Humanities and Letters (HUMLET) Wolf in a best-of-three showdown, scoring 2-1.",
         "image": "SON.png",
-        "galleryImages": ["DartsWomen.jpg", "DartsWomen2.jpg", "PA_2024_118.jpg"]
+        "galleryImages": ["DartsWomen.JPG", "DartsWomen2.JPG", "PA_2024_118.JPG"]
 
     },
     {
         "game_title": "DOTA2",
         "description": "The School of Engineering and Architecture (SEA) Tigers kept their reign as victors over the Computer Studies (CS) Chameleons in a best-of-five DOTA 2 championships during the Palarong Atenista 2024, 3-1.",
         "image": "ea.png",
-        "galleryImages": ["Dota.jpg", "Dota2.jpg", "Dota3.jpg"]
+        "galleryImages": ["Dota.JPG", "Dota2.JPG", "Dota3.JPG"]
 
     },
     {

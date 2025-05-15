@@ -1,5 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
+import getConfig from 'next/config';
+
+const { basePath } = getConfig().publicRuntimeConfig || { basePath: '' };
 
 const HeroSection = () => {
   return (
@@ -8,11 +11,9 @@ const HeroSection = () => {
       {/* Left side - Logo with shadow */}
       <div className="relative w-fit ml-[10%] lg:ml-[15%]">
         {/* Shadow Image - Bottom Layer */}
-        <Image
-          src="/images/hero-pictures/shadow.svg"
-          priority={true}
+        <img
+          src={`${basePath}/images/hero-pictures/shadow.svg`}
           alt=""
-          quality={75}
           width={878}
           height={562}
           className="w-full 
@@ -34,12 +35,10 @@ const HeroSection = () => {
 
         {/* Hero Logo - Top Layer */}
         <div className="absolute inset-0">
-          <Image
-            src="/images/hero-pictures/Hero_Logo.svg"
+          <img
+            src={`${basePath}/images/hero-pictures/Hero_Logo.svg`}
             alt=""
             width={878}
-            priority={true}
-            quality={75}
             height={562}
             className="w-full 
               max-w-[400px]
@@ -71,7 +70,7 @@ const HeroSection = () => {
       {/* Right side image */}
       <div className="relative flex-shrink-0 w-[35%] hidden lg:block">
         <Image
-          src="/images/hero-pictures/Right-Image.png"
+          src={"/images/hero-pictures/Right-Image.png"}
           width={529}
           height={773}
           alt=""
