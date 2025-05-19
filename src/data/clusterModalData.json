@@ -116,7 +116,7 @@
     {
         "game_title": "Swimming Team",
         "description": "",
-        "image": "cs.png",
+        "image": "palaro-card.png",
         "galleryImages": ["PA_2024_271.JPG", "PA_2024_272.JPG", "PA_2024_273.JPG"]
 
     },
@@ -151,14 +151,14 @@
     {
         "game_title": "Billiards Men",
         "description": "In a notable first for this year’s Palarong Atenista, the School of Nursing (SON) Panthers and School of Engineering and Architecture (SEA) Tigers emerged victorious in the newly added billiards competition in this year’s Palarong Atenista. ",
-        "image": "SON.png",
+        "image": "ea.png",
         "galleryImages": ["Billiards.JPG", "PA_2024_41.JPG", "PA_2024_40.JPG"]
 
     },
     {
         "game_title": "Billiards Women",
         "description": "In a notable first for this year’s Palarong Atenista, the School of Nursing (SON) Panthers and School of Engineering and Architecture (SEA) Tigers emerged victorious in the newly added billiards competition in this year’s Palarong Atenista. ",
-        "image": "ea.png",
+        "image": "SON.png",
         "galleryImages": ["Billiards4.JPG", "Billiards3.JPG", "PA_2024_56.JPG"]
 
     },
